@@ -1,5 +1,7 @@
 Ethan Dinehart
+
 FÆNG
+
 Overview:
 	My idea for a game is a platform fighter like smash bros or brawlhalla. But the characters are all animals and the theme follows. I won’t make too many characters, I’ll start with 1 or 2, as I don’t want to complicate things and keep my game within the scope of capability despite greater ambitions. The premise is to fight each other to knock each other off the stage and fall down or out of the arena (3 lives). The more damage you do to the opponent the more knockback they take. Each character will have unique attacks and thus unique animations. They will also have unique health, speed, weight, and damage. The more damage you take/deal the more your ultimate charges (not for certain on ultimate). You’ll be able to block, just like in smash bros, but I’ll also add a dodge just like in brawlhalla. There will be a start screen, choose your character screen (which will display stats), then the game screen, and game over screen. I want to be able to let people play against each other on the same computer.
 
