@@ -10,3 +10,6 @@ UserSettings/
 .idea/
 
 .DS_Store
+*.csproj
+*.sln
+*.slnx
