@@ -6,6 +6,8 @@ public class FighterController : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private float jumpForce = 13f;
+    [SerializeField] private float downForce = 10f;
+    [SerializeField] private float normalGravity = 3f;
 
     [Header("Ground Check")]
     [SerializeField] private Transform groundCheck;
@@ -47,26 +49,14 @@ public class FighterController : MonoBehaviour
         }
 
         // Jump
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded)
         {
-            Debug.Log("SPACE PRESSED");
-            Debug.Log("Grounded: " + isGrounded);
-
-            if (isGrounded)
-            {
-                rb.linearVelocity = new Vector2(
-                    rb.linearVelocity.x,
-                    jumpForce
-                );
-            }
+            rb.linearVelocity = new Vector2(
+                rb.linearVelocity.x,
+                jumpForce
+            );
         }
-        // if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded)
-        // {
-        //     rb.linearVelocity = new Vector2(
-        //         rb.linearVelocity.x,
-        //         jumpForce
-        //     );
-        // }
+        
 
         // Determine which direction we're facing
         if (horizontalInput > 0)
@@ -81,9 +71,16 @@ public class FighterController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(
-            horizontalInput * moveSpeed,
-            rb.linearVelocity.y
-        );
+        rb.linearVelocity = new Vector2(horizontalInput * moveSpeed,rb.linearVelocity.y);
+
+        // Fast fall
+        if (Keyboard.current.sKey.isPressed && !isGrounded)
+        {
+            rb.gravityScale = normalGravity - downForce;
+        }
+        else
+        {
+            rb.gravityScale = normalGravity;
+        }
     }
 }
