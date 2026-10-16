@@ -13,7 +13,8 @@ public class MainMenuController : MonoBehaviour
 
     [Header("Intro Animation")]
     [SerializeField] private RectTransform leavesImage;
-    // [SerializeField] private CanvasGroup mainMenuCanvasGroup;
+    [SerializeField] private RectTransform topLeavesImage;
+
     [SerializeField] private GameObject clickToStart;
 
     [SerializeField] private float leafMoveDistance = 800f;
@@ -21,6 +22,7 @@ public class MainMenuController : MonoBehaviour
 
     private bool introFinished = false;
     private Vector2 leavesStartPosition;
+    private Vector2 topLeavesStartPosition;
 
     private void Start()
     {
@@ -31,6 +33,7 @@ public class MainMenuController : MonoBehaviour
         settingsPanel.SetActive(false);
 
         leavesStartPosition = leavesImage.anchoredPosition;
+        topLeavesStartPosition = topLeavesImage.anchoredPosition;
     }
 
     private void Update()
@@ -54,10 +57,16 @@ public class MainMenuController : MonoBehaviour
         mainMenuPanel.SetActive(true);
         // mainMenuCanvasGroup.alpha = 1f;
 
-        Vector2 startPosition = leavesStartPosition;
+        Vector2 bottomStartPosition = leavesStartPosition;
+        Vector2 topStartPosition = topLeavesStartPosition;
 
-        Vector2 endPosition =
-            startPosition + Vector2.down * leafMoveDistance;
+        // Bottom leaves move DOWN
+        Vector2 bottomEndPosition =
+            bottomStartPosition + Vector2.down * leafMoveDistance;
+
+        // Top leaves move UP
+        Vector2 topEndPosition =
+            topStartPosition + Vector2.up * leafMoveDistance;
 
         float elapsedTime = 0f;
 
@@ -66,22 +75,22 @@ public class MainMenuController : MonoBehaviour
             elapsedTime += Time.deltaTime;
 
             float t = elapsedTime / animationDuration;
-
-            // Makes animation start and stop smoothly
             t = Mathf.SmoothStep(0f, 1f, t);
 
-            // Move leaves downward
+            // Bottom leaves move down
             leavesImage.anchoredPosition =
-                Vector2.Lerp(startPosition, endPosition, t);
+                Vector2.Lerp(bottomStartPosition, bottomEndPosition, t);
+
+            // Top leaves move up
+            topLeavesImage.anchoredPosition =
+                Vector2.Lerp(topStartPosition, topEndPosition, t);
 
             yield return null;
         }
 
-        // Make sure final values are exact
-        leavesImage.anchoredPosition = endPosition;
-        // mainMenuCanvasGroup.alpha = 1f;
+        leavesImage.anchoredPosition = bottomEndPosition;
+        topLeavesImage.anchoredPosition = topEndPosition;
 
-        // Entire intro can now be disabled
         leafIntro.SetActive(false);
 
         playOptions.SetActive(false);
