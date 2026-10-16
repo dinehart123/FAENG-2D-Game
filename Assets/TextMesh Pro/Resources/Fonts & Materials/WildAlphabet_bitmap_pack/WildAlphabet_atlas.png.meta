@@ -1,0 +1,1614 @@
+fileFormatVersion: 2
+guid: c4f7f141f8ff04b0b82bf4ccbdb8e6f5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8754926686093936206
+    second: WildAlphabet_atlas_0
+  - first:
+      213: -7458297730108163860
+    second: WildAlphabet_atlas_1
+  - first:
+      213: 5046980372510115455
+    second: WildAlphabet_atlas_2
+  - first:
+      213: 3939044184466035889
+    second: WildAlphabet_atlas_3
+  - first:
+      213: 5367972012457363195
+    second: WildAlphabet_atlas_4
+  - first:
+      213: -4469661406804639164
+    second: WildAlphabet_atlas_5
+  - first:
+      213: 535661450740999774
+    second: WildAlphabet_atlas_6
+  - first:
+      213: -6358000611897801538
+    second: WildAlphabet_atlas_7
+  - first:
+      213: 7835864472371839650
+    second: WildAlphabet_atlas_8
+  - first:
+      213: 4362179749694301143
+    second: WildAlphabet_atlas_9
+  - first:
+      213: 3823531078812299992
+    second: WildAlphabet_atlas_10
+  - first:
+      213: 1936996930582197675
+    second: WildAlphabet_atlas_11
+  - first:
+      213: -4831844387362864710
+    second: WildAlphabet_atlas_12
+  - first:
+      213: -8165218884365842201
+    second: WildAlphabet_atlas_13
+  - first:
+      213: -6261852876934907889
+    second: WildAlphabet_atlas_14
+  - first:
+      213: 5867075708077971242
+    second: WildAlphabet_atlas_15
+  - first:
+      213: 4701330530441968257
+    second: WildAlphabet_atlas_16
+  - first:
+      213: 6669072809204663283
+    second: WildAlphabet_atlas_17
+  - first:
+      213: 7515938034862272844
+    second: WildAlphabet_atlas_18
+  - first:
+      213: 5708806554520120418
+    second: WildAlphabet_atlas_19
+  - first:
+      213: -7982923721289802607
+    second: WildAlphabet_atlas_20
+  - first:
+      213: -4379326256663987408
+    second: WildAlphabet_atlas_21
+  - first:
+      213: -8579032638361634823
+    second: WildAlphabet_atlas_22
+  - first:
+      213: -50387401322325131
+    second: WildAlphabet_atlas_23
+  - first:
+      213: -8539595709223813362
+    second: WildAlphabet_atlas_24
+  - first:
+      213: 2519328459473180211
+    second: WildAlphabet_atlas_25
+  - first:
+      213: -7165079874536240436
+    second: WildAlphabet_atlas_26
+  - first:
+      213: 1108386649646720108
+    second: WildAlphabet_atlas_27
+  - first:
+      213: -924804922038819580
+    second: WildAlphabet_atlas_28
+  - first:
+      213: 3056148657203791049
+    second: WildAlphabet_atlas_29
+  - first:
+      213: -9069863065237960421
+    second: WildAlphabet_atlas_30
+  - first:
+      213: -8653787174456915479
+    second: WildAlphabet_atlas_31
+  - first:
+      213: 4122094286352942650
+    second: WildAlphabet_atlas_32
+  - first:
+      213: -2530105514453703675
+    second: WildAlphabet_atlas_33
+  - first:
+      213: 7326421701826120558
+    second: WildAlphabet_atlas_34
+  - first:
+      213: -3467867316910633624
+    second: WildAlphabet_atlas_35
+  - first:
+      213: 84100333590871132
+    second: WildAlphabet_atlas_36
+  - first:
+      213: 8381533834309914553
+    second: WildAlphabet_atlas_37
+  - first:
+      213: -7506750948556809823
+    second: WildAlphabet_atlas_38
+  - first:
+      213: -4839302040593256975
+    second: WildAlphabet_atlas_39
+  - first:
+      213: 8905500214558104811
+    second: WildAlphabet_atlas_40
+  - first:
+      213: -4291545624038705250
+    second: WildAlphabet_atlas_41
+  - first:
+      213: 4648662096884946362
+    second: WildAlphabet_atlas_42
+  - first:
+      213: -6163237240278805216
+    second: WildAlphabet_atlas_43
+  - first:
+      213: 9153781850211359160
+    second: WildAlphabet_atlas_44
+  - first:
+      213: -3383810904222447719
+    second: WildAlphabet_atlas_45
+  - first:
+      213: -7045188920894203251
+    second: WildAlphabet_atlas_46
+  - first:
+      213: -2095324398409054024
+    second: WildAlphabet_atlas_47
+  - first:
+      213: 3170099980252283086
+    second: WildAlphabet_atlas_48
+  - first:
+      213: 5825426550398548009
+    second: WildAlphabet_atlas_49
+  - first:
+      213: -4911743524726916637
+    second: WildAlphabet_atlas_50
+  - first:
+      213: 3476603091539654917
+    second: WildAlphabet_atlas_51
+  - first:
+      213: -5111962594731834749
+    second: WildAlphabet_atlas_52
+  - first:
+      213: 8781567347294428124
+    second: WildAlphabet_atlas_53
+  - first:
+      213: -6993416027950809903
+    second: WildAlphabet_atlas_54
+  - first:
+      213: 6537524891621172221
+    second: WildAlphabet_atlas_55
+  - first:
+      213: -5123040520564354300
+    second: WildAlphabet_atlas_56
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 809
+        width: 184
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4687377f6fbf7970800000000000000
+      internalID: 8754926686093936206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_1
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 816
+        width: 150
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8fccfeabdce7890800000000000000
+      internalID: -7458297730108163860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_2
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 819
+        width: 208
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7685d3a8e97a0640800000000000000
+      internalID: 5046980372510115455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_3
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 821
+        width: 191
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b49aa9d0db4aa630800000000000000
+      internalID: 3939044184466035889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_4
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 823
+        width: 179
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf682c6ca1ede7a40800000000000000
+      internalID: 5367972012457363195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_5
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 823
+        width: 199
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442032db1a298f1c0800000000000000
+      internalID: -4469661406804639164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_6
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 825
+        width: 99
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e56a94b504d0f6700800000000000000
+      internalID: 535661450740999774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_7
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 828
+        width: 175
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb48d1e2128d3c7a0800000000000000
+      internalID: -6358000611897801538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_8
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 828
+        width: 204
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a2c3dfa8359ebc60800000000000000
+      internalID: 7835864472371839650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_9
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 829
+        width: 175
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d36eeade53998c30800000000000000
+      internalID: 4362179749694301143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_10
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 829
+        width: 182
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d2f54c1249ef0530800000000000000
+      internalID: 3823531078812299992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 618
+        width: 213
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba5bf5a127891ea10800000000000000
+      internalID: 1936996930582197675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_12
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 619
+        width: 230
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab185414127d1fcb0800000000000000
+      internalID: -4831844387362864710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_13
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 622
+        width: 152
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e800149fa05fae80800000000000000
+      internalID: -8165218884365842201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_14
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 622
+        width: 179
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0879823cfd6919a0800000000000000
+      internalID: -6261852876934907889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_15
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 623
+        width: 180
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a279f4a754a0c6150800000000000000
+      internalID: 5867075708077971242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_16
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 625
+        width: 187
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18a31be653b7e3140800000000000000
+      internalID: 4701330530441968257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_17
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 625
+        width: 164
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f34cddb26e4d8c50800000000000000
+      internalID: 6669072809204663283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_18
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 625
+        width: 176
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4130d152d9fd4860800000000000000
+      internalID: 7515938034862272844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_19
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 627
+        width: 166
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ce7959051c93f40800000000000000
+      internalID: 5708806554520120418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_20
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 628
+        width: 266
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c5b7bbb25f63190800000000000000
+      internalID: -7982923721289802607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 438
+        width: 207
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03b7004e8f18933c0800000000000000
+      internalID: -4379326256663987408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_22
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 439
+        width: 187
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f7f8f1e44721f880800000000000000
+      internalID: -8579032638361634823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_23
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 442
+        width: 173
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57b170bececfc4ff0800000000000000
+      internalID: -50387401322325131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_24
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 443
+        width: 202
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0fb34a72f24d7980800000000000000
+      internalID: -8539595709223813362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_25
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 444
+        width: 200
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3365e6bc2e376f220800000000000000
+      internalID: 2519328459473180211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_26
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 445
+        width: 157
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cca87faf0d5809c90800000000000000
+      internalID: -7165079874536240436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_27
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 448
+        width: 151
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c646afd09c7c16f00800000000000000
+      internalID: 1108386649646720108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_28
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 510
+        width: 133
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 405e75fb2de6a23f0800000000000000
+      internalID: -924804922038819580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_29
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 449
+        width: 149
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c44b65f20f996a20800000000000000
+      internalID: 3056148657203791049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_30
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 450
+        width: 167
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b194e0ba89f512280800000000000000
+      internalID: -9069863065237960421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_31
+      rect:
+        serializedVersion: 2
+        x: 1593
+        y: 450
+        width: 161
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e90aa02a6297e780800000000000000
+      internalID: -8653787174456915479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_32
+      rect:
+        serializedVersion: 2
+        x: 1754
+        y: 451
+        width: 163
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a360cb4e9ee943930800000000000000
+      internalID: 4122094286352942650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 271
+        width: 164
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 504eabe807243ecd0800000000000000
+      internalID: -2530105514453703675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_34
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 272
+        width: 142
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b0f0488bdaca560800000000000000
+      internalID: 7326421701826120558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_35
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 272
+        width: 156
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86dca5f7c09afdfc0800000000000000
+      internalID: -3467867316910633624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_36
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 273
+        width: 108
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5cfc2dcec8ca2100800000000000000
+      internalID: 84100333590871132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_37
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 274
+        width: 73
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bfc5f27d90315470800000000000000
+      internalID: 8381533834309914553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_38
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 274
+        width: 74
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a9d1f5e8c9a2d790800000000000000
+      internalID: -7506750948556809823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_39
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 275
+        width: 168
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fdad9d0f6857dcb0800000000000000
+      internalID: -4839302040593256975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_40
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 320
+        width: 115
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec96e30341b69b70800000000000000
+      internalID: 8905500214558104811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_41
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 333
+        width: 53
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e977ac51efd5174c0800000000000000
+      internalID: -4291545624038705250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_42
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 300
+        width: 95
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab556a52c8d538040800000000000000
+      internalID: 4648662096884946362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_43
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 302
+        width: 112
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02519ba5268c77aa0800000000000000
+      internalID: -6163237240278805216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_44
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 313
+        width: 154
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b9144d0814c80f70800000000000000
+      internalID: 9153781850211359160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_45
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 318
+        width: 86
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9974aba29e94a01d0800000000000000
+      internalID: -3383810904222447719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_46
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 383
+        width: 158
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8a5592e0067a3e90800000000000000
+      internalID: -7045188920894203251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_47
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 336
+        width: 77
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b88e97af89ebe2e0800000000000000
+      internalID: -2095324398409054024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_48
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 349
+        width: 52
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec00969d2257efb20800000000000000
+      internalID: 3170099980252283086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_49
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 350
+        width: 54
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92872a9459218d050800000000000000
+      internalID: 5825426550398548009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_50
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 357
+        width: 51
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9b3dca94bf5dbb0800000000000000
+      internalID: -4911743524726916637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_51
+      rect:
+        serializedVersion: 2
+        x: 1906
+        y: 356
+        width: 48
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 509fe3887106f3030800000000000000
+      internalID: 3476603091539654917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_52
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 377
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 382ccebba19ae09b0800000000000000
+      internalID: -5111962594731834749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_53
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 275
+        width: 55
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdb57a2c9f46ed970800000000000000
+      internalID: 8781567347294428124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_54
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 284
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dcf77fdc2562fe90800000000000000
+      internalID: -6993416027950809903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_55
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 320
+        width: 160
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df3aa5b6044f9ba50800000000000000
+      internalID: 6537524891621172221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WildAlphabet_atlas_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 218
+        width: 146
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40354d12acd47e8b0800000000000000
+      internalID: -5123040520564354300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WildAlphabet_atlas_0: 8754926686093936206
+      WildAlphabet_atlas_1: -7458297730108163860
+      WildAlphabet_atlas_10: 3823531078812299992
+      WildAlphabet_atlas_11: 1936996930582197675
+      WildAlphabet_atlas_12: -4831844387362864710
+      WildAlphabet_atlas_13: -8165218884365842201
+      WildAlphabet_atlas_14: -6261852876934907889
+      WildAlphabet_atlas_15: 5867075708077971242
+      WildAlphabet_atlas_16: 4701330530441968257
+      WildAlphabet_atlas_17: 6669072809204663283
+      WildAlphabet_atlas_18: 7515938034862272844
+      WildAlphabet_atlas_19: 5708806554520120418
+      WildAlphabet_atlas_2: 5046980372510115455
+      WildAlphabet_atlas_20: -7982923721289802607
+      WildAlphabet_atlas_21: -4379326256663987408
+      WildAlphabet_atlas_22: -8579032638361634823
+      WildAlphabet_atlas_23: -50387401322325131
+      WildAlphabet_atlas_24: -8539595709223813362
+      WildAlphabet_atlas_25: 2519328459473180211
+      WildAlphabet_atlas_26: -7165079874536240436
+      WildAlphabet_atlas_27: 1108386649646720108
+      WildAlphabet_atlas_28: -924804922038819580
+      WildAlphabet_atlas_29: 3056148657203791049
+      WildAlphabet_atlas_3: 3939044184466035889
+      WildAlphabet_atlas_30: -9069863065237960421
+      WildAlphabet_atlas_31: -8653787174456915479
+      WildAlphabet_atlas_32: 4122094286352942650
+      WildAlphabet_atlas_33: -2530105514453703675
+      WildAlphabet_atlas_34: 7326421701826120558
+      WildAlphabet_atlas_35: -3467867316910633624
+      WildAlphabet_atlas_36: 84100333590871132
+      WildAlphabet_atlas_37: 8381533834309914553
+      WildAlphabet_atlas_38: -7506750948556809823
+      WildAlphabet_atlas_39: -4839302040593256975
+      WildAlphabet_atlas_4: 5367972012457363195
+      WildAlphabet_atlas_40: 8905500214558104811
+      WildAlphabet_atlas_41: -4291545624038705250
+      WildAlphabet_atlas_42: 4648662096884946362
+      WildAlphabet_atlas_43: -6163237240278805216
+      WildAlphabet_atlas_44: 9153781850211359160
+      WildAlphabet_atlas_45: -3383810904222447719
+      WildAlphabet_atlas_46: -7045188920894203251
+      WildAlphabet_atlas_47: -2095324398409054024
+      WildAlphabet_atlas_48: 3170099980252283086
+      WildAlphabet_atlas_49: 5825426550398548009
+      WildAlphabet_atlas_5: -4469661406804639164
+      WildAlphabet_atlas_50: -4911743524726916637
+      WildAlphabet_atlas_51: 3476603091539654917
+      WildAlphabet_atlas_52: -5111962594731834749
+      WildAlphabet_atlas_53: 8781567347294428124
+      WildAlphabet_atlas_54: -6993416027950809903
+      WildAlphabet_atlas_55: 6537524891621172221
+      WildAlphabet_atlas_56: -5123040520564354300
+      WildAlphabet_atlas_6: 535661450740999774
+      WildAlphabet_atlas_7: -6358000611897801538
+      WildAlphabet_atlas_8: 7835864472371839650
+      WildAlphabet_atlas_9: 4362179749694301143
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
