@@ -53,9 +53,6 @@ public class MainMenuController : MonoBehaviour
         // Hide the prompt immediately when the intro animation begins
         clickToStart.SetActive(false);
 
-        // The menu is already visible behind the leaves as they move away
-        mainMenuPanel.SetActive(true);
-        // mainMenuCanvasGroup.alpha = 1f;
 
         Vector2 bottomStartPosition = leavesStartPosition;
         Vector2 topStartPosition = topLeavesStartPosition;
@@ -93,6 +90,10 @@ public class MainMenuController : MonoBehaviour
 
         leafIntro.SetActive(false);
 
+        // The menu is already visible behind the leaves as they move away
+        mainMenuPanel.SetActive(true);
+        // mainMenuCanvasGroup.alpha = 1f;
+
         playOptions.SetActive(false);
         settingsPanel.SetActive(false);
     }
@@ -104,7 +105,7 @@ public class MainMenuController : MonoBehaviour
 
     public void LocalClicked()
     {
-        SceneManager.LoadScene("CharacterTest");
+        SceneManager.LoadScene("Arena");
     }
 
     public void SettingsClicked()

@@ -25,7 +25,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Background
   - 
   - 
   - 
@@ -40,6 +40,24 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Characters
+    uniqueID: 2117252657
+    locked: 0
+  - name: New Layer 2
+    uniqueID: 2260257845
+    locked: 0
+  - name: Platform
+    uniqueID: 3654620023
+    locked: 0
+  - name: Icons
+    uniqueID: 181549503
+    locked: 0
+  - name: Text
+    uniqueID: 333607429
+    locked: 0
+  - name: Background
+    uniqueID: 2099413363
     locked: 0
   m_RenderingLayers:
   - Default
