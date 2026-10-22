@@ -27,8 +27,11 @@ public class FighterController : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
 
     private Rigidbody2D rb;
+    private Gamepad assignedGamepad;
+
     private float horizontalInput;
     private float knockbackTimer;
+
     private bool isGrounded;
     private bool downPressed;
     private bool facingRight = true;
@@ -36,6 +39,10 @@ public class FighterController : MonoBehaviour
     public float HorizontalInput => horizontalInput;
     public bool IsGrounded => isGrounded;
     public bool IsDownPressed => downPressed;
+    public bool FacingRight => facingRight;
+
+    public ControlMode CurrentControlMode => controlMode;
+    public Gamepad AssignedGamepad => assignedGamepad;
 
     private void Awake()
     {
@@ -60,52 +67,73 @@ public class FighterController : MonoBehaviour
 
         if (controlMode == ControlMode.Keyboard)
         {
-            if (Keyboard.current != null)
-            {
-                if (Keyboard.current.aKey.isPressed)
-                {
-                    horizontalInput = -1f;
-                }
-
-                if (Keyboard.current.dKey.isPressed)
-                {
-                    horizontalInput = 1f;
-                }
-
-                downPressed = Keyboard.current.sKey.isPressed;
-
-                if (Keyboard.current.spaceKey.wasPressedThisFrame &&
-                    isGrounded &&
-                    knockbackTimer <= 0f)
-                {
-                    rb.linearVelocity = new Vector2(
-                        rb.linearVelocity.x,
-                        jumpForce
-                    );
-                }
-            }
+            HandleKeyboardInput();
         }
-        else if (controlMode == ControlMode.Controller)
+        else
         {
-            if (Gamepad.current != null)
-            {
-                Vector2 stickInput = Gamepad.current.leftStick.ReadValue();
-                horizontalInput = stickInput.x;
-                downPressed = stickInput.y < -0.5f;
-
-                // Xbox A button
-                if (Gamepad.current.buttonSouth.wasPressedThisFrame &&
-                    isGrounded &&
-                    knockbackTimer <= 0f)
-                {
-                    rb.linearVelocity = new Vector2(
-                        rb.linearVelocity.x,
-                        jumpForce
-                    );
-                }
-            }
+            HandleControllerInput();
         }
 
+        UpdateFacingDirection();
+    }
+
+    private void HandleKeyboardInput()
+    {
+        if (Keyboard.current == null)
+        {
+            return;
+        }
+
+        if (Keyboard.current.aKey.isPressed)
+        {
+            horizontalInput = -1f;
+        }
+
+        if (Keyboard.current.dKey.isPressed)
+        {
+            horizontalInput = 1f;
+        }
+
+        downPressed = Keyboard.current.sKey.isPressed;
+
+        if ((Keyboard.current.spaceKey.wasPressedThisFrame || Keyboard.current.wKey.wasPressedThisFrame) &&
+            isGrounded &&
+            knockbackTimer <= 0f)
+        {
+            Jump();
+        }
+    }
+
+    private void HandleControllerInput()
+    {
+        if (assignedGamepad == null)
+        {
+            return;
+        }
+
+        Vector2 stickInput = assignedGamepad.leftStick.ReadValue();
+
+        horizontalInput = stickInput.x;
+        downPressed = stickInput.y < -0.5f;
+
+        if (assignedGamepad.buttonSouth.wasPressedThisFrame &&
+            isGrounded &&
+            knockbackTimer <= 0f)
+        {
+            Jump();
+        }
+    }
+
+    private void Jump()
+    {
+        rb.linearVelocity = new Vector2(
+            rb.linearVelocity.x,
+            jumpForce
+        );
+    }
+
+    private void UpdateFacingDirection()
+    {
         if (horizontalInput > 0f)
         {
             facingRight = true;
@@ -118,7 +146,6 @@ public class FighterController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // Preserve knockback momentum while knockback is active.
         if (knockbackTimer <= 0f)
         {
             rb.linearVelocity = new Vector2(
@@ -135,6 +162,14 @@ public class FighterController : MonoBehaviour
         {
             rb.gravityScale = normalGravity;
         }
+    }
+
+    public void SetControls(
+        ControlMode mode,
+        Gamepad gamepad = null)
+    {
+        controlMode = mode;
+        assignedGamepad = gamepad;
     }
 
     public void ApplyKnockback(Vector2 knockbackForce)

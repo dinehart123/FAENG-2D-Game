@@ -28,8 +28,6 @@ public class FighterAttack : MonoBehaviour
     }
 
     [Header("Controls")]
-    [SerializeField] private FighterController.ControlMode controlMode =
-        FighterController.ControlMode.Keyboard;
 
     [Header("Attack Hitbox")]
     [SerializeField] private GameObject attackHitbox;
@@ -89,32 +87,22 @@ public class FighterAttack : MonoBehaviour
     {
         attackType = AttackType.Light;
 
-        if (controlMode == FighterController.ControlMode.Keyboard)
+        if (fighterController.CurrentControlMode ==
+            FighterController.ControlMode.Keyboard)
         {
             if (Keyboard.current != null)
             {
-                if (Keyboard.current.jKey.wasPressedThisFrame)
+                if (Keyboard.current.jKey.wasPressedThisFrame ||
+                    (Mouse.current != null &&
+                    Mouse.current.leftButton.wasPressedThisFrame))
                 {
                     attackType = AttackType.Light;
                     return true;
                 }
 
-                if (Keyboard.current.kKey.wasPressedThisFrame)
-                {
-                    attackType = AttackType.Heavy;
-                    return true;
-                }
-            }
-
-            if (Mouse.current != null)
-            {
-                if (Mouse.current.leftButton.wasPressedThisFrame)
-                {
-                    attackType = AttackType.Light;
-                    return true;
-                }
-
-                if (Mouse.current.rightButton.wasPressedThisFrame)
+                if (Keyboard.current.kKey.wasPressedThisFrame ||
+                    (Mouse.current != null &&
+                    Mouse.current.rightButton.wasPressedThisFrame))
                 {
                     attackType = AttackType.Heavy;
                     return true;
@@ -124,19 +112,20 @@ public class FighterAttack : MonoBehaviour
             return false;
         }
 
-        if (Gamepad.current == null)
+        Gamepad gamepad = fighterController.AssignedGamepad;
+
+        if (gamepad == null)
         {
             return false;
         }
 
-        // Xbox X button = light attack; Xbox Y button = heavy attack.
-        if (Gamepad.current.buttonWest.wasPressedThisFrame)
+        if (gamepad.buttonWest.wasPressedThisFrame)
         {
             attackType = AttackType.Light;
             return true;
         }
 
-        if (Gamepad.current.buttonNorth.wasPressedThisFrame)
+        if (gamepad.buttonNorth.wasPressedThisFrame)
         {
             attackType = AttackType.Heavy;
             return true;

@@ -38,12 +38,41 @@ public class MainMenuController : MonoBehaviour
 
     private void Update()
     {
-        if (!introFinished &&
-            Mouse.current != null &&
-            Mouse.current.leftButton.wasPressedThisFrame)
+        if (!introFinished && 
+        ((Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) ||
+        (Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame)))
         {
             StartCoroutine(ShowMainMenu());
         }
+
+        // Back button - only works after intro
+        if (introFinished &&
+            ((Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame) ||
+            (Gamepad.current != null && Gamepad.current.buttonEast.wasPressedThisFrame)))
+        {
+            GoBack();
+        }
+    }
+
+    private void GoBack()
+    {
+        // If Settings is open -> return to main menu
+        if (settingsPanel.activeSelf)
+        {
+            settingsPanel.SetActive(false);
+            mainMenuPanel.SetActive(true);
+            playOptions.SetActive(false);
+            return;
+        }
+
+        // If Local/Online options are open -> close them
+        if (playOptions.activeSelf)
+        {
+            playOptions.SetActive(false);
+            return;
+        }
+
+        // Already at the main menu -> do nothing
     }
 
     private IEnumerator ShowMainMenu()
