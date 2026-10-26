@@ -26,6 +26,10 @@ public class FighterController : MonoBehaviour
     [SerializeField] private float groundCheckRadius = 0.15f;
     [SerializeField] private LayerMask groundLayer;
 
+    [Header("Animation")]
+    [SerializeField] private Animator animator;
+    [SerializeField] private SpriteRenderer spriteRenderer;
+
     private Rigidbody2D rb;
     private Gamepad assignedGamepad;
 
@@ -38,6 +42,7 @@ public class FighterController : MonoBehaviour
 
     public float HorizontalInput => horizontalInput;
     public bool IsGrounded => isGrounded;
+    public bool IsFalling => !isGrounded && rb != null && rb.linearVelocity.y < -0.1f;
     public bool IsDownPressed => downPressed;
     public bool FacingRight => facingRight;
 
@@ -47,6 +52,16 @@ public class FighterController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        if (animator == null)
+        {
+            animator = GetComponent<Animator>();
+        }
+
+        if (spriteRenderer == null)
+        {
+            spriteRenderer = GetComponent<SpriteRenderer>();
+        }
     }
 
     private void Update()
@@ -56,11 +71,18 @@ public class FighterController : MonoBehaviour
             knockbackTimer -= Time.deltaTime;
         }
 
-        isGrounded = Physics2D.OverlapCircle(
-            groundCheck.position,
-            groundCheckRadius,
-            groundLayer
-        );
+        if (groundCheck != null)
+        {
+            isGrounded = Physics2D.OverlapCircle(
+                groundCheck.position,
+                groundCheckRadius,
+                groundLayer
+            );
+        }
+        else
+        {
+            isGrounded = false;
+        }
 
         horizontalInput = 0f;
         downPressed = false;
@@ -75,6 +97,7 @@ public class FighterController : MonoBehaviour
         }
 
         UpdateFacingDirection();
+        UpdateAnimation();
     }
 
     private void HandleKeyboardInput()
@@ -96,9 +119,7 @@ public class FighterController : MonoBehaviour
 
         downPressed = Keyboard.current.sKey.isPressed;
 
-        if ((Keyboard.current.spaceKey.wasPressedThisFrame || Keyboard.current.wKey.wasPressedThisFrame) &&
-            isGrounded &&
-            knockbackTimer <= 0f)
+        if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded && knockbackTimer <= 0f)
         {
             Jump();
         }
@@ -130,6 +151,13 @@ public class FighterController : MonoBehaviour
             rb.linearVelocity.x,
             jumpForce
         );
+
+        if (animator != null)
+        {
+            animator.ResetTrigger("Jump");
+            animator.SetTrigger("Jump");
+            
+        }
     }
 
     private void UpdateFacingDirection()
@@ -141,6 +169,12 @@ public class FighterController : MonoBehaviour
         else if (horizontalInput < 0f)
         {
             facingRight = false;
+        }
+
+        if (spriteRenderer != null)
+        {
+            // The spritesheet faces right by default.
+            spriteRenderer.flipX = !facingRight;
         }
     }
 
@@ -156,7 +190,7 @@ public class FighterController : MonoBehaviour
 
         if (downPressed && !isGrounded)
         {
-            rb.gravityScale = normalGravity - downForce;
+            rb.gravityScale = normalGravity + downForce;
         }
         else
         {
@@ -176,5 +210,17 @@ public class FighterController : MonoBehaviour
     {
         rb.linearVelocity = knockbackForce;
         knockbackTimer = knockbackDuration;
+    }
+
+    private void UpdateAnimation()
+    {
+        if (animator == null)
+        {
+            return;
+        }
+
+        animator.SetFloat("Speed", Mathf.Abs(horizontalInput));
+        animator.SetBool("IsGrounded", isGrounded);
+        animator.SetBool("IsFalling", IsFalling);
     }
 }

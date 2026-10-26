@@ -1,0 +1,639 @@
+fileFormatVersion: 2
+guid: 1cb67ec2733e5524d917cf9e171b39ac
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5047870604233068540
+    second: ostrich_run_attack_0
+  - first:
+      213: 7844167725888356387
+    second: ostrich_run_attack_1
+  - first:
+      213: -9143506786787649470
+    second: ostrich_run_attack_2
+  - first:
+      213: 7633011933353932813
+    second: ostrich_run_attack_3
+  - first:
+      213: 6452363041937727604
+    second: ostrich_run_attack_4
+  - first:
+      213: -1926609276045435641
+    second: ostrich_run_attack_5
+  - first:
+      213: -5561658607753123756
+    second: ostrich_run_attack_6
+  - first:
+      213: 2160174692500379410
+    second: ostrich_run_attack_7
+  - first:
+      213: 3770017405568143960
+    second: ostrich_run_attack_8
+  - first:
+      213: -7506639832850940055
+    second: ostrich_run_attack_9
+  - first:
+      213: 6582676057019215202
+    second: ostrich_run_attack_10
+  - first:
+      213: -1406258771648691210
+    second: ostrich_run_attack_11
+  - first:
+      213: 43531194961156437
+    second: ostrich_run_attack_12
+  - first:
+      213: 1748355277990854155
+    second: ostrich_run_attack_13
+  - first:
+      213: -7165176282440124992
+    second: ostrich_run_attack_14
+  - first:
+      213: 1932324220207532390
+    second: ostrich_run_attack_15
+  - first:
+      213: -4466619241001906651
+    second: ostrich_run_attack_16
+  - first:
+      213: -2082406509839930663
+    second: ostrich_run_attack_17
+  - first:
+      213: 3395312120608987
+    second: ostrich_run_attack_18
+  - first:
+      213: -3744960943362558040
+    second: ostrich_run_attack_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ostrich_run_attack_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 5
+        width: 246
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4003d822e6c52f9b0800000000000000
+      internalID: -5047870604233068540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_run_attack_1
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 122
+        width: 41
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 320c82c8cf41cdc60800000000000000
+      internalID: 7844167725888356387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_run_attack_2
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 5
+        width: 214
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2481624950dbb1180800000000000000
+      internalID: -9143506786787649470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_run_attack_3
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 5
+        width: 186
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d08f0e579e7ede960800000000000000
+      internalID: 7633011933353932813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_run_attack_4
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 5
+        width: 208
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 470ae8420066b8950800000000000000
+      internalID: 6452363041937727604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_run_attack_5
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 5
+        width: 248
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70dd650321f4345e0800000000000000
+      internalID: -1926609276045435641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_run_attack_6
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 5
+        width: 214
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 458a1e296f401d2b0800000000000000
+      internalID: -5561658607753123756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_run_attack_7
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 5
+        width: 196
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 217164f007b7afd10800000000000000
+      internalID: 2160174692500379410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_run_attack_8
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 5
+        width: 215
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 852ddef1bdac15430800000000000000
+      internalID: 3770017405568143960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_run_attack_9
+      rect:
+        serializedVersion: 2
+        x: 2051
+        y: 5
+        width: 246
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f3f1a08de03d790800000000000000
+      internalID: -7506639832850940055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_run_attack_10
+      rect:
+        serializedVersion: 2
+        x: 2307
+        y: 5
+        width: 216
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26d69125ffc5a5b50800000000000000
+      internalID: 6582676057019215202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_run_attack_11
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 5
+        width: 190
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f34a9d0917fb7ce0800000000000000
+      internalID: -1406258771648691210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_run_attack_12
+      rect:
+        serializedVersion: 2
+        x: 2821
+        y: 5
+        width: 190
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559de442467aa9000800000000000000
+      internalID: 43531194961156437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_run_attack_13
+      rect:
+        serializedVersion: 2
+        x: 3075
+        y: 5
+        width: 227
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ef2d5bcd7634810800000000000000
+      internalID: 1748355277990854155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_run_attack_14
+      rect:
+        serializedVersion: 2
+        x: 3331
+        y: 5
+        width: 193
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c53a14422e209c90800000000000000
+      internalID: -7165176282440124992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_run_attack_15
+      rect:
+        serializedVersion: 2
+        x: 3587
+        y: 5
+        width: 192
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6698a50f3aef0da10800000000000000
+      internalID: 1932324220207532390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_run_attack_16
+      rect:
+        serializedVersion: 2
+        x: 3843
+        y: 5
+        width: 215
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e082927716302c0800000000000000
+      internalID: -4466619241001906651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_run_attack_17
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 112
+        width: 41
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9daa707ff4ec913e0800000000000000
+      internalID: -2082406509839930663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_run_attack_18
+      rect:
+        serializedVersion: 2
+        x: 2563
+        y: 108
+        width: 41
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd8b9d4b4001c0000800000000000000
+      internalID: 3395312120608987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_run_attack_19
+      rect:
+        serializedVersion: 2
+        x: 2819
+        y: 88
+        width: 41
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a7b9291dd9370cc0800000000000000
+      internalID: -3744960943362558040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ostrich_run_attack_0: -5047870604233068540
+      ostrich_run_attack_1: 7844167725888356387
+      ostrich_run_attack_10: 6582676057019215202
+      ostrich_run_attack_11: -1406258771648691210
+      ostrich_run_attack_12: 43531194961156437
+      ostrich_run_attack_13: 1748355277990854155
+      ostrich_run_attack_14: -7165176282440124992
+      ostrich_run_attack_15: 1932324220207532390
+      ostrich_run_attack_16: -4466619241001906651
+      ostrich_run_attack_17: -2082406509839930663
+      ostrich_run_attack_18: 3395312120608987
+      ostrich_run_attack_19: -3744960943362558040
+      ostrich_run_attack_2: -9143506786787649470
+      ostrich_run_attack_3: 7633011933353932813
+      ostrich_run_attack_4: 6452363041937727604
+      ostrich_run_attack_5: -1926609276045435641
+      ostrich_run_attack_6: -5561658607753123756
+      ostrich_run_attack_7: 2160174692500379410
+      ostrich_run_attack_8: 3770017405568143960
+      ostrich_run_attack_9: -7506639832850940055
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

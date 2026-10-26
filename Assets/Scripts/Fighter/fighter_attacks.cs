@@ -53,12 +53,14 @@ public class FighterAttack : MonoBehaviour
     [SerializeField] private AttackSettings downAirHeavy = new AttackSettings();
 
     private FighterController fighterController;
+    private Animator animator;
     private Hitbox hitbox;
     private bool canAttack = true;
 
     private void Awake()
     {
         fighterController = GetComponent<FighterController>();
+        animator = GetComponent<Animator>();
 
         if (attackHitbox != null)
         {
@@ -78,6 +80,8 @@ public class FighterAttack : MonoBehaviour
                 direction,
                 airAttack
             );
+
+            PlayAttackAnimation(attackType, direction, airAttack);
 
             StartCoroutine(PerformAttack(settings));
         }
@@ -211,6 +215,43 @@ public class FighterAttack : MonoBehaviour
         }
 
         return neutralHeavy;
+    }
+
+    private void PlayAttackAnimation(
+        AttackType attackType,
+        AttackDirection direction,
+        bool airAttack)
+    {
+        if (animator == null)
+        {
+            return;
+        }
+
+        string directionName;
+
+        if (direction == AttackDirection.Down)
+        {
+            directionName = "Down";
+        }
+        else if (direction == AttackDirection.Side)
+        {
+            directionName = "Forward";
+        }
+        else
+        {
+            directionName = "Neutral";
+        }
+
+        string strengthName = attackType == AttackType.Light
+            ? "Light"
+            : "Heavy";
+
+        string parameterName = airAttack
+            ? "Air" + directionName + strengthName
+            : directionName + strengthName;
+
+        animator.ResetTrigger(parameterName);
+        animator.SetTrigger(parameterName);
     }
 
     private IEnumerator PerformAttack(AttackSettings settings)

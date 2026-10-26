@@ -1,0 +1,7301 @@
+fileFormatVersion: 2
+guid: c7af5000146fdb74d89fbe53e543681a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8861075046807585277
+    second: ostrich_spritesheet_0
+  - first:
+      213: 1021072272008179230
+    second: ostrich_spritesheet_1
+  - first:
+      213: 7628288593833749981
+    second: ostrich_spritesheet_2
+  - first:
+      213: 619335967480934006
+    second: ostrich_spritesheet_3
+  - first:
+      213: -800951215265506575
+    second: ostrich_spritesheet_4
+  - first:
+      213: -8840548834818880556
+    second: ostrich_spritesheet_5
+  - first:
+      213: -9113858597599304817
+    second: ostrich_spritesheet_6
+  - first:
+      213: 6447837285907309321
+    second: ostrich_spritesheet_7
+  - first:
+      213: -635136559181920588
+    second: ostrich_spritesheet_8
+  - first:
+      213: -4665762661080350665
+    second: ostrich_spritesheet_9
+  - first:
+      213: -6004449578276081227
+    second: ostrich_spritesheet_10
+  - first:
+      213: 8471411403936922979
+    second: ostrich_spritesheet_11
+  - first:
+      213: -8916908224208415879
+    second: ostrich_spritesheet_12
+  - first:
+      213: 3315346133836952889
+    second: ostrich_spritesheet_13
+  - first:
+      213: 6932030042823974467
+    second: ostrich_spritesheet_14
+  - first:
+      213: -1902000074567383986
+    second: ostrich_spritesheet_15
+  - first:
+      213: -2037132747499414148
+    second: ostrich_spritesheet_16
+  - first:
+      213: -5306504559368685911
+    second: ostrich_spritesheet_17
+  - first:
+      213: -2044818927405509353
+    second: ostrich_spritesheet_18
+  - first:
+      213: 2759781195744547943
+    second: ostrich_spritesheet_19
+  - first:
+      213: 6279066314524031089
+    second: ostrich_spritesheet_20
+  - first:
+      213: 5155782812288262567
+    second: ostrich_spritesheet_21
+  - first:
+      213: 2730871057056797615
+    second: ostrich_spritesheet_22
+  - first:
+      213: 9148983480887004564
+    second: ostrich_spritesheet_23
+  - first:
+      213: -4535344953845210640
+    second: ostrich_spritesheet_24
+  - first:
+      213: -5882969996452769991
+    second: ostrich_spritesheet_25
+  - first:
+      213: 1092222713086580506
+    second: ostrich_spritesheet_26
+  - first:
+      213: -7397033404828840972
+    second: ostrich_spritesheet_27
+  - first:
+      213: -8354602456650784034
+    second: ostrich_spritesheet_28
+  - first:
+      213: -5246721160157338242
+    second: ostrich_spritesheet_29
+  - first:
+      213: -2161502013397165964
+    second: ostrich_spritesheet_30
+  - first:
+      213: 8142399215275577279
+    second: ostrich_spritesheet_31
+  - first:
+      213: 2700589823614807630
+    second: ostrich_spritesheet_32
+  - first:
+      213: -8965241182102155345
+    second: ostrich_spritesheet_33
+  - first:
+      213: -4855606929680835144
+    second: ostrich_spritesheet_34
+  - first:
+      213: 3372542785880219931
+    second: ostrich_spritesheet_35
+  - first:
+      213: 7094829973242323685
+    second: ostrich_spritesheet_36
+  - first:
+      213: -6595708409347788852
+    second: ostrich_spritesheet_37
+  - first:
+      213: -7311451573016985995
+    second: ostrich_spritesheet_38
+  - first:
+      213: 6247966970320333561
+    second: ostrich_spritesheet_39
+  - first:
+      213: -2379462364404569251
+    second: ostrich_spritesheet_40
+  - first:
+      213: -1769698743773539712
+    second: ostrich_spritesheet_41
+  - first:
+      213: 2564027691663508195
+    second: ostrich_spritesheet_42
+  - first:
+      213: 2734470036400300344
+    second: ostrich_spritesheet_43
+  - first:
+      213: -8607272782714360454
+    second: ostrich_spritesheet_44
+  - first:
+      213: 49917655879746556
+    second: ostrich_spritesheet_45
+  - first:
+      213: 6287745441662482781
+    second: ostrich_spritesheet_46
+  - first:
+      213: -7952489693560529715
+    second: ostrich_spritesheet_47
+  - first:
+      213: -3462739490027189545
+    second: ostrich_spritesheet_48
+  - first:
+      213: 1275883403713828525
+    second: ostrich_spritesheet_49
+  - first:
+      213: 2770187837697151095
+    second: ostrich_spritesheet_50
+  - first:
+      213: -8990022208139578799
+    second: ostrich_spritesheet_51
+  - first:
+      213: 6365302950153295913
+    second: ostrich_spritesheet_52
+  - first:
+      213: 466782090778108602
+    second: ostrich_spritesheet_53
+  - first:
+      213: 5147959871672628870
+    second: ostrich_spritesheet_54
+  - first:
+      213: 1271744906692932282
+    second: ostrich_spritesheet_55
+  - first:
+      213: 1064794148590319028
+    second: ostrich_spritesheet_56
+  - first:
+      213: -8070672672371678190
+    second: ostrich_spritesheet_57
+  - first:
+      213: -7114341250840392578
+    second: ostrich_spritesheet_58
+  - first:
+      213: 9019660979859423586
+    second: ostrich_spritesheet_59
+  - first:
+      213: -1520560710054186949
+    second: ostrich_spritesheet_60
+  - first:
+      213: 926662076606334839
+    second: ostrich_spritesheet_61
+  - first:
+      213: 214125402273947488
+    second: ostrich_spritesheet_62
+  - first:
+      213: -90084093391868657
+    second: ostrich_spritesheet_63
+  - first:
+      213: -925615263725158487
+    second: ostrich_spritesheet_64
+  - first:
+      213: -1516822590944854576
+    second: ostrich_spritesheet_65
+  - first:
+      213: 4386155164776184527
+    second: ostrich_spritesheet_66
+  - first:
+      213: -6517862230647539309
+    second: ostrich_spritesheet_67
+  - first:
+      213: -5176070476400867813
+    second: ostrich_spritesheet_68
+  - first:
+      213: -1572086711821859606
+    second: ostrich_spritesheet_69
+  - first:
+      213: 3941366898716924565
+    second: ostrich_spritesheet_70
+  - first:
+      213: 8672570194736273810
+    second: ostrich_spritesheet_71
+  - first:
+      213: 5740297170416597698
+    second: ostrich_spritesheet_72
+  - first:
+      213: -7720168493554840343
+    second: ostrich_spritesheet_73
+  - first:
+      213: -3299796562693882257
+    second: ostrich_spritesheet_74
+  - first:
+      213: -5779890623773013648
+    second: ostrich_spritesheet_75
+  - first:
+      213: 1275989213383052479
+    second: ostrich_spritesheet_76
+  - first:
+      213: -1496723635635666246
+    second: ostrich_spritesheet_77
+  - first:
+      213: -1109315951971102578
+    second: ostrich_spritesheet_78
+  - first:
+      213: -4063191011417855587
+    second: ostrich_spritesheet_79
+  - first:
+      213: 3458943072121070580
+    second: ostrich_spritesheet_80
+  - first:
+      213: 9195192522359211308
+    second: ostrich_spritesheet_81
+  - first:
+      213: -3425790111515779919
+    second: ostrich_spritesheet_82
+  - first:
+      213: 5591665184416801532
+    second: ostrich_spritesheet_83
+  - first:
+      213: 4684889408582636391
+    second: ostrich_spritesheet_84
+  - first:
+      213: 4481502870678881188
+    second: ostrich_spritesheet_85
+  - first:
+      213: -9007090555022188161
+    second: ostrich_spritesheet_86
+  - first:
+      213: 1164903437279067659
+    second: ostrich_spritesheet_87
+  - first:
+      213: -2653136256373192892
+    second: ostrich_spritesheet_88
+  - first:
+      213: 4916612464973190633
+    second: ostrich_spritesheet_89
+  - first:
+      213: -1964072830435130505
+    second: ostrich_spritesheet_90
+  - first:
+      213: -1496575593935329288
+    second: ostrich_spritesheet_91
+  - first:
+      213: 7412484856800328674
+    second: ostrich_spritesheet_92
+  - first:
+      213: 9111813755428866965
+    second: ostrich_spritesheet_93
+  - first:
+      213: -2143279493560024992
+    second: ostrich_spritesheet_94
+  - first:
+      213: 9191996512110697449
+    second: ostrich_spritesheet_95
+  - first:
+      213: -1657437544622548395
+    second: ostrich_spritesheet_96
+  - first:
+      213: -1451436425705753569
+    second: ostrich_spritesheet_97
+  - first:
+      213: 3843249098951351936
+    second: ostrich_spritesheet_98
+  - first:
+      213: -409676803664232495
+    second: ostrich_spritesheet_99
+  - first:
+      213: -3442561024838901416
+    second: ostrich_spritesheet_100
+  - first:
+      213: -5646341935218653725
+    second: ostrich_spritesheet_101
+  - first:
+      213: 966825543729828147
+    second: ostrich_spritesheet_102
+  - first:
+      213: 5507935685571346949
+    second: ostrich_spritesheet_103
+  - first:
+      213: 5387360362266342334
+    second: ostrich_spritesheet_104
+  - first:
+      213: 5097997394901623909
+    second: ostrich_spritesheet_105
+  - first:
+      213: -7401719022981939073
+    second: ostrich_spritesheet_106
+  - first:
+      213: 867994404691607419
+    second: ostrich_spritesheet_107
+  - first:
+      213: -6448093630716111539
+    second: ostrich_spritesheet_108
+  - first:
+      213: -5253723058431723321
+    second: ostrich_spritesheet_109
+  - first:
+      213: -8489546424401234502
+    second: ostrich_spritesheet_110
+  - first:
+      213: 1075075669146755356
+    second: ostrich_spritesheet_111
+  - first:
+      213: -364972572631427974
+    second: ostrich_spritesheet_112
+  - first:
+      213: -4753247730863736177
+    second: ostrich_spritesheet_113
+  - first:
+      213: -9219159706273015178
+    second: ostrich_spritesheet_114
+  - first:
+      213: 7871578708671727565
+    second: ostrich_spritesheet_115
+  - first:
+      213: -3710268683854125188
+    second: ostrich_spritesheet_116
+  - first:
+      213: 2365028433690031527
+    second: ostrich_spritesheet_117
+  - first:
+      213: 7950290880470716599
+    second: ostrich_spritesheet_118
+  - first:
+      213: -457814152237782305
+    second: ostrich_spritesheet_119
+  - first:
+      213: -947969388413495226
+    second: ostrich_spritesheet_120
+  - first:
+      213: 8630890804232640918
+    second: ostrich_spritesheet_121
+  - first:
+      213: -4171667819872047361
+    second: ostrich_spritesheet_122
+  - first:
+      213: -4647765295156594652
+    second: ostrich_spritesheet_123
+  - first:
+      213: 8177535782107323312
+    second: ostrich_spritesheet_124
+  - first:
+      213: 9161243077858776978
+    second: ostrich_spritesheet_125
+  - first:
+      213: -4358368651554995634
+    second: ostrich_spritesheet_126
+  - first:
+      213: -2688001943722342979
+    second: ostrich_spritesheet_127
+  - first:
+      213: -1455698235359641533
+    second: ostrich_spritesheet_128
+  - first:
+      213: 8605899043791799972
+    second: ostrich_spritesheet_129
+  - first:
+      213: 4601368878180444876
+    second: ostrich_spritesheet_130
+  - first:
+      213: -970281375936316128
+    second: ostrich_spritesheet_131
+  - first:
+      213: 6837232788652221938
+    second: ostrich_spritesheet_132
+  - first:
+      213: -6995931382498383216
+    second: ostrich_spritesheet_133
+  - first:
+      213: 5273522862724885522
+    second: ostrich_spritesheet_134
+  - first:
+      213: 2398353100444885714
+    second: ostrich_spritesheet_135
+  - first:
+      213: -7088638643931166343
+    second: ostrich_spritesheet_136
+  - first:
+      213: -381876921414180336
+    second: ostrich_spritesheet_137
+  - first:
+      213: -8556451703601456463
+    second: ostrich_spritesheet_138
+  - first:
+      213: -8359991451371269444
+    second: ostrich_spritesheet_139
+  - first:
+      213: -613214189640920094
+    second: ostrich_spritesheet_140
+  - first:
+      213: -5623715992629334744
+    second: ostrich_spritesheet_141
+  - first:
+      213: -1400503025085041652
+    second: ostrich_spritesheet_142
+  - first:
+      213: -3751279861849663645
+    second: ostrich_spritesheet_143
+  - first:
+      213: -3928935507382448144
+    second: ostrich_spritesheet_144
+  - first:
+      213: 6816381720828349540
+    second: ostrich_spritesheet_145
+  - first:
+      213: -2982024458286050371
+    second: ostrich_spritesheet_146
+  - first:
+      213: 4375172949114766902
+    second: ostrich_spritesheet_147
+  - first:
+      213: -4927788899028905529
+    second: ostrich_spritesheet_148
+  - first:
+      213: -6505760459327670356
+    second: ostrich_spritesheet_149
+  - first:
+      213: -1460606251819380974
+    second: ostrich_spritesheet_150
+  - first:
+      213: -1453048847601401803
+    second: ostrich_spritesheet_151
+  - first:
+      213: 8743545591574185492
+    second: ostrich_spritesheet_152
+  - first:
+      213: -2607074964566842237
+    second: ostrich_spritesheet_153
+  - first:
+      213: -2001626202103796759
+    second: ostrich_spritesheet_154
+  - first:
+      213: -2585320220342261317
+    second: ostrich_spritesheet_155
+  - first:
+      213: 7827205797388955212
+    second: ostrich_spritesheet_156
+  - first:
+      213: 7395898163759312425
+    second: ostrich_spritesheet_157
+  - first:
+      213: -606123208352177819
+    second: ostrich_spritesheet_158
+  - first:
+      213: -94323272904090464
+    second: ostrich_spritesheet_159
+  - first:
+      213: 3814216301442451602
+    second: ostrich_spritesheet_160
+  - first:
+      213: -4077211406798714643
+    second: ostrich_spritesheet_161
+  - first:
+      213: -3551705787925695450
+    second: ostrich_spritesheet_162
+  - first:
+      213: -5572304352548919097
+    second: ostrich_spritesheet_163
+  - first:
+      213: -2953909366797750987
+    second: ostrich_spritesheet_164
+  - first:
+      213: 7913439259280660150
+    second: ostrich_spritesheet_165
+  - first:
+      213: -3029247189239825160
+    second: ostrich_spritesheet_166
+  - first:
+      213: -8821462250655761252
+    second: ostrich_spritesheet_167
+  - first:
+      213: -3699123611391355322
+    second: ostrich_spritesheet_168
+  - first:
+      213: 4324801468426154320
+    second: ostrich_spritesheet_169
+  - first:
+      213: -5341531760244980901
+    second: ostrich_spritesheet_170
+  - first:
+      213: -4444101111234033517
+    second: ostrich_spritesheet_171
+  - first:
+      213: 8898319463923013439
+    second: ostrich_spritesheet_172
+  - first:
+      213: -2207508767403899068
+    second: ostrich_spritesheet_173
+  - first:
+      213: 1081908887254196806
+    second: ostrich_spritesheet_174
+  - first:
+      213: 9210279801882651701
+    second: ostrich_spritesheet_175
+  - first:
+      213: -8912315512502331412
+    second: ostrich_spritesheet_176
+  - first:
+      213: 5202010217689678899
+    second: ostrich_spritesheet_177
+  - first:
+      213: 5836388085614152751
+    second: ostrich_spritesheet_178
+  - first:
+      213: -1651066558504472895
+    second: ostrich_spritesheet_179
+  - first:
+      213: -1817640184711715509
+    second: ostrich_spritesheet_180
+  - first:
+      213: -2544014929452001456
+    second: ostrich_spritesheet_181
+  - first:
+      213: -3466555339368785265
+    second: ostrich_spritesheet_182
+  - first:
+      213: 5212141680149592553
+    second: ostrich_spritesheet_183
+  - first:
+      213: -45924759750539275
+    second: ostrich_spritesheet_184
+  - first:
+      213: -7774005672402910491
+    second: ostrich_spritesheet_185
+  - first:
+      213: 69076860429857360
+    second: ostrich_spritesheet_186
+  - first:
+      213: 4893780273568610749
+    second: ostrich_spritesheet_187
+  - first:
+      213: -2051607590826179329
+    second: ostrich_spritesheet_188
+  - first:
+      213: 4074864798249984954
+    second: ostrich_spritesheet_189
+  - first:
+      213: 4832909921020742186
+    second: ostrich_spritesheet_190
+  - first:
+      213: 3338869767143879476
+    second: ostrich_spritesheet_191
+  - first:
+      213: -4670134114028407541
+    second: ostrich_spritesheet_192
+  - first:
+      213: 7058465989788313471
+    second: ostrich_spritesheet_193
+  - first:
+      213: 7811472613492580554
+    second: ostrich_spritesheet_194
+  - first:
+      213: 455642756440386404
+    second: ostrich_spritesheet_195
+  - first:
+      213: -8785753689265620596
+    second: ostrich_spritesheet_196
+  - first:
+      213: 2618080207248108824
+    second: ostrich_spritesheet_197
+  - first:
+      213: 9202315928772625286
+    second: ostrich_spritesheet_198
+  - first:
+      213: -4262451929015314364
+    second: ostrich_spritesheet_199
+  - first:
+      213: -5263016753513449287
+    second: ostrich_spritesheet_200
+  - first:
+      213: 4683060402714544293
+    second: ostrich_spritesheet_201
+  - first:
+      213: 1237244376557468361
+    second: ostrich_spritesheet_202
+  - first:
+      213: -2072054346873477809
+    second: ostrich_spritesheet_203
+  - first:
+      213: 5947004319680402403
+    second: ostrich_spritesheet_204
+  - first:
+      213: 338527499061465869
+    second: ostrich_spritesheet_205
+  - first:
+      213: 5555308619563109116
+    second: ostrich_spritesheet_206
+  - first:
+      213: -2976102381872775690
+    second: ostrich_spritesheet_207
+  - first:
+      213: 8465912836843671025
+    second: ostrich_spritesheet_208
+  - first:
+      213: -5449201522351136826
+    second: ostrich_spritesheet_209
+  - first:
+      213: 6675750117475276881
+    second: ostrich_spritesheet_210
+  - first:
+      213: -319993970779546248
+    second: ostrich_spritesheet_211
+  - first:
+      213: 1816758787168725223
+    second: ostrich_spritesheet_212
+  - first:
+      213: 1752078185192353791
+    second: ostrich_spritesheet_213
+  - first:
+      213: 2438872657640157457
+    second: ostrich_spritesheet_214
+  - first:
+      213: -2662976998851416958
+    second: ostrich_spritesheet_215
+  - first:
+      213: -7130842143982252131
+    second: ostrich_spritesheet_216
+  - first:
+      213: 2830351201775806055
+    second: ostrich_spritesheet_217
+  - first:
+      213: -1815723860858702951
+    second: ostrich_spritesheet_218
+  - first:
+      213: 4467309967769866193
+    second: ostrich_spritesheet_219
+  - first:
+      213: -1462620235177337746
+    second: ostrich_spritesheet_220
+  - first:
+      213: -8226687131055960217
+    second: ostrich_spritesheet_221
+  - first:
+      213: -332554061816787131
+    second: ostrich_spritesheet_222
+  - first:
+      213: 5622625809321575368
+    second: ostrich_spritesheet_223
+  - first:
+      213: -8754287200447841676
+    second: ostrich_spritesheet_224
+  - first:
+      213: -8312089064202614939
+    second: ostrich_spritesheet_225
+  - first:
+      213: -7062048501968502789
+    second: ostrich_spritesheet_226
+  - first:
+      213: -8819779002517990838
+    second: ostrich_spritesheet_227
+  - first:
+      213: -3489933155121256899
+    second: ostrich_spritesheet_228
+  - first:
+      213: -1483366984970632031
+    second: ostrich_spritesheet_229
+  - first:
+      213: -6812806722100487539
+    second: ostrich_spritesheet_230
+  - first:
+      213: -3997301531005293802
+    second: ostrich_spritesheet_231
+  - first:
+      213: -6058170598342517021
+    second: ostrich_spritesheet_232
+  - first:
+      213: -6387316414844157095
+    second: ostrich_spritesheet_233
+  - first:
+      213: 3350306069941665194
+    second: ostrich_spritesheet_234
+  - first:
+      213: 6711439642544567891
+    second: ostrich_spritesheet_235
+  - first:
+      213: -1499486730568117715
+    second: ostrich_spritesheet_236
+  - first:
+      213: -5907756804492074817
+    second: ostrich_spritesheet_237
+  - first:
+      213: -2593406798547600663
+    second: ostrich_spritesheet_238
+  - first:
+      213: 2680887330150186424
+    second: ostrich_spritesheet_239
+  - first:
+      213: -370626046895757019
+    second: ostrich_spritesheet_240
+  - first:
+      213: -4924895666344931788
+    second: ostrich_spritesheet_241
+  - first:
+      213: 6843322841130763379
+    second: ostrich_spritesheet_242
+  - first:
+      213: -819724451634328260
+    second: ostrich_spritesheet_243
+  - first:
+      213: 1907245177074189027
+    second: ostrich_spritesheet_244
+  - first:
+      213: -3003762568896460340
+    second: ostrich_spritesheet_245
+  - first:
+      213: -1316495322711556398
+    second: ostrich_spritesheet_246
+  - first:
+      213: 5021484243817847510
+    second: ostrich_spritesheet_247
+  - first:
+      213: -1693767279642098526
+    second: ostrich_spritesheet_248
+  - first:
+      213: 4091213982125298729
+    second: ostrich_spritesheet_249
+  - first:
+      213: -8854986737139428771
+    second: ostrich_spritesheet_250
+  - first:
+      213: -2708217076276929578
+    second: ostrich_spritesheet_251
+  - first:
+      213: -266120763350989377
+    second: ostrich_spritesheet_252
+  - first:
+      213: -1067259148434022064
+    second: ostrich_spritesheet_253
+  - first:
+      213: -7900267979886636307
+    second: ostrich_spritesheet_254
+  - first:
+      213: -7029841587519902519
+    second: ostrich_spritesheet_255
+  - first:
+      213: -3054399655282403686
+    second: ostrich_spritesheet_256
+  - first:
+      213: -3155761249067310720
+    second: ostrich_spritesheet_257
+  - first:
+      213: -4356237517225421178
+    second: ostrich_spritesheet_258
+  - first:
+      213: -8243949316657434113
+    second: ostrich_spritesheet_259
+  - first:
+      213: -7314811847401259195
+    second: ostrich_spritesheet_260
+  - first:
+      213: -3232597259946972990
+    second: ostrich_spritesheet_261
+  - first:
+      213: -6563116323132532926
+    second: ostrich_spritesheet_262
+  - first:
+      213: 1894259562764974366
+    second: ostrich_spritesheet_263
+  - first:
+      213: -7387353592589754212
+    second: ostrich_spritesheet_264
+  - first:
+      213: 3388931767681630039
+    second: ostrich_spritesheet_265
+  - first:
+      213: 370107738838117976
+    second: ostrich_spritesheet_266
+  - first:
+      213: 3837630545860747976
+    second: ostrich_spritesheet_267
+  - first:
+      213: 2097140742683098138
+    second: ostrich_spritesheet_268
+  - first:
+      213: -4624050244725060139
+    second: ostrich_spritesheet_269
+  - first:
+      213: 2521947543299620505
+    second: ostrich_spritesheet_270
+  - first:
+      213: 5201906604065563444
+    second: ostrich_spritesheet_271
+  - first:
+      213: -618609374785772469
+    second: ostrich_spritesheet_272
+  - first:
+      213: 4126485633705298863
+    second: ostrich_spritesheet_273
+  - first:
+      213: 3594547155163768887
+    second: ostrich_spritesheet_274
+  - first:
+      213: -8839897703263056586
+    second: ostrich_spritesheet_275
+  - first:
+      213: -2115724386349710141
+    second: ostrich_spritesheet_276
+  - first:
+      213: -7155482423725549108
+    second: ostrich_spritesheet_277
+  - first:
+      213: 8872313843682455995
+    second: ostrich_spritesheet_278
+  - first:
+      213: -5861844732041897229
+    second: ostrich_spritesheet_279
+  - first:
+      213: 2714623136054301497
+    second: ostrich_spritesheet_280
+  - first:
+      213: -4563117559000354919
+    second: ostrich_spritesheet_281
+  - first:
+      213: 5077498015909526728
+    second: ostrich_spritesheet_282
+  - first:
+      213: -5497049512187358665
+    second: ostrich_spritesheet_283
+  - first:
+      213: 3588732067148737509
+    second: ostrich_spritesheet_284
+  - first:
+      213: 2927644920440669037
+    second: ostrich_spritesheet_285
+  - first:
+      213: 2293755971059933719
+    second: ostrich_spritesheet_286
+  - first:
+      213: -3859229996069045643
+    second: ostrich_spritesheet_287
+  - first:
+      213: -5476555616738788175
+    second: ostrich_spritesheet_288
+  - first:
+      213: -3105583703976401963
+    second: ostrich_spritesheet_289
+  - first:
+      213: -5279739612314835954
+    second: ostrich_spritesheet_290
+  - first:
+      213: 8448847378304313752
+    second: ostrich_spritesheet_291
+  - first:
+      213: 3583973056572737789
+    second: ostrich_spritesheet_292
+  - first:
+      213: -5477246172473149612
+    second: ostrich_spritesheet_293
+  - first:
+      213: 5711946264466478046
+    second: ostrich_spritesheet_294
+  - first:
+      213: 3865508853995486874
+    second: ostrich_spritesheet_295
+  - first:
+      213: -730160340605337016
+    second: ostrich_spritesheet_296
+  - first:
+      213: 2456243593492556406
+    second: ostrich_spritesheet_297
+  - first:
+      213: 6789128703869514384
+    second: ostrich_spritesheet_298
+  - first:
+      213: 2888061133819681846
+    second: ostrich_spritesheet_299
+  - first:
+      213: 3815988585083984177
+    second: ostrich_spritesheet_300
+  - first:
+      213: 4396321263006579892
+    second: ostrich_spritesheet_301
+  - first:
+      213: -8013718097955653385
+    second: ostrich_spritesheet_302
+  - first:
+      213: 3760485691784858702
+    second: ostrich_spritesheet_303
+  - first:
+      213: 8725955824896519245
+    second: ostrich_spritesheet_304
+  - first:
+      213: 1480054587266474820
+    second: ostrich_spritesheet_305
+  - first:
+      213: 2863442827349808782
+    second: ostrich_spritesheet_306
+  - first:
+      213: -6832847218140418886
+    second: ostrich_spritesheet_307
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ostrich_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4096
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30eb4f26133270580800000000000000
+      internalID: -8861075046807585277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 4096
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e6c0f42d39b2e00800000000000000
+      internalID: 1021072272008179230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 4096
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dddef974f002dd960800000000000000
+      internalID: 7628288593833749981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 4096
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67ee252f7c2589800800000000000000
+      internalID: 619335967480934006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 4096
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fa9ea30d1372e4f0800000000000000
+      internalID: -800951215265506575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 4096
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4db80298caf005580800000000000000
+      internalID: -8840548834818880556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 4096
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8324fc84e1158180800000000000000
+      internalID: -9113858597599304817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 4096
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 903260479d15b7950800000000000000
+      internalID: 6447837285907309321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 4096
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b6091e1aaa8f27f0800000000000000
+      internalID: -635136559181920588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 4096
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 730460c7491ef3fb0800000000000000
+      internalID: -4665762661080350665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 4096
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b13c17ebe8ebaca0800000000000000
+      internalID: -6004449578276081227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 4096
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36d7ad5d9cf709570800000000000000
+      internalID: 8471411403936922979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 4096
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9735c41c637c04480800000000000000
+      internalID: -8916908224208415879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 4096
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 935f0d64eb9720e20800000000000000
+      internalID: 3315346133836952889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 4096
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34edbd2b894833060800000000000000
+      internalID: 6932030042823974467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 4096
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4405a8620dba95e0800000000000000
+      internalID: -1902000074567383986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3840
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d5bf03f86aab3e0800000000000000
+      internalID: -2037132747499414148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 3840
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a6b6d3e7328b56b0800000000000000
+      internalID: -5306504559368685911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3840
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 715dff9f4085f93e0800000000000000
+      internalID: -2044818927405509353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 3840
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76418262066bc4620800000000000000
+      internalID: 2759781195744547943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3840
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 178735e8b89b32750800000000000000
+      internalID: 6279066314524031089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3840
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a1a189b6250d8740800000000000000
+      internalID: 5155782812288262567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3840
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa31443f1c006e520800000000000000
+      internalID: 2730871057056797615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 3840
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49dcf22a008b7fe70800000000000000
+      internalID: 9148983480887004564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3840
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f122343bc73f01c0800000000000000
+      internalID: -4535344953845210640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 3840
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93fc62125fd7b5ea0800000000000000
+      internalID: -5882969996452769991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3840
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a17932d45ca582f00800000000000000
+      internalID: 1092222713086580506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 3840
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb8a793f45785990800000000000000
+      internalID: -7397033404828840972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3840
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed269bb845d7e0c80800000000000000
+      internalID: -8354602456650784034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 3840
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e75eb4537e6ef27b0800000000000000
+      internalID: -5246721160157338242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 3840
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4789b26fe5dc002e0800000000000000
+      internalID: -2161502013397165964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3840
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf8bed22fc9ff070800000000000000
+      internalID: 8142399215275577279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3584
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e6890e22c6a7520800000000000000
+      internalID: 2700589823614807630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 3584
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faf091f05a0159380800000000000000
+      internalID: -8965241182102155345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3584
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bdd27b393b6d9cb0800000000000000
+      internalID: -4855606929680835144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 3584
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1162369bcdadce20800000000000000
+      internalID: 3372542785880219931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3584
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e227e84546e57260800000000000000
+      internalID: 7094829973242323685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3584
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccfa4c2b5265774a0800000000000000
+      internalID: -6595708409347788852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3584
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ef9d53881888a90800000000000000
+      internalID: -7311451573016985995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 3584
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa215a3bdc35b650800000000000000
+      internalID: 6247966970320333561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3584
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5b214526937afed0800000000000000
+      internalID: -2379462364404569251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 3584
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0825ce96e54c077e0800000000000000
+      internalID: -1769698743773539712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3584
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e24edbc991459320800000000000000
+      internalID: 2564027691663508195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 3584
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831e690a20ac2f520800000000000000
+      internalID: 2734470036400300344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3584
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7d2c65e103dc8880800000000000000
+      internalID: -8607272782714360454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 3584
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf38bb2f7d751b000800000000000000
+      internalID: 49917655879746556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 3584
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d59bf505a2f824750800000000000000
+      internalID: 6287745441662482781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3584
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc9e5ff1c413a190800000000000000
+      internalID: -7952489693560529715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3328
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da463bb7c0e1ffc0800000000000000
+      internalID: -3462739490027189545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 3328
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6dd2d1239d4b110800000000000000
+      internalID: 1275883403713828525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3328
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 770db0b492fa17620800000000000000
+      internalID: 2770187837697151095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 3328
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 152b7f0de660d3380800000000000000
+      internalID: -8990022208139578799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3328
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92812afee49165850800000000000000
+      internalID: 6365302950153295913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3328
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab2e754a6d75a7600800000000000000
+      internalID: 466782090778108602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3328
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 686330d6a3a317740800000000000000
+      internalID: 5147959871672628870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 3328
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab23850314526a110800000000000000
+      internalID: 1271744906692932282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3328
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b5f3a9f2a8e6ce00800000000000000
+      internalID: 1064794148590319028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 3328
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21465d8f6f53fff80800000000000000
+      internalID: -8070672672371678190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3328
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7c00c46358c44d90800000000000000
+      internalID: -7114341250840392578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 3328
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26109fa7fd54c2d70800000000000000
+      internalID: 9019660979859423586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3328
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b30fdc92712e5eae0800000000000000
+      internalID: -1520560710054186949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 3328
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77742febf3a2cdc00800000000000000
+      internalID: 926662076606334839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 3328
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f1deb3be9b8f200800000000000000
+      internalID: 214125402273947488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3328
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0de67d8ef4ffbef0800000000000000
+      internalID: -90084093391868657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3072
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9af7bfe52dd8723f0800000000000000
+      internalID: -925615263725158487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 3072
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ddb177d3e923fae0800000000000000
+      internalID: -1516822590944854576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3072
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcaba3e22e0cedc30800000000000000
+      internalID: 4386155164776184527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 3072
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 399715795d6eb85a0800000000000000
+      internalID: -6517862230647539309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3072
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b164db16357ea28b0800000000000000
+      internalID: -5176070476400867813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3072
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae40fb10773de2ae0800000000000000
+      internalID: -1572086711821859606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3072
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59a5187ef4c82b630800000000000000
+      internalID: 3941366898716924565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 3072
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29955e294a82b5870800000000000000
+      internalID: 8672570194736273810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3072
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ca7cd3fcd1a9af40800000000000000
+      internalID: 5740297170416597698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 3072
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ec408788a37cd490800000000000000
+      internalID: -7720168493554840343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3072
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e73916284c432d0800000000000000
+      internalID: -3299796562693882257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_75
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 3072
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0790661d914b9cfa0800000000000000
+      internalID: -5779890623773013648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_76
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3072
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc4de8dd6935b110800000000000000
+      internalID: 1275989213383052479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_77
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 3072
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab2410b88c19a3be0800000000000000
+      internalID: -1496723635635666246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_78
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 3072
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e809613e40bea90f0800000000000000
+      internalID: -1109315951971102578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_79
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3072
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d99e0e58d45ac97c0800000000000000
+      internalID: -4063191011417855587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2816
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f32318d562a00030800000000000000
+      internalID: 3458943072121070580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_81
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2816
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c258c8081e2eb9f70800000000000000
+      internalID: 9195192522359211308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_82
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2816
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bc5e005b062570d0800000000000000
+      internalID: -3425790111515779919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_83
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2816
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf2251cfbd5999d40800000000000000
+      internalID: 5591665184416801532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_84
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2816
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 763de827812140140800000000000000
+      internalID: 4684889408582636391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_85
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2816
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a345baed1f713e30800000000000000
+      internalID: 4481502870678881188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_86
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2816
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f716020acd2600380800000000000000
+      internalID: -9007090555022188161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_87
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 2816
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e76a811819a2010800000000000000
+      internalID: 1164903437279067659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_88
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2816
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4478a2ab1aa2e2bd0800000000000000
+      internalID: -2653136256373192892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_89
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2816
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e51cf0dcf05b3440800000000000000
+      internalID: 4916612464973190633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_90
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2816
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7730be4ba263eb4e0800000000000000
+      internalID: -1964072830435130505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_91
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 2816
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f727ff2d681b3be0800000000000000
+      internalID: -1496575593935329288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_92
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2816
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ebbb8844bf6ed660800000000000000
+      internalID: 7412484856800328674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_93
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 2816
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59b0bd7855aa37e70800000000000000
+      internalID: 9111813755428866965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_94
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 2816
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 060c9fbf7aa8142e0800000000000000
+      internalID: -2143279493560024992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_95
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2816
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ebdcf06028809f70800000000000000
+      internalID: 9191996512110697449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55a906ba5599ff8e0800000000000000
+      internalID: -1657437544622548395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_97
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14feb7c2467bdbe0800000000000000
+      internalID: -1451436425705753569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_98
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ed55e61b6f55530800000000000000
+      internalID: 3843249098951351936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_99
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df30ec1e19805af0800000000000000
+      internalID: -409676803664232495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_100
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8516fd4ccf09930d0800000000000000
+      internalID: -3442561024838901416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_101
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e586eeece924a1b0800000000000000
+      internalID: -5646341935218653725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_102
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3315ac5a5bada6d00800000000000000
+      internalID: 966825543729828147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_103
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5028d20e25e107c40800000000000000
+      internalID: 5507935685571346949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_104
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb3b7edb4bfb3ca40800000000000000
+      internalID: 5387360362266342334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_105
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5646afcce99bfb640800000000000000
+      internalID: 5097997394901623909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_106
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7009ebb3cfc74990800000000000000
+      internalID: -7401719022981939073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_107
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f7baeef4cbb0c00800000000000000
+      internalID: 867994404691607419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_108
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4515be9105c386a0800000000000000
+      internalID: -6448093630716111539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_109
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8f5e9b6b60717b0800000000000000
+      internalID: -5253723058431723321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_110
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab5706da1821f2a80800000000000000
+      internalID: -8489546424401234502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_111
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2560
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c11682600af6bee00800000000000000
+      internalID: 1075075669146755356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a741b8ff06b5feaf0800000000000000
+      internalID: -364972572631427974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_113
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8a7f606f52190eb0800000000000000
+      internalID: -4753247730863736177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_114
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67a9004a717fe0080800000000000000
+      internalID: -9219159706273015178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_115
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc708ef41277d3d60800000000000000
+      internalID: 7871578708671727565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_116
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c776e953a4a728cc0800000000000000
+      internalID: -3710268683854125188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_117
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a5fac974d442d020800000000000000
+      internalID: 2365028433690031527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_118
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b01c7fee6b155e60800000000000000
+      internalID: 7950290880470716599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_119
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda68b2447485a9f0800000000000000
+      internalID: -457814152237782305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_120
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6485ba12dd228d2f0800000000000000
+      internalID: -947969388413495226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_121
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 699d871457517c770800000000000000
+      internalID: 8630890804232640918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_122
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffe299368324b16c0800000000000000
+      internalID: -4171667819872047361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_123
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4287dc6c612df7fb0800000000000000
+      internalID: -4647765295156594652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_124
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb9d86a7717c7170800000000000000
+      internalID: 8177535782107323312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_125
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29757cc7a06432f70800000000000000
+      internalID: 9161243077858776978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_126
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e42cdd39dc6f383c0800000000000000
+      internalID: -4358368651554995634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_127
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2304
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db5cedc497c42bad0800000000000000
+      internalID: -2688001943722342979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 340c935ea225ccbe0800000000000000
+      internalID: -1455698235359641533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_129
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a68516959b4e6770800000000000000
+      internalID: 8605899043791799972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_130
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccaab789d985bdf30800000000000000
+      internalID: 4601368878180444876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_131
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02d7327ba3ed882f0800000000000000
+      internalID: -970281375936316128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_132
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f5e44efefab2ee50800000000000000
+      internalID: 6837232788652221938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_133
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a2d21497579ee90800000000000000
+      internalID: -6995931382498383216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_134
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21c2e937a115f2940800000000000000
+      internalID: 5273522862724885522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_135
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d269f51079a84120800000000000000
+      internalID: 2398353100444885714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_136
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9794067e5b810ad90800000000000000
+      internalID: -7088638643931166343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_137
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 012203796fc43baf0800000000000000
+      internalID: -381876921414180336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_138
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ba9c057280614980800000000000000
+      internalID: -8556451703601456463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_139
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb296bf61185bfb80800000000000000
+      internalID: -8359991451371269444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_140
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e3593781fc6d77f0800000000000000
+      internalID: -613214189640920094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_141
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d25a5b91c84f1b0800000000000000
+      internalID: -5623715992629334744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_142
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0432fa3be9609ce0800000000000000
+      internalID: -1400503025085041652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_143
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2048
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 367df5d37d6c0fbc0800000000000000
+      internalID: -3751279861849663645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ffcc01f8fd9979c0800000000000000
+      internalID: -3928935507382448144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_145
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46c80737f07a89e50800000000000000
+      internalID: 6816381720828349540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_146
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db3555cfd88bd96d0800000000000000
+      internalID: -2982024458286050371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_147
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63642e6dd9cb7bc30800000000000000
+      internalID: 4375172949114766902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_148
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c1d449da1afc9bb0800000000000000
+      internalID: -4927788899028905529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_149
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca7fdfbc455e6b5a0800000000000000
+      internalID: -6505760459327670356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_150
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21f47934a52eabbe0800000000000000
+      internalID: -1460606251819380974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_151
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5308d6d85cbb5dbe0800000000000000
+      internalID: -1453048847601401803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_152
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4164637e360575970800000000000000
+      internalID: 8743545591574185492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_153
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 384ed22f12fc1dbd0800000000000000
+      internalID: -2607074964566842237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_154
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eb2d72039bc834e0800000000000000
+      internalID: -2001626202103796759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_155
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb96ddb05f81f1cd0800000000000000
+      internalID: -2585320220342261317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_156
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4e2f31d332df9c60800000000000000
+      internalID: 7827205797388955212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_157
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92e66ddd13283a660800000000000000
+      internalID: 7395898163759312425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_158
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5616c04472e9697f0800000000000000
+      internalID: -606123208352177819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_159
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0acdf78ab75e0bef0800000000000000
+      internalID: -94323272904090464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_160
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2984bff7481dee430800000000000000
+      internalID: 3814216301442451602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_161
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de88797d3d5da67c0800000000000000
+      internalID: -4077211406798714643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_162
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6247df3576ec5bec0800000000000000
+      internalID: -3551705787925695450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_163
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c865f5f6b23ba2b0800000000000000
+      internalID: -5572304352548919097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_164
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53d2255d41b9107d0800000000000000
+      internalID: -2953909366797750987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_165
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b6dd01441f22dd60800000000000000
+      internalID: 7913439259280660150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_166
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc72842bb3f5f5d0800000000000000
+      internalID: -3029247189239825160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_167
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9c352632ded39580800000000000000
+      internalID: -8821462250655761252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_168
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64612ca9ca21aacc0800000000000000
+      internalID: -3699123611391355322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_169
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 051f0a19508c40c30800000000000000
+      internalID: 4324801468426154320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_170
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b53812a2a211fd5b0800000000000000
+      internalID: -5341531760244980901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_171
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3980afec5916352c0800000000000000
+      internalID: -4444101111234033517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_172
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f375319386e2d7b70800000000000000
+      internalID: 8898319463923013439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_173
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4478450d87a5d51e0800000000000000
+      internalID: -2207508767403899068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_174
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 642ef189666b30f00800000000000000
+      internalID: 1081908887254196806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_175
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53cab218eac71df70800000000000000
+      internalID: 9210279801882651701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_176
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce75817c248115480800000000000000
+      internalID: -8912315512502331412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_177
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33488574bb0413840800000000000000
+      internalID: 5202010217689678899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_178
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2c8a569a040ff050800000000000000
+      internalID: 5836388085614152751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_179
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce60d776bb3619e0800000000000000
+      internalID: -1651066558504472895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_180
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4568ccd1e176c6e0800000000000000
+      internalID: -1817640184711715509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_181
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05719b286e7d1bcd0800000000000000
+      internalID: -2544014929452001456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_182
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8a90b2194254efc0800000000000000
+      internalID: -3466555339368785265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_183
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e9f2543e3f355840800000000000000
+      internalID: 5212141680149592553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_184
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f78ca0aca7dc5ff0800000000000000
+      internalID: -45924759750539275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_185
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e28d86870f2d1490800000000000000
+      internalID: -7774005672402910491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_186
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 052fe10e90965f000800000000000000
+      internalID: 69076860429857360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_187
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db9fedefa333ae340800000000000000
+      internalID: 4893780273568610749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_188
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff48f4a14c93783e0800000000000000
+      internalID: -2051607590826179329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_189
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab32f67c1f3dc8830800000000000000
+      internalID: 4074864798249984954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_190
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2a07e1a7f1f11340800000000000000
+      internalID: 4832909921020742186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_191
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 433f6e5fc5c065e20800000000000000
+      internalID: 3338869767143879476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_192
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0537e744c9503fb0800000000000000
+      internalID: -4670134114028407541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_193
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f77228c9b65b4f160800000000000000
+      internalID: 7058465989788313471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_194
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac0eaeb74fce76c60800000000000000
+      internalID: 7811472613492580554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_195
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46beb124ca4c25600800000000000000
+      internalID: 455642756440386404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_196
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c89be3b819bb21680800000000000000
+      internalID: -8785753689265620596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_197
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81d218ac31a455420800000000000000
+      internalID: 2618080207248108824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_198
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 683496dc49135bf70800000000000000
+      internalID: 9202315928772625286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_199
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4481dd2dd8ab8d4c0800000000000000
+      internalID: -4262451929015314364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_200
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b8b6e7b52206f6b0800000000000000
+      internalID: -5263016753513449287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_201
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a88f75df929df040800000000000000
+      internalID: 4683060402714544293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_202
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cabe0d84339b2110800000000000000
+      internalID: 1237244376557468361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_203
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f456d4bbc859e33e0800000000000000
+      internalID: -2072054346873477809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_204
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e393409be0088250800000000000000
+      internalID: 5947004319680402403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_205
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d03924087f0b2b400800000000000000
+      internalID: 338527499061465869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_206
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa89b691cb681d40800000000000000
+      internalID: 5555308619563109116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_207
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fd7749d6a2c2b6d0800000000000000
+      internalID: -2976102381872775690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_208
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd8c7beed6fc7570800000000000000
+      internalID: 8465912836843671025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_209
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf1eb6261c8064b0800000000000000
+      internalID: -5449201522351136826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_210
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 158d269bc5705ac50800000000000000
+      internalID: 6675750117475276881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_211
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87d1b61dd272f8bf0800000000000000
+      internalID: -319993970779546248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_212
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8e2c7cd7c663910800000000000000
+      internalID: 1816758787168725223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_213
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fffe91793d1a05810800000000000000
+      internalID: 1752078185192353791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_214
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 111fd0ba2cd98d120800000000000000
+      internalID: 2438872657640157457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_215
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28cec6257843b0bd0800000000000000
+      internalID: -2662976998851416958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_216
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9f8d82d9d82a0d90800000000000000
+      internalID: -7130842143982252131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_217
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76662731c6d674720800000000000000
+      internalID: 2830351201775806055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_218
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993f057c4c04dc6e0800000000000000
+      internalID: -1815723860858702951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_219
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df0c723fb21ffd30800000000000000
+      internalID: 4467309967769866193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_220
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6cd4f835aab3bbe0800000000000000
+      internalID: -1462620235177337746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_221
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76fc12324afe4dd80800000000000000
+      internalID: -8226687131055960217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_222
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f0cccb7d7826bf0800000000000000
+      internalID: -332554061816787131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_223
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c34e853264970e40800000000000000
+      internalID: 5622625809321575368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_224
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47abe836c26828680800000000000000
+      internalID: -8754287200447841676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_225
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5674bc2190785ac80800000000000000
+      internalID: -8312089064202614939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_226
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff7695cd409efd90800000000000000
+      internalID: -7062048501968502789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_227
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a425775f9b9d99580800000000000000
+      internalID: -8819779002517990838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_228
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d36a32f2944419fc0800000000000000
+      internalID: -3489933155121256899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_229
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a4884d16950a6be0800000000000000
+      internalID: -1483366984970632031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_230
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8a9ecdc16c0471a0800000000000000
+      internalID: -6812806722100487539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_231
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61bed48af6bb688c0800000000000000
+      internalID: -3997301531005293802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_232
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ee141930fd0deba0800000000000000
+      internalID: -6058170598342517021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_233
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9534139ef81bb57a0800000000000000
+      internalID: -6387316414844157095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_234
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad35b3be9dae7e20800000000000000
+      internalID: 3350306069941665194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_235
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 356f751dbc2d32d50800000000000000
+      internalID: 6711439642544567891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_236
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d22531f53c0c03be0800000000000000
+      internalID: -1499486730568117715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_237
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb06ad8ac7e630ea0800000000000000
+      internalID: -5907756804492074817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_238
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eabc76d14e520cd0800000000000000
+      internalID: -2593406798547600663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_239
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bd7274a2dc643520800000000000000
+      internalID: 2680887330150186424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_240
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5296542f2954bdaf0800000000000000
+      internalID: -370626046895757019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_241
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43e46a31c7147abb0800000000000000
+      internalID: -4924895666344931788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_242
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3748ae4dddd58fe50800000000000000
+      internalID: 6843322841130763379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_243
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3d42ae44f0cf94f0800000000000000
+      internalID: -819724451634328260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_244
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e2851f2265e77a10800000000000000
+      internalID: 1907245177074189027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_245
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc9cf43bbdd7056d0800000000000000
+      internalID: -3003762568896460340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_246
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de7055aa7edabde0800000000000000
+      internalID: -1316495322711556398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_247
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dadbf59055efa540800000000000000
+      internalID: 5021484243817847510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_248
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a4c0c412a78e78e0800000000000000
+      internalID: -1693767279642098526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_249
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92490b8c079e6c830800000000000000
+      internalID: 4091213982125298729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_250
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5252027a74cc1580800000000000000
+      internalID: -8854986737139428771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_251
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dbddd9faea7a6ad0800000000000000
+      internalID: -2708217076276929578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_252
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb5cb11639c8e4cf0800000000000000
+      internalID: -266120763350989377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_253
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 051ed4685755031f0800000000000000
+      internalID: -1067259148434022064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_254
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de2d674312c9c5290800000000000000
+      internalID: -7900267979886636307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_255
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ccab94625cf07e90800000000000000
+      internalID: -7029841587519902519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_256
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9611d842b79c95d0800000000000000
+      internalID: -3054399655282403686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_257
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08166692ddb7434d0800000000000000
+      internalID: -3155761249067310720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_258
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6869c84fe098b83c0800000000000000
+      internalID: -4356237517225421178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_259
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff13f4a56cb979d80800000000000000
+      internalID: -8243949316657434113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_260
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f34dc51619c7a90800000000000000
+      internalID: -7314811847401259195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_261
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c8a5fa4be18323d0800000000000000
+      internalID: -3232597259946972990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_262
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2471e1c1a702be4a0800000000000000
+      internalID: -6563116323132532926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_263
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e193efe3903c94a10800000000000000
+      internalID: 1894259562764974366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_264
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c906b732c09da7990800000000000000
+      internalID: -7387353592589754212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_265
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75f33b4cc77e70f20800000000000000
+      internalID: 3388931767681630039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_266
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85ea11e0703e22500800000000000000
+      internalID: 370107738838117976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_267
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c2e73916a0024530800000000000000
+      internalID: 3837630545860747976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_268
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1cff93f46a8a1d10800000000000000
+      internalID: 2097140742683098138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_269
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ddca9b3dc214dfb0800000000000000
+      internalID: -4624050244725060139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_270
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99efa84cde1cff220800000000000000
+      internalID: 2521947543299620505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ostrich_spritesheet_271
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 433261ade72e03840800000000000000
+      internalID: 5201906604065563444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8e1362c6ce29f8c4ea9e7661ae8a0f7a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":16.0,"y":17.0},"gridSpriteSize":{"x":256.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      ostrich_spritesheet_0: -8861075046807585277
+      ostrich_spritesheet_1: 1021072272008179230
+      ostrich_spritesheet_10: -6004449578276081227
+      ostrich_spritesheet_100: -3442561024838901416
+      ostrich_spritesheet_101: -5646341935218653725
+      ostrich_spritesheet_102: 966825543729828147
+      ostrich_spritesheet_103: 5507935685571346949
+      ostrich_spritesheet_104: 5387360362266342334
+      ostrich_spritesheet_105: 5097997394901623909
+      ostrich_spritesheet_106: -7401719022981939073
+      ostrich_spritesheet_107: 867994404691607419
+      ostrich_spritesheet_108: -6448093630716111539
+      ostrich_spritesheet_109: -5253723058431723321
+      ostrich_spritesheet_11: 8471411403936922979
+      ostrich_spritesheet_110: -8489546424401234502
+      ostrich_spritesheet_111: 1075075669146755356
+      ostrich_spritesheet_112: -364972572631427974
+      ostrich_spritesheet_113: -4753247730863736177
+      ostrich_spritesheet_114: -9219159706273015178
+      ostrich_spritesheet_115: 7871578708671727565
+      ostrich_spritesheet_116: -3710268683854125188
+      ostrich_spritesheet_117: 2365028433690031527
+      ostrich_spritesheet_118: 7950290880470716599
+      ostrich_spritesheet_119: -457814152237782305
+      ostrich_spritesheet_12: -8916908224208415879
+      ostrich_spritesheet_120: -947969388413495226
+      ostrich_spritesheet_121: 8630890804232640918
+      ostrich_spritesheet_122: -4171667819872047361
+      ostrich_spritesheet_123: -4647765295156594652
+      ostrich_spritesheet_124: 8177535782107323312
+      ostrich_spritesheet_125: 9161243077858776978
+      ostrich_spritesheet_126: -4358368651554995634
+      ostrich_spritesheet_127: -2688001943722342979
+      ostrich_spritesheet_128: -1455698235359641533
+      ostrich_spritesheet_129: 8605899043791799972
+      ostrich_spritesheet_13: 3315346133836952889
+      ostrich_spritesheet_130: 4601368878180444876
+      ostrich_spritesheet_131: -970281375936316128
+      ostrich_spritesheet_132: 6837232788652221938
+      ostrich_spritesheet_133: -6995931382498383216
+      ostrich_spritesheet_134: 5273522862724885522
+      ostrich_spritesheet_135: 2398353100444885714
+      ostrich_spritesheet_136: -7088638643931166343
+      ostrich_spritesheet_137: -381876921414180336
+      ostrich_spritesheet_138: -8556451703601456463
+      ostrich_spritesheet_139: -8359991451371269444
+      ostrich_spritesheet_14: 6932030042823974467
+      ostrich_spritesheet_140: -613214189640920094
+      ostrich_spritesheet_141: -5623715992629334744
+      ostrich_spritesheet_142: -1400503025085041652
+      ostrich_spritesheet_143: -3751279861849663645
+      ostrich_spritesheet_144: -3928935507382448144
+      ostrich_spritesheet_145: 6816381720828349540
+      ostrich_spritesheet_146: -2982024458286050371
+      ostrich_spritesheet_147: 4375172949114766902
+      ostrich_spritesheet_148: -4927788899028905529
+      ostrich_spritesheet_149: -6505760459327670356
+      ostrich_spritesheet_15: -1902000074567383986
+      ostrich_spritesheet_150: -1460606251819380974
+      ostrich_spritesheet_151: -1453048847601401803
+      ostrich_spritesheet_152: 8743545591574185492
+      ostrich_spritesheet_153: -2607074964566842237
+      ostrich_spritesheet_154: -2001626202103796759
+      ostrich_spritesheet_155: -2585320220342261317
+      ostrich_spritesheet_156: 7827205797388955212
+      ostrich_spritesheet_157: 7395898163759312425
+      ostrich_spritesheet_158: -606123208352177819
+      ostrich_spritesheet_159: -94323272904090464
+      ostrich_spritesheet_16: -2037132747499414148
+      ostrich_spritesheet_160: 3814216301442451602
+      ostrich_spritesheet_161: -4077211406798714643
+      ostrich_spritesheet_162: -3551705787925695450
+      ostrich_spritesheet_163: -5572304352548919097
+      ostrich_spritesheet_164: -2953909366797750987
+      ostrich_spritesheet_165: 7913439259280660150
+      ostrich_spritesheet_166: -3029247189239825160
+      ostrich_spritesheet_167: -8821462250655761252
+      ostrich_spritesheet_168: -3699123611391355322
+      ostrich_spritesheet_169: 4324801468426154320
+      ostrich_spritesheet_17: -5306504559368685911
+      ostrich_spritesheet_170: -5341531760244980901
+      ostrich_spritesheet_171: -4444101111234033517
+      ostrich_spritesheet_172: 8898319463923013439
+      ostrich_spritesheet_173: -2207508767403899068
+      ostrich_spritesheet_174: 1081908887254196806
+      ostrich_spritesheet_175: 9210279801882651701
+      ostrich_spritesheet_176: -8912315512502331412
+      ostrich_spritesheet_177: 5202010217689678899
+      ostrich_spritesheet_178: 5836388085614152751
+      ostrich_spritesheet_179: -1651066558504472895
+      ostrich_spritesheet_18: -2044818927405509353
+      ostrich_spritesheet_180: -1817640184711715509
+      ostrich_spritesheet_181: -2544014929452001456
+      ostrich_spritesheet_182: -3466555339368785265
+      ostrich_spritesheet_183: 5212141680149592553
+      ostrich_spritesheet_184: -45924759750539275
+      ostrich_spritesheet_185: -7774005672402910491
+      ostrich_spritesheet_186: 69076860429857360
+      ostrich_spritesheet_187: 4893780273568610749
+      ostrich_spritesheet_188: -2051607590826179329
+      ostrich_spritesheet_189: 4074864798249984954
+      ostrich_spritesheet_19: 2759781195744547943
+      ostrich_spritesheet_190: 4832909921020742186
+      ostrich_spritesheet_191: 3338869767143879476
+      ostrich_spritesheet_192: -4670134114028407541
+      ostrich_spritesheet_193: 7058465989788313471
+      ostrich_spritesheet_194: 7811472613492580554
+      ostrich_spritesheet_195: 455642756440386404
+      ostrich_spritesheet_196: -8785753689265620596
+      ostrich_spritesheet_197: 2618080207248108824
+      ostrich_spritesheet_198: 9202315928772625286
+      ostrich_spritesheet_199: -4262451929015314364
+      ostrich_spritesheet_2: 7628288593833749981
+      ostrich_spritesheet_20: 6279066314524031089
+      ostrich_spritesheet_200: -5263016753513449287
+      ostrich_spritesheet_201: 4683060402714544293
+      ostrich_spritesheet_202: 1237244376557468361
+      ostrich_spritesheet_203: -2072054346873477809
+      ostrich_spritesheet_204: 5947004319680402403
+      ostrich_spritesheet_205: 338527499061465869
+      ostrich_spritesheet_206: 5555308619563109116
+      ostrich_spritesheet_207: -2976102381872775690
+      ostrich_spritesheet_208: 8465912836843671025
+      ostrich_spritesheet_209: -5449201522351136826
+      ostrich_spritesheet_21: 5155782812288262567
+      ostrich_spritesheet_210: 6675750117475276881
+      ostrich_spritesheet_211: -319993970779546248
+      ostrich_spritesheet_212: 1816758787168725223
+      ostrich_spritesheet_213: 1752078185192353791
+      ostrich_spritesheet_214: 2438872657640157457
+      ostrich_spritesheet_215: -2662976998851416958
+      ostrich_spritesheet_216: -7130842143982252131
+      ostrich_spritesheet_217: 2830351201775806055
+      ostrich_spritesheet_218: -1815723860858702951
+      ostrich_spritesheet_219: 4467309967769866193
+      ostrich_spritesheet_22: 2730871057056797615
+      ostrich_spritesheet_220: -1462620235177337746
+      ostrich_spritesheet_221: -8226687131055960217
+      ostrich_spritesheet_222: -332554061816787131
+      ostrich_spritesheet_223: 5622625809321575368
+      ostrich_spritesheet_224: -8754287200447841676
+      ostrich_spritesheet_225: -8312089064202614939
+      ostrich_spritesheet_226: -7062048501968502789
+      ostrich_spritesheet_227: -8819779002517990838
+      ostrich_spritesheet_228: -3489933155121256899
+      ostrich_spritesheet_229: -1483366984970632031
+      ostrich_spritesheet_23: 9148983480887004564
+      ostrich_spritesheet_230: -6812806722100487539
+      ostrich_spritesheet_231: -3997301531005293802
+      ostrich_spritesheet_232: -6058170598342517021
+      ostrich_spritesheet_233: -6387316414844157095
+      ostrich_spritesheet_234: 3350306069941665194
+      ostrich_spritesheet_235: 6711439642544567891
+      ostrich_spritesheet_236: -1499486730568117715
+      ostrich_spritesheet_237: -5907756804492074817
+      ostrich_spritesheet_238: -2593406798547600663
+      ostrich_spritesheet_239: 2680887330150186424
+      ostrich_spritesheet_24: -4535344953845210640
+      ostrich_spritesheet_240: -370626046895757019
+      ostrich_spritesheet_241: -4924895666344931788
+      ostrich_spritesheet_242: 6843322841130763379
+      ostrich_spritesheet_243: -819724451634328260
+      ostrich_spritesheet_244: 1907245177074189027
+      ostrich_spritesheet_245: -3003762568896460340
+      ostrich_spritesheet_246: -1316495322711556398
+      ostrich_spritesheet_247: 5021484243817847510
+      ostrich_spritesheet_248: -1693767279642098526
+      ostrich_spritesheet_249: 4091213982125298729
+      ostrich_spritesheet_25: -5882969996452769991
+      ostrich_spritesheet_250: -8854986737139428771
+      ostrich_spritesheet_251: -2708217076276929578
+      ostrich_spritesheet_252: -266120763350989377
+      ostrich_spritesheet_253: -1067259148434022064
+      ostrich_spritesheet_254: -7900267979886636307
+      ostrich_spritesheet_255: -7029841587519902519
+      ostrich_spritesheet_256: -3054399655282403686
+      ostrich_spritesheet_257: -3155761249067310720
+      ostrich_spritesheet_258: -4356237517225421178
+      ostrich_spritesheet_259: -8243949316657434113
+      ostrich_spritesheet_26: 1092222713086580506
+      ostrich_spritesheet_260: -7314811847401259195
+      ostrich_spritesheet_261: -3232597259946972990
+      ostrich_spritesheet_262: -6563116323132532926
+      ostrich_spritesheet_263: 1894259562764974366
+      ostrich_spritesheet_264: -7387353592589754212
+      ostrich_spritesheet_265: 3388931767681630039
+      ostrich_spritesheet_266: 370107738838117976
+      ostrich_spritesheet_267: 3837630545860747976
+      ostrich_spritesheet_268: 2097140742683098138
+      ostrich_spritesheet_269: -4624050244725060139
+      ostrich_spritesheet_27: -7397033404828840972
+      ostrich_spritesheet_270: 2521947543299620505
+      ostrich_spritesheet_271: 5201906604065563444
+      ostrich_spritesheet_28: -8354602456650784034
+      ostrich_spritesheet_29: -5246721160157338242
+      ostrich_spritesheet_3: 619335967480934006
+      ostrich_spritesheet_30: -2161502013397165964
+      ostrich_spritesheet_31: 8142399215275577279
+      ostrich_spritesheet_32: 2700589823614807630
+      ostrich_spritesheet_33: -8965241182102155345
+      ostrich_spritesheet_34: -4855606929680835144
+      ostrich_spritesheet_35: 3372542785880219931
+      ostrich_spritesheet_36: 7094829973242323685
+      ostrich_spritesheet_37: -6595708409347788852
+      ostrich_spritesheet_38: -7311451573016985995
+      ostrich_spritesheet_39: 6247966970320333561
+      ostrich_spritesheet_4: -800951215265506575
+      ostrich_spritesheet_40: -2379462364404569251
+      ostrich_spritesheet_41: -1769698743773539712
+      ostrich_spritesheet_42: 2564027691663508195
+      ostrich_spritesheet_43: 2734470036400300344
+      ostrich_spritesheet_44: -8607272782714360454
+      ostrich_spritesheet_45: 49917655879746556
+      ostrich_spritesheet_46: 6287745441662482781
+      ostrich_spritesheet_47: -7952489693560529715
+      ostrich_spritesheet_48: -3462739490027189545
+      ostrich_spritesheet_49: 1275883403713828525
+      ostrich_spritesheet_5: -8840548834818880556
+      ostrich_spritesheet_50: 2770187837697151095
+      ostrich_spritesheet_51: -8990022208139578799
+      ostrich_spritesheet_52: 6365302950153295913
+      ostrich_spritesheet_53: 466782090778108602
+      ostrich_spritesheet_54: 5147959871672628870
+      ostrich_spritesheet_55: 1271744906692932282
+      ostrich_spritesheet_56: 1064794148590319028
+      ostrich_spritesheet_57: -8070672672371678190
+      ostrich_spritesheet_58: -7114341250840392578
+      ostrich_spritesheet_59: 9019660979859423586
+      ostrich_spritesheet_6: -9113858597599304817
+      ostrich_spritesheet_60: -1520560710054186949
+      ostrich_spritesheet_61: 926662076606334839
+      ostrich_spritesheet_62: 214125402273947488
+      ostrich_spritesheet_63: -90084093391868657
+      ostrich_spritesheet_64: -925615263725158487
+      ostrich_spritesheet_65: -1516822590944854576
+      ostrich_spritesheet_66: 4386155164776184527
+      ostrich_spritesheet_67: -6517862230647539309
+      ostrich_spritesheet_68: -5176070476400867813
+      ostrich_spritesheet_69: -1572086711821859606
+      ostrich_spritesheet_7: 6447837285907309321
+      ostrich_spritesheet_70: 3941366898716924565
+      ostrich_spritesheet_71: 8672570194736273810
+      ostrich_spritesheet_72: 5740297170416597698
+      ostrich_spritesheet_73: -7720168493554840343
+      ostrich_spritesheet_74: -3299796562693882257
+      ostrich_spritesheet_75: -5779890623773013648
+      ostrich_spritesheet_76: 1275989213383052479
+      ostrich_spritesheet_77: -1496723635635666246
+      ostrich_spritesheet_78: -1109315951971102578
+      ostrich_spritesheet_79: -4063191011417855587
+      ostrich_spritesheet_8: -635136559181920588
+      ostrich_spritesheet_80: 3458943072121070580
+      ostrich_spritesheet_81: 9195192522359211308
+      ostrich_spritesheet_82: -3425790111515779919
+      ostrich_spritesheet_83: 5591665184416801532
+      ostrich_spritesheet_84: 4684889408582636391
+      ostrich_spritesheet_85: 4481502870678881188
+      ostrich_spritesheet_86: -9007090555022188161
+      ostrich_spritesheet_87: 1164903437279067659
+      ostrich_spritesheet_88: -2653136256373192892
+      ostrich_spritesheet_89: 4916612464973190633
+      ostrich_spritesheet_9: -4665762661080350665
+      ostrich_spritesheet_90: -1964072830435130505
+      ostrich_spritesheet_91: -1496575593935329288
+      ostrich_spritesheet_92: 7412484856800328674
+      ostrich_spritesheet_93: 9111813755428866965
+      ostrich_spritesheet_94: -2143279493560024992
+      ostrich_spritesheet_95: 9191996512110697449
+      ostrich_spritesheet_96: -1657437544622548395
+      ostrich_spritesheet_97: -1451436425705753569
+      ostrich_spritesheet_98: 3843249098951351936
+      ostrich_spritesheet_99: -409676803664232495
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
