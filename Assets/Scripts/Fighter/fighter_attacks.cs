@@ -31,6 +31,14 @@ public class FighterAttack : MonoBehaviour
     [Header("Controls")]
     [SerializeField] private float bananaCooldown = 0.5f;
 
+    [Header("Attack Knockback")]
+    [SerializeField] private float lightKnockbackMultiplier = 0.65f;
+    [SerializeField] private float heavyKnockbackMultiplier = 1f;
+
+    [Header("Heavy Attack Movement")]
+    [SerializeField] private float heavyAttackLungeSpeed = 6f;
+    [SerializeField] private float heavyAttackLungeDuration = 0.12f;
+
     [Header("Attack Sounds")]
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip[] lightAttackSounds = new AudioClip[5];
@@ -67,6 +75,7 @@ public class FighterAttack : MonoBehaviour
     private Animator animator;
     private Hitbox hitbox;
     private bool canAttack = true;
+    private int attackSequence = 0;
 
     private void Awake()
     {
@@ -94,6 +103,11 @@ public class FighterAttack : MonoBehaviour
 
     private void Update()
     {
+        if (fighterController != null && fighterController.IsRespawning)
+        {
+            return;
+        }
+
         if (canAttack && BananaPressed())
         {
             PlayBananaAnimation();
@@ -113,7 +127,11 @@ public class FighterAttack : MonoBehaviour
 
             PlayAttackAnimation(attackType, direction, airAttack);
 
-            StartCoroutine(PerformAttack(settings));
+            StartCoroutine(PerformAttack(
+                settings,
+                attackType,
+                direction
+            ));
         }
     }
 
@@ -429,25 +447,97 @@ public class FighterAttack : MonoBehaviour
         }
     }
 
-    private IEnumerator PerformAttack(AttackSettings settings)
+    private IEnumerator PerformAttack(
+        AttackSettings settings,
+        AttackType attackType,
+        AttackDirection direction)
     {
+        int myAttackSequence = ++attackSequence;
         canAttack = false;
+
+        if (attackType == AttackType.Heavy)
+        {
+            StartHeavyAttackMovement(direction);
+        }
+
+        if (animator != null)
+        {
+            animator.SetBool("IsAttacking", true);
+        }
 
         if (attackHitbox != null && hitbox != null)
         {
+            float knockbackMultiplier = attackType == AttackType.Light
+                ? lightKnockbackMultiplier
+                : heavyKnockbackMultiplier;
+
+            float attackDirection = fighterController.FacingRight ? 1f : -1f;
+
             hitbox.Configure(
                 gameObject,
                 settings.damage,
-                settings.horizontalKnockback,
+                settings.horizontalKnockback * knockbackMultiplier,
                 settings.verticalKnockback
+                    * knockbackMultiplier,
+                attackDirection
             );
 
             attackHitbox.SetActive(true);
             yield return new WaitForSeconds(settings.duration);
             attackHitbox.SetActive(false);
         }
+        else
+        {
+            yield return new WaitForSeconds(settings.duration);
+        }
+
+        // Lights can chain after their active hitbox window.
+        // Heavies stay committed through the full cooldown.
+        if (attackType == AttackType.Light && myAttackSequence == attackSequence)
+        {
+            canAttack = true;
+        }
 
         yield return new WaitForSeconds(settings.cooldown);
-        canAttack = true;
+
+        // A newer light may already have started. Do not let an older
+        // coroutine unlock the Animator in the middle of that attack.
+        if (myAttackSequence == attackSequence)
+        {
+            canAttack = true;
+
+            if (animator != null)
+            {
+                animator.SetBool("IsAttacking", false);
+            }
+        }
+    }
+
+    private void StartHeavyAttackMovement(AttackDirection direction)
+    {
+        float facingDirection = fighterController.FacingRight ? 1f : -1f;
+        Vector2 movement;
+
+        switch (direction)
+        {
+            case AttackDirection.Up:
+                movement = Vector2.up * heavyAttackLungeSpeed;
+                break;
+
+            case AttackDirection.Down:
+                movement = Vector2.down * heavyAttackLungeSpeed;
+                break;
+
+            case AttackDirection.Side:
+            case AttackDirection.Neutral:
+            default:
+                movement = Vector2.right * facingDirection * heavyAttackLungeSpeed;
+                break;
+        }
+
+        fighterController.StartAttackLunge(
+            movement,
+            heavyAttackLungeDuration
+        );
     }
 }

@@ -7,21 +7,27 @@ public class StockManager : MonoBehaviour
     [SerializeField] private FighterHealth playerOne;
     [SerializeField] private FighterHealth playerTwo;
 
-    [Header("Respawn Points")]
+    [Header("Spawn Points")]
     [SerializeField] private Transform playerOneSpawn;
     [SerializeField] private Transform playerTwoSpawn;
 
-    [Header("Stocks")]
+    [Header("Stock Settings")]
     [SerializeField] private int startingStocks = 3;
-    [SerializeField] private float blastZoneY = -10f;
-    [SerializeField] private float respawnDelay = 1.5f;
+    [SerializeField] private float blastZoneY = -18f;
+    [SerializeField] private float respawnDelay = 1f;
+    [SerializeField] private float respawnFloatDuration = 5f;
 
     private int playerOneStocks;
     private int playerTwoStocks;
     private bool playerOneRespawning;
     private bool playerTwoRespawning;
+    private bool playerOneEliminated;
+    private bool playerTwoEliminated;
 
-    private void Start()
+    public int PlayerOneStocks => playerOneStocks;
+    public int PlayerTwoStocks => playerTwoStocks;
+
+    private void Awake()
     {
         playerOneStocks = startingStocks;
         playerTwoStocks = startingStocks;
@@ -29,33 +35,92 @@ public class StockManager : MonoBehaviour
 
     private void Update()
     {
-        CheckPlayer(playerOne, ref playerOneStocks, playerOneSpawn, ref playerOneRespawning);
-        CheckPlayer(playerTwo, ref playerTwoStocks, playerTwoSpawn, ref playerTwoRespawning);
+        CheckPlayerForBlastZone(
+            playerOne,
+            playerOneSpawn,
+            ref playerOneStocks,
+            ref playerOneRespawning,
+            ref playerOneEliminated,
+            "Player 1",
+            true
+        );
+
+        CheckPlayerForBlastZone(
+            playerTwo,
+            playerTwoSpawn,
+            ref playerTwoStocks,
+            ref playerTwoRespawning,
+            ref playerTwoEliminated,
+            "Player 2",
+            false
+        );
     }
 
-    private void CheckPlayer(
+    private void CheckPlayerForBlastZone(
         FighterHealth player,
-        ref int stocks,
         Transform spawnPoint,
-        ref bool respawning)
+        ref int stocks,
+        ref bool respawning,
+        ref bool eliminated,
+        string playerName,
+        bool isPlayerOne)
     {
-        if (player == null || respawning || player.transform.position.y > blastZoneY)
+        if (player == null || respawning || eliminated || !player.gameObject.activeInHierarchy)
         {
             return;
         }
 
+        if (player.transform.position.y < blastZoneY)
+        {
+            LoseStock(
+                player,
+                spawnPoint,
+                ref stocks,
+                ref respawning,
+                ref eliminated,
+                playerName,
+                isPlayerOne
+            );
+        }
+    }
+
+    private void LoseStock(
+        FighterHealth player,
+        Transform spawnPoint,
+        ref int stocks,
+        ref bool respawning,
+        ref bool eliminated,
+        string playerName,
+        bool isPlayerOne)
+    {
         stocks--;
+        player.ResetDamage();
+
+        Debug.Log(playerName + " lost a stock. Stocks remaining: " + stocks);
+
+        if (stocks <= 0)
+        {
+            eliminated = true;
+            player.gameObject.SetActive(false);
+            Debug.Log(playerName + " has been eliminated.");
+            return;
+        }
+
         respawning = true;
-        StartCoroutine(RespawnPlayer(player, spawnPoint, stocks));
+        StartCoroutine(RespawnPlayer(
+            player,
+            spawnPoint,
+            isPlayerOne
+        ));
     }
 
     private IEnumerator RespawnPlayer(
         FighterHealth player,
         Transform spawnPoint,
-        int remainingStocks)
+        bool isPlayerOne)
     {
-        Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
-        FighterController controller = player.GetComponent<FighterController>();
+        GameObject playerObject = player.gameObject;
+        Rigidbody2D rb = playerObject.GetComponent<Rigidbody2D>();
 
         if (rb != null)
         {
@@ -63,40 +128,37 @@ public class StockManager : MonoBehaviour
             rb.angularVelocity = 0f;
         }
 
-        if (controller != null)
-        {
-            controller.enabled = false;
-        }
-
+        playerObject.SetActive(false);
         yield return new WaitForSeconds(respawnDelay);
 
-        if (remainingStocks >= 0 && spawnPoint != null)
+        if (spawnPoint != null)
         {
-            player.transform.position = spawnPoint.position;
-            player.transform.rotation = Quaternion.identity;
-            player.ResetDamage();
-
-            if (rb != null)
-            {
-                rb.linearVelocity = Vector2.zero;
-                rb.angularVelocity = 0f;
-            }
-
-            if (controller != null)
-            {
-                controller.enabled = true;
-            }
-        }
-        else
-        {
-            player.gameObject.SetActive(false);
+            playerObject.transform.position = spawnPoint.position;
+            playerObject.transform.rotation = spawnPoint.rotation;
         }
 
-        if (player == playerOne)
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+        }
+
+        player.ResetDamage();
+        playerObject.SetActive(true);
+
+        FighterController controller =
+            playerObject.GetComponent<FighterController>();
+
+        if (controller != null)
+        {
+            controller.BeginRespawn(respawnFloatDuration);
+        }
+
+        if (isPlayerOne)
         {
             playerOneRespawning = false;
         }
-        else if (player == playerTwo)
+        else
         {
             playerTwoRespawning = false;
         }

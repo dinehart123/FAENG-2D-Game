@@ -7,6 +7,7 @@ public class Hitbox : MonoBehaviour
     private float damage;
     private float horizontalKnockback;
     private float verticalKnockback;
+    private float attackDirection;
     private readonly HashSet<FighterHealth> hitTargets =
         new HashSet<FighterHealth>();
 
@@ -14,12 +15,14 @@ public class Hitbox : MonoBehaviour
         GameObject attackOwner,
         float attackDamage,
         float horizontalForce,
-        float verticalForce)
+        float verticalForce,
+        float direction)
     {
         owner = attackOwner;
         damage = attackDamage;
         horizontalKnockback = horizontalForce;
         verticalKnockback = verticalForce;
+        attackDirection = Mathf.Sign(direction);
         hitTargets.Clear();
     }
 
@@ -37,12 +40,8 @@ public class Hitbox : MonoBehaviour
             return;
         }
 
-        float direction = target.transform.position.x >= owner.transform.position.x
-            ? 1f
-            : -1f;
-
         Vector2 knockback = new Vector2(
-            direction * horizontalKnockback,
+            attackDirection * horizontalKnockback,
             verticalKnockback
         );
 

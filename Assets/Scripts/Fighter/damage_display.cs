@@ -1,10 +1,14 @@
 using TMPro;
 using UnityEngine;
 
-public class DamagePercentDisplay : MonoBehaviour
+public class DamageDisplay : MonoBehaviour
 {
-    [Header("References")]
+    [Header("Player")]
     [SerializeField] private FighterHealth fighterHealth;
+    [SerializeField] private bool isPlayerOne;
+    [SerializeField] private StockManager stockManager;
+
+    [Header("UI")]
     [SerializeField] private TMP_Text percentText;
 
     private void Awake()
@@ -13,6 +17,11 @@ public class DamagePercentDisplay : MonoBehaviour
         {
             percentText = GetComponent<TMP_Text>();
         }
+
+        if (stockManager == null)
+        {
+            stockManager = FindFirstObjectByType<StockManager>();
+        }
     }
 
     private void Update()
@@ -20,6 +29,11 @@ public class DamagePercentDisplay : MonoBehaviour
         if (fighterHealth == null || percentText == null)
         {
             return;
+        }
+
+        if (stockManager == null)
+        {
+            stockManager = FindFirstObjectByType<StockManager>();
         }
 
         float damagePercent = Mathf.Max(0f, fighterHealth.DamagePercent);
@@ -36,7 +50,17 @@ public class DamagePercentDisplay : MonoBehaviour
             damageColor = Color.Lerp(Color.red, Color.black, colorAmount);
         }
 
-        percentText.text = damagePercent.ToString("0");
+        int lives = 0;
+
+        if (stockManager != null)
+        {
+            lives = isPlayerOne
+                ? stockManager.PlayerOneStocks
+                : stockManager.PlayerTwoStocks;
+        }
+
+        percentText.text = damagePercent.ToString("0") +
+            "\nLives: " + lives;
         percentText.color = damageColor;
     }
 }
