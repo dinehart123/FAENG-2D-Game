@@ -11,4 +11,8 @@ public class CharacterData : ScriptableObject
 
     [Header("Gameplay")]
     public GameObject fighterPrefab;
+
+    [Header("Character Select Animation")]
+    public GameObject selectionPreviewPrefab;
+    public string previewIdleStateName = "MonkeyIdle";
 }

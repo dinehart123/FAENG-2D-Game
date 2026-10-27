@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaab3a78080c04f2f8f6ee3c008d9a36, type: 3}
+  m_Name: Ostrich
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData
+  characterName: Ostrich
+  characterIcon: {fileID: -8835866482225543805, guid: eeec4815e4ea24d47ace6e3c16ad9d0a, type: 3}
+  fighterPrefab: {fileID: 0}
+  selectionPreviewPrefab: {fileID: 0}

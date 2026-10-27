@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class FighterHealth : MonoBehaviour
@@ -10,6 +9,10 @@ public class FighterHealth : MonoBehaviour
     [SerializeField] private float maxKnockbackMultiplier = 4f;
     [SerializeField] private float knockbackGrowth = 3f;
 
+    [Header("Death Sound")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip deathSound;
+
     private FighterController fighterController;
 
     public float DamagePercent => damagePercent;
@@ -17,6 +20,26 @@ public class FighterHealth : MonoBehaviour
     private void Awake()
     {
         fighterController = GetComponent<FighterController>();
+
+        if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
+
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.playOnAwake = false;
+            audioSource.spatialBlend = 0f;
+        }
+    }
+
+    public void PlayDeathSound()
+    {
+        if (audioSource != null && deathSound != null)
+        {
+            audioSource.PlayOneShot(deathSound);
+        }
     }
 
     public void TakeDamage(float damage, Vector2 knockback)
@@ -60,4 +83,3 @@ public class FighterHealth : MonoBehaviour
         damagePercent = 0f;
     }
 }
-

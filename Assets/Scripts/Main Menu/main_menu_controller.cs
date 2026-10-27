@@ -134,7 +134,7 @@ public class MainMenuController : MonoBehaviour
 
     public void LocalClicked()
     {
-        SceneManager.LoadScene("Arena");
+        SceneManager.LoadScene("Character SelectV2");
     }
 
     public void SettingsClicked()
