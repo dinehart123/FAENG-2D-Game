@@ -14,6 +14,7 @@ public class FighterAttack : MonoBehaviour
     {
         Neutral,
         Side,
+        Up,
         Down
     }
 
@@ -28,6 +29,12 @@ public class FighterAttack : MonoBehaviour
     }
 
     [Header("Controls")]
+    [SerializeField] private float bananaCooldown = 0.5f;
+
+    [Header("Attack Sounds")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip[] lightAttackSounds = new AudioClip[5];
+    [SerializeField] private AudioClip[] heavyAttackSounds = new AudioClip[5];
 
     [Header("Attack Hitbox")]
     [SerializeField] private GameObject attackHitbox;
@@ -35,21 +42,25 @@ public class FighterAttack : MonoBehaviour
     [Header("Ground Light Attacks")]
     [SerializeField] private AttackSettings neutralLight = new AttackSettings();
     [SerializeField] private AttackSettings sideLight = new AttackSettings();
+    [SerializeField] private AttackSettings upLight = new AttackSettings();
     [SerializeField] private AttackSettings downLight = new AttackSettings();
 
     [Header("Ground Heavy Attacks")]
     [SerializeField] private AttackSettings neutralHeavy = new AttackSettings();
     [SerializeField] private AttackSettings sideHeavy = new AttackSettings();
+    [SerializeField] private AttackSettings upHeavy = new AttackSettings();
     [SerializeField] private AttackSettings downHeavy = new AttackSettings();
 
     [Header("Air Light Attacks")]
     [SerializeField] private AttackSettings neutralAirLight = new AttackSettings();
     [SerializeField] private AttackSettings sideAirLight = new AttackSettings();
+    [SerializeField] private AttackSettings upAirLight = new AttackSettings();
     [SerializeField] private AttackSettings downAirLight = new AttackSettings();
 
     [Header("Air Heavy Attacks")]
     [SerializeField] private AttackSettings neutralAirHeavy = new AttackSettings();
     [SerializeField] private AttackSettings sideAirHeavy = new AttackSettings();
+    [SerializeField] private AttackSettings upAirHeavy = new AttackSettings();
     [SerializeField] private AttackSettings downAirHeavy = new AttackSettings();
 
     private FighterController fighterController;
@@ -62,6 +73,11 @@ public class FighterAttack : MonoBehaviour
         fighterController = GetComponent<FighterController>();
         animator = GetComponent<Animator>();
 
+        if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
+
         if (attackHitbox != null)
         {
             hitbox = attackHitbox.GetComponent<Hitbox>();
@@ -71,6 +87,13 @@ public class FighterAttack : MonoBehaviour
 
     private void Update()
     {
+        if (canAttack && BananaPressed())
+        {
+            PlayBananaAnimation();
+            StartCoroutine(BananaCooldown());
+            return;
+        }
+
         if (canAttack && AttackPressed(out AttackType attackType))
         {
             AttackDirection direction = GetAttackDirection();
@@ -85,6 +108,37 @@ public class FighterAttack : MonoBehaviour
 
             StartCoroutine(PerformAttack(settings));
         }
+    }
+
+    private bool BananaPressed()
+    {
+        if (fighterController.CurrentControlMode ==
+            FighterController.ControlMode.Keyboard)
+        {
+            return Keyboard.current != null &&
+                Keyboard.current.lKey.wasPressedThisFrame;
+        }
+
+        Gamepad gamepad = fighterController.AssignedGamepad;
+        return gamepad != null && gamepad.buttonEast.wasPressedThisFrame;
+    }
+
+    private void PlayBananaAnimation()
+    {
+        if (animator == null)
+        {
+            return;
+        }
+
+        ResetAttackTriggers();
+        animator.SetTrigger("Special");
+    }
+
+    private IEnumerator BananaCooldown()
+    {
+        canAttack = false;
+        yield return new WaitForSeconds(bananaCooldown);
+        canAttack = true;
     }
 
     private bool AttackPressed(out AttackType attackType)
@@ -140,10 +194,15 @@ public class FighterAttack : MonoBehaviour
 
     private AttackDirection GetAttackDirection()
     {
-        // Down takes priority over sideways movement.
+        // Vertical input takes priority over sideways movement.
         if (fighterController.IsDownPressed)
         {
             return AttackDirection.Down;
+        }
+
+        if (fighterController.IsUpPressed)
+        {
+            return AttackDirection.Up;
         }
 
         if (Mathf.Abs(fighterController.HorizontalInput) > 0.1f)
@@ -165,7 +224,8 @@ public class FighterAttack : MonoBehaviour
             {
                 if (direction == AttackDirection.Side)
                 {
-                    return sideAirLight;
+                    // The current Monkey controller has no Air Forward state.
+                    return neutralAirLight;
                 }
 
                 if (direction == AttackDirection.Down)
@@ -173,17 +233,28 @@ public class FighterAttack : MonoBehaviour
                     return downAirLight;
                 }
 
+                if (direction == AttackDirection.Up)
+                {
+                    return upAirLight;
+                }
+
                 return neutralAirLight;
             }
 
             if (direction == AttackDirection.Side)
             {
-                return sideAirHeavy;
+                // The current Monkey controller has no Air Forward state.
+                return neutralAirHeavy;
             }
 
             if (direction == AttackDirection.Down)
             {
                 return downAirHeavy;
+            }
+
+            if (direction == AttackDirection.Up)
+            {
+                return upAirHeavy;
             }
 
             return neutralAirHeavy;
@@ -201,6 +272,11 @@ public class FighterAttack : MonoBehaviour
                 return downLight;
             }
 
+            if (direction == AttackDirection.Up)
+            {
+                return upLight;
+            }
+
             return neutralLight;
         }
 
@@ -212,6 +288,11 @@ public class FighterAttack : MonoBehaviour
         if (direction == AttackDirection.Down)
         {
             return downHeavy;
+        }
+
+        if (direction == AttackDirection.Up)
+        {
+            return upHeavy;
         }
 
         return neutralHeavy;
@@ -227,11 +308,23 @@ public class FighterAttack : MonoBehaviour
             return;
         }
 
+        // There are no Air Forward animations in the Monkey controller.
+        // While airborne, pressing A/D should use the air-neutral attack
+        // instead of trying to play a ground Forward attack.
+        if (airAttack && direction == AttackDirection.Side)
+        {
+            direction = AttackDirection.Neutral;
+        }
+
         string directionName;
 
         if (direction == AttackDirection.Down)
         {
             directionName = "Down";
+        }
+        else if (direction == AttackDirection.Up)
+        {
+            directionName = "Up";
         }
         else if (direction == AttackDirection.Side)
         {
@@ -246,12 +339,76 @@ public class FighterAttack : MonoBehaviour
             ? "Light"
             : "Heavy";
 
-        string parameterName = airAttack
-            ? "Air" + directionName + strengthName
-            : directionName + strengthName;
+        // This controller uses separate direction and strength triggers.
+        // Example: Forward + Light selects the Forward Light animation.
+        ResetAttackTriggers();
+        animator.SetTrigger(directionName);
+        animator.SetTrigger(strengthName);
+    }
 
-        animator.ResetTrigger(parameterName);
-        animator.SetTrigger(parameterName);
+    private void ResetAttackTriggers()
+    {
+        animator.ResetTrigger("Neutral");
+        animator.ResetTrigger("Forward");
+        animator.ResetTrigger("Up");
+        animator.ResetTrigger("Down");
+        animator.ResetTrigger("Light");
+        animator.ResetTrigger("Heavy");
+        animator.ResetTrigger("Special");
+    }
+
+    // Add this as an Animation Event on the impact frame of every light attack.
+    public void PlayLightAttackSound()
+    {
+        PlayRandomAttackSound(lightAttackSounds);
+    }
+
+    // Add this as an Animation Event on the impact frame of every heavy attack.
+    public void PlayHeavyAttackSound()
+    {
+        PlayRandomAttackSound(heavyAttackSounds);
+    }
+
+    private void PlayRandomAttackSound(AudioClip[] sounds)
+    {
+        if (audioSource == null || sounds == null || sounds.Length == 0)
+        {
+            return;
+        }
+
+        int validSoundCount = 0;
+
+        foreach (AudioClip sound in sounds)
+        {
+            if (sound != null)
+            {
+                validSoundCount++;
+            }
+        }
+
+        if (validSoundCount == 0)
+        {
+            return;
+        }
+
+        int selectedSound = Random.Range(0, validSoundCount);
+        int validIndex = 0;
+
+        foreach (AudioClip sound in sounds)
+        {
+            if (sound == null)
+            {
+                continue;
+            }
+
+            if (validIndex == selectedSound)
+            {
+                audioSource.PlayOneShot(sound);
+                return;
+            }
+
+            validIndex++;
+        }
     }
 
     private IEnumerator PerformAttack(AttackSettings settings)

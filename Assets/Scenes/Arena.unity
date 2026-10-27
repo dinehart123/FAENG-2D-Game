@@ -794,7 +794,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -6.5, z: 0}
-  m_LocalScale: {x: 30, y: 1, z: 1}
+  m_LocalScale: {x: 27, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -825,7 +825,7 @@ Transform:
   m_GameObject: {fileID: 1465630941}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 15}
+  m_LocalPosition: {x: 0, y: -0.02, z: 15}
   m_LocalScale: {x: 3.2, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -947,17 +947,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.23114127, y: 1.0696502}
+  m_Offset: {x: -0.0074692816, y: 0.95354825}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.46, y: 0}
     oldSize: {x: 2.56, y: 2.560625}
     newSize: {x: 2.56, y: 2.560625}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.4505222, y: 1.8108349}
+  m_Size: {x: 1.0031781, y: 1.5818037}
   m_EdgeRadius: 0
 --- !u!95 &1569176711
 Animator:
@@ -1050,7 +1050,7 @@ Transform:
   m_GameObject: {fileID: 1569176709}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -6, z: 0}
+  m_LocalPosition: {x: 1.2, y: -1.33, z: 0}
   m_LocalScale: {x: 1.75, y: 1.75, z: 1.75}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1097,8 +1097,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FighterController
   moveSpeed: 7
-  jumpForce: 13
-  downForce: 10
+  jumpForce: 15
+  downForce: 5
   normalGravity: 3
   controlMode: 0
   knockbackDuration: 0.25
@@ -1121,6 +1121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 742a50826847ba04d871ddd0f5926a7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FighterAttack
+  bananaCooldown: 0.5
   attackHitbox: {fileID: 0}
   neutralLight:
     damage: 10
@@ -1129,6 +1130,12 @@ MonoBehaviour:
     duration: 0.15
     cooldown: 0.35
   sideLight:
+    damage: 10
+    horizontalKnockback: 8
+    verticalKnockback: 4
+    duration: 0.15
+    cooldown: 0.35
+  upLight:
     damage: 10
     horizontalKnockback: 8
     verticalKnockback: 4
@@ -1152,6 +1159,12 @@ MonoBehaviour:
     verticalKnockback: 4
     duration: 0.15
     cooldown: 0.35
+  upHeavy:
+    damage: 10
+    horizontalKnockback: 8
+    verticalKnockback: 4
+    duration: 0.15
+    cooldown: 0.35
   downHeavy:
     damage: 10
     horizontalKnockback: 8
@@ -1170,6 +1183,12 @@ MonoBehaviour:
     verticalKnockback: 4
     duration: 0.15
     cooldown: 0.35
+  upAirLight:
+    damage: 10
+    horizontalKnockback: 8
+    verticalKnockback: 4
+    duration: 0.15
+    cooldown: 0.35
   downAirLight:
     damage: 10
     horizontalKnockback: 8
@@ -1183,6 +1202,12 @@ MonoBehaviour:
     duration: 0.15
     cooldown: 0.35
   sideAirHeavy:
+    damage: 10
+    horizontalKnockback: 8
+    verticalKnockback: 4
+    duration: 0.15
+    cooldown: 0.35
+  upAirHeavy:
     damage: 10
     horizontalKnockback: 8
     verticalKnockback: 4
@@ -1250,7 +1275,7 @@ Transform:
   m_GameObject: {fileID: 1755765785}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.173, y: 0.179, z: 0}
+  m_LocalPosition: {x: -0.172, y: 0.134, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

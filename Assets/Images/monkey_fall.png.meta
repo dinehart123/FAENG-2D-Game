@@ -198,10 +198,10 @@ TextureImporter:
       name: monkey_fall_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 256
+        x: 72
+        y: 58
+        width: 84
+        height: 186
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,10 +220,10 @@ TextureImporter:
       name: monkey_fall_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 256
+        x: 332
+        y: 52
+        width: 80
+        height: 198
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,10 +242,10 @@ TextureImporter:
       name: monkey_fall_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 256
-        height: 256
+        x: 592
+        y: 48
+        width: 80
+        height: 206
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,10 +264,10 @@ TextureImporter:
       name: monkey_fall_3
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 256
-        height: 256
+        x: 848
+        y: 52
+        width: 82
+        height: 200
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,10 +286,10 @@ TextureImporter:
       name: monkey_fall_4
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 256
-        height: 256
+        x: 1102
+        y: 48
+        width: 82
+        height: 196
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,10 +308,10 @@ TextureImporter:
       name: monkey_fall_5
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 0
-        width: 256
-        height: 256
+        x: 1354
+        y: 48
+        width: 82
+        height: 192
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -330,10 +330,10 @@ TextureImporter:
       name: monkey_fall_6
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 0
-        width: 256
-        height: 256
+        x: 1606
+        y: 50
+        width: 86
+        height: 190
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,10 +352,10 @@ TextureImporter:
       name: monkey_fall_7
       rect:
         serializedVersion: 2
-        x: 1792
-        y: 0
-        width: 256
-        height: 256
+        x: 1848
+        y: 49
+        width: 100
+        height: 193
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,10 +374,10 @@ TextureImporter:
       name: monkey_fall_8
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 0
-        width: 256
-        height: 256
+        x: 2092
+        y: 46
+        width: 114
+        height: 196
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -396,10 +396,10 @@ TextureImporter:
       name: monkey_fall_9
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 0
-        width: 256
-        height: 256
+        x: 2338
+        y: 41
+        width: 128
+        height: 205
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,10 +418,10 @@ TextureImporter:
       name: monkey_fall_10
       rect:
         serializedVersion: 2
-        x: 2560
-        y: 0
-        width: 256
-        height: 256
+        x: 2588
+        y: 49
+        width: 134
+        height: 199
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -440,10 +440,10 @@ TextureImporter:
       name: monkey_fall_11
       rect:
         serializedVersion: 2
-        x: 2816
-        y: 0
-        width: 256
-        height: 256
+        x: 2844
+        y: 52
+        width: 130
+        height: 194
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -462,10 +462,10 @@ TextureImporter:
       name: monkey_fall_12
       rect:
         serializedVersion: 2
-        x: 3072
-        y: 0
-        width: 256
-        height: 256
+        x: 3104
+        y: 49
+        width: 124
+        height: 195
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -484,10 +484,10 @@ TextureImporter:
       name: monkey_fall_13
       rect:
         serializedVersion: 2
-        x: 3328
-        y: 0
-        width: 256
-        height: 256
+        x: 3368
+        y: 44
+        width: 116
+        height: 202
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -506,10 +506,10 @@ TextureImporter:
       name: monkey_fall_14
       rect:
         serializedVersion: 2
-        x: 3584
-        y: 0
-        width: 256
-        height: 256
+        x: 3638
+        y: 46
+        width: 102
+        height: 200
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -528,10 +528,10 @@ TextureImporter:
       name: monkey_fall_15
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 0
-        width: 256
-        height: 256
+        x: 3904
+        y: 49
+        width: 92
+        height: 197
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

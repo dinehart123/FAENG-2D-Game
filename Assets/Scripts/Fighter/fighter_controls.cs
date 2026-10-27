@@ -38,12 +38,14 @@ public class FighterController : MonoBehaviour
 
     private bool isGrounded;
     private bool downPressed;
+    private bool upPressed;
     private bool facingRight = true;
 
     public float HorizontalInput => horizontalInput;
     public bool IsGrounded => isGrounded;
     public bool IsFalling => !isGrounded && rb != null && rb.linearVelocity.y < -0.1f;
     public bool IsDownPressed => downPressed;
+    public bool IsUpPressed => upPressed;
     public bool FacingRight => facingRight;
 
     public ControlMode CurrentControlMode => controlMode;
@@ -86,6 +88,7 @@ public class FighterController : MonoBehaviour
 
         horizontalInput = 0f;
         downPressed = false;
+        upPressed = false;
 
         if (controlMode == ControlMode.Keyboard)
         {
@@ -118,6 +121,7 @@ public class FighterController : MonoBehaviour
         }
 
         downPressed = Keyboard.current.sKey.isPressed;
+        upPressed = Keyboard.current.wKey.isPressed;
 
         if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded && knockbackTimer <= 0f)
         {
@@ -136,6 +140,7 @@ public class FighterController : MonoBehaviour
 
         horizontalInput = stickInput.x;
         downPressed = stickInput.y < -0.5f;
+        upPressed = stickInput.y > 0.5f;
 
         if (assignedGamepad.buttonSouth.wasPressedThisFrame &&
             isGrounded &&
