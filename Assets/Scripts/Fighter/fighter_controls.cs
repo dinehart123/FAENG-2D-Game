@@ -30,6 +30,10 @@ public class FighterController : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private SpriteRenderer spriteRenderer;
 
+    [Header("Jump Sound")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip jumpSound;
+
     private Rigidbody2D rb;
     private Gamepad assignedGamepad;
 
@@ -63,6 +67,18 @@ public class FighterController : MonoBehaviour
         if (spriteRenderer == null)
         {
             spriteRenderer = GetComponent<SpriteRenderer>();
+        }
+
+        if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
+
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.playOnAwake = false;
+            audioSource.spatialBlend = 0f;
         }
     }
 
@@ -156,6 +172,11 @@ public class FighterController : MonoBehaviour
             rb.linearVelocity.x,
             jumpForce
         );
+
+        if (audioSource != null && jumpSound != null)
+        {
+            audioSource.PlayOneShot(jumpSound);
+        }
 
         if (animator != null)
         {

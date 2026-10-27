@@ -1122,6 +1122,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FighterAttack
   bananaCooldown: 0.5
+  audioSource: {fileID: 0}
+  lightAttackSounds:
+  - {fileID: 8300000, guid: fe7d0adceb7bac7468b5443a5c241463, type: 3}
+  - {fileID: 8300000, guid: c98307f09c2b48b45a5cd79f197168cf, type: 3}
+  - {fileID: 8300000, guid: 245547a131ef23b44be97a2a350d0edd, type: 3}
+  - {fileID: 8300000, guid: 65669c47252686c419569bf6089501d9, type: 3}
+  - {fileID: 8300000, guid: adb9b627a631938429475e59228dd702, type: 3}
+  heavyAttackSounds:
+  - {fileID: 8300000, guid: 20e6407f1f1f07440a9c901cfd51b953, type: 3}
+  - {fileID: 8300000, guid: 6e67e9f8c227259438a111fe0f9482a7, type: 3}
+  - {fileID: 8300000, guid: ccbd9ab03ae5ac64f91c25f7d39d73ee, type: 3}
+  - {fileID: 8300000, guid: b7e64ad99e4ad1a43be9ab1f56e92644, type: 3}
+  - {fileID: 8300000, guid: 352441ba7b56a4543a996fd0fa080e94, type: 3}
   attackHitbox: {fileID: 0}
   neutralLight:
     damage: 10

@@ -78,6 +78,13 @@ public class FighterAttack : MonoBehaviour
             audioSource = GetComponent<AudioSource>();
         }
 
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.playOnAwake = false;
+            audioSource.spatialBlend = 0f;
+        }
+
         if (attackHitbox != null)
         {
             hitbox = attackHitbox.GetComponent<Hitbox>();
@@ -344,6 +351,17 @@ public class FighterAttack : MonoBehaviour
         ResetAttackTriggers();
         animator.SetTrigger(directionName);
         animator.SetTrigger(strengthName);
+
+        // Play the attack sound when the attack is triggered.
+        // This does not require Animation Events.
+        if (attackType == AttackType.Light)
+        {
+            PlayRandomAttackSound(lightAttackSounds);
+        }
+        else
+        {
+            PlayRandomAttackSound(heavyAttackSounds);
+        }
     }
 
     private void ResetAttackTriggers()
