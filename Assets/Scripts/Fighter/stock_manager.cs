@@ -60,6 +60,7 @@ public class StockManager : MonoBehaviour
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0f;
         }
 
         if (controller != null)
@@ -72,11 +73,13 @@ public class StockManager : MonoBehaviour
         if (remainingStocks >= 0 && spawnPoint != null)
         {
             player.transform.position = spawnPoint.position;
+            player.transform.rotation = Quaternion.identity;
             player.ResetDamage();
 
             if (rb != null)
             {
                 rb.linearVelocity = Vector2.zero;
+                rb.angularVelocity = 0f;
             }
 
             if (controller != null)

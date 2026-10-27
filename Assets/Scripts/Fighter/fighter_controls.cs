@@ -59,6 +59,11 @@ public class FighterController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
 
+        if (rb != null)
+        {
+            rb.constraints |= RigidbodyConstraints2D.FreezeRotation;
+        }
+
         if (animator == null)
         {
             animator = GetComponent<Animator>();
@@ -235,6 +240,7 @@ public class FighterController : MonoBehaviour
     public void ApplyKnockback(Vector2 knockbackForce)
     {
         rb.linearVelocity = knockbackForce;
+        rb.angularVelocity = 0f;
         knockbackTimer = knockbackDuration;
     }
 
