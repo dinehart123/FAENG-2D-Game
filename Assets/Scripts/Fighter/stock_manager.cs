@@ -17,6 +17,10 @@ public class StockManager : MonoBehaviour
     [SerializeField] private float respawnDelay = 1f;
     [SerializeField] private float respawnFloatDuration = 5f;
 
+    [Header("Death Sound")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip deathSound;
+
     private int playerOneStocks;
     private int playerTwoStocks;
     private bool playerOneRespawning;
@@ -31,6 +35,19 @@ public class StockManager : MonoBehaviour
     {
         playerOneStocks = startingStocks;
         playerTwoStocks = startingStocks;
+
+        if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
+
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.playOnAwake = false;
+            audioSource.spatialBlend = 0f;
+        }
+
     }
 
     private void Update()
@@ -95,6 +112,11 @@ public class StockManager : MonoBehaviour
     {
         stocks--;
         player.ResetDamage();
+
+        if (audioSource != null && deathSound != null)
+        {
+            audioSource.PlayOneShot(deathSound);
+        }
 
         Debug.Log(playerName + " lost a stock. Stocks remaining: " + stocks);
 

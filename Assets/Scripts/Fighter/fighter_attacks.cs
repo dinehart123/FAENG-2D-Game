@@ -39,6 +39,12 @@ public class FighterAttack : MonoBehaviour
     [SerializeField] private float heavyAttackLungeSpeed = 6f;
     [SerializeField] private float heavyAttackLungeDuration = 0.12f;
 
+    [Header("Air Heavy Cooldown")]
+    [SerializeField] private float airHeavyCooldown = 0.8f;
+
+    [Header("Air Light Cooldown")]
+    [SerializeField] private float airLightCooldown = 0.35f;
+
     [Header("Attack Sounds")]
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip[] lightAttackSounds = new AudioClip[5];
@@ -130,7 +136,8 @@ public class FighterAttack : MonoBehaviour
             StartCoroutine(PerformAttack(
                 settings,
                 attackType,
-                direction
+                direction,
+                airAttack
             ));
         }
     }
@@ -450,7 +457,8 @@ public class FighterAttack : MonoBehaviour
     private IEnumerator PerformAttack(
         AttackSettings settings,
         AttackType attackType,
-        AttackDirection direction)
+        AttackDirection direction,
+        bool airAttack)
     {
         int myAttackSequence = ++attackSequence;
         canAttack = false;
@@ -491,14 +499,27 @@ public class FighterAttack : MonoBehaviour
             yield return new WaitForSeconds(settings.duration);
         }
 
-        // Lights can chain after their active hitbox window.
-        // Heavies stay committed through the full cooldown.
-        if (attackType == AttackType.Light && myAttackSequence == attackSequence)
+        // Ground lights can chain after their active hitbox window.
+        // Air lights and all heavies must wait for their cooldown.
+        if (attackType == AttackType.Light &&
+            !airAttack &&
+            myAttackSequence == attackSequence)
         {
             canAttack = true;
         }
 
-        yield return new WaitForSeconds(settings.cooldown);
+        float cooldown = settings.cooldown;
+
+        if (airAttack && attackType == AttackType.Heavy)
+        {
+            cooldown = Mathf.Max(cooldown, airHeavyCooldown);
+        }
+        else if (airAttack && attackType == AttackType.Light)
+        {
+            cooldown = Mathf.Max(cooldown, airLightCooldown);
+        }
+
+        yield return new WaitForSeconds(cooldown);
 
         // A newer light may already have started. Do not let an older
         // coroutine unlock the Animator in the middle of that attack.

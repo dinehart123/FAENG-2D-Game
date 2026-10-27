@@ -289,6 +289,8 @@ MonoBehaviour:
   heavyKnockbackMultiplier: 1
   heavyAttackLungeSpeed: 6
   heavyAttackLungeDuration: 0.12
+  airHeavyCooldown: 0.8
+  airLightCooldown: 0.35
   audioSource: {fileID: 0}
   lightAttackSounds:
   - {fileID: 8300000, guid: fe7d0adceb7bac7468b5443a5c241463, type: 3}
@@ -1683,7 +1685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DamageDisplay
   fighterHealth: {fileID: 1569176720}
-  isPlayerOne: 0
+  isPlayerOne: 1
   stockManager: {fileID: 866687580}
   percentText: {fileID: 1188806676}
 --- !u!114 &1188806676
@@ -2122,6 +2124,8 @@ MonoBehaviour:
   heavyKnockbackMultiplier: 1
   heavyAttackLungeSpeed: 10
   heavyAttackLungeDuration: 0.12
+  airHeavyCooldown: 1
+  airLightCooldown: 0.2
   audioSource: {fileID: 0}
   lightAttackSounds:
   - {fileID: 8300000, guid: fe7d0adceb7bac7468b5443a5c241463, type: 3}
