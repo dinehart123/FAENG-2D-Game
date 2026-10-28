@@ -2,14 +2,22 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 using System.Collections;
+using TMPro;
+using UnityEngine.UI;
 
 public class MainMenuController : MonoBehaviour
 {
+    public static bool SkipIntroOnNextLoad { get; set; }
+
     [Header("Menu Panels")]
     [SerializeField] private GameObject leafIntro;
     [SerializeField] private GameObject mainMenuPanel;
     [SerializeField] private GameObject playOptions;
     [SerializeField] private GameObject settingsPanel;
+
+    [Header("Settings UI")]
+    [SerializeField] private TMP_Text musicToggleText;
+    [SerializeField] private Slider musicVolumeSlider;
 
     [Header("Background Music")]
     [SerializeField] private AudioClip backgroundMusic;
@@ -38,8 +46,24 @@ public class MainMenuController : MonoBehaviour
         playOptions.SetActive(false);
         settingsPanel.SetActive(false);
 
+        UpdateMusicToggleText();
+
+        if (musicVolumeSlider != null)
+        {
+            musicVolumeSlider.SetValueWithoutNotify(MenuMusic.MusicVolume);
+            musicVolumeSlider.onValueChanged.AddListener(SetMusicVolume);
+        }
+
         leavesStartPosition = leavesImage.anchoredPosition;
         topLeavesStartPosition = topLeavesImage.anchoredPosition;
+
+        bool skipIntro = SkipIntroOnNextLoad;
+        SkipIntroOnNextLoad = false;
+
+        if (skipIntro)
+        {
+            OpenMainMenuImmediately();
+        }
     }
 
     private void Update()
@@ -133,6 +157,22 @@ public class MainMenuController : MonoBehaviour
         settingsPanel.SetActive(false);
     }
 
+    private void OpenMainMenuImmediately()
+    {
+        introFinished = true;
+        clickToStart.SetActive(false);
+
+        leavesImage.anchoredPosition =
+            leavesStartPosition + Vector2.down * leafMoveDistance;
+        topLeavesImage.anchoredPosition =
+            topLeavesStartPosition + Vector2.up * leafMoveDistance;
+
+        leafIntro.SetActive(false);
+        mainMenuPanel.SetActive(true);
+        playOptions.SetActive(false);
+        settingsPanel.SetActive(false);
+    }
+
     public void PlayClicked()
     {
         playOptions.SetActive(!playOptions.activeSelf);
@@ -155,6 +195,36 @@ public class MainMenuController : MonoBehaviour
         mainMenuPanel.SetActive(true);
 
         playOptions.SetActive(false);
+    }
+
+    public void ToggleMusic()
+    {
+        bool musicEnabled = MenuMusic.ToggleMusic();
+
+        // Explicitly restart the assigned track when music is turned back on.
+        // This also works if the AudioSource was stopped by an older version
+        // of the music script.
+        if (musicEnabled)
+        {
+            MenuMusic.Play(backgroundMusic, backgroundMusicVolume);
+        }
+
+        UpdateMusicToggleText();
+    }
+
+    public void SetMusicVolume(float value)
+    {
+        MenuMusic.SetVolume(value);
+    }
+
+    private void UpdateMusicToggleText()
+    {
+        if (musicToggleText != null)
+        {
+            musicToggleText.text = MenuMusic.MusicEnabled
+                ? "MUSIC: ON"
+                : "MUSIC: OFF";
+        }
     }
 
     public void QuitGame()

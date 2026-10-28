@@ -17,6 +17,9 @@ public class StockManager : MonoBehaviour
     [SerializeField] private float respawnDelay = 1f;
     [SerializeField] private float respawnFloatDuration = 5f;
 
+    [Header("End Game")]
+    [SerializeField] private string endGameSceneName = "EndGame";
+
     [Header("Death Sound")]
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip deathSound;
@@ -27,6 +30,7 @@ public class StockManager : MonoBehaviour
     private bool playerTwoRespawning;
     private bool playerOneEliminated;
     private bool playerTwoEliminated;
+    private bool matchEnded;
 
     public int PlayerOneStocks => playerOneStocks;
     public int PlayerTwoStocks => playerTwoStocks;
@@ -52,6 +56,11 @@ public class StockManager : MonoBehaviour
 
     private void Update()
     {
+        if (matchEnded)
+        {
+            return;
+        }
+
         CheckPlayerForBlastZone(
             playerOne,
             playerOneSpawn,
@@ -125,6 +134,8 @@ public class StockManager : MonoBehaviour
             eliminated = true;
             player.gameObject.SetActive(false);
             Debug.Log(playerName + " has been eliminated.");
+
+            EndMatch(isPlayerOne);
             return;
         }
 
@@ -134,6 +145,48 @@ public class StockManager : MonoBehaviour
             spawnPoint,
             isPlayerOne
         ));
+    }
+
+    private void EndMatch(bool playerOneWasEliminated)
+    {
+        if (matchEnded)
+        {
+            return;
+        }
+
+        matchEnded = true;
+
+        FighterHealth playerOneHealth = playerOne;
+        FighterHealth playerTwoHealth = playerTwo;
+
+        // In a two-player match, the damage dealt by one player equals the
+        // opponent's total damage taken across all of their stocks.
+        float playerOneDamageDealt = playerTwoHealth == null
+            ? 0f
+            : playerTwoHealth.TotalDamageTaken;
+        float playerTwoDamageDealt = playerOneHealth == null
+            ? 0f
+            : playerOneHealth.TotalDamageTaken;
+
+        string winnerName = playerOneWasEliminated
+            ? "Player 2"
+            : "Player 1";
+
+        MatchResults.SetResults(
+            winnerName,
+            playerOneDamageDealt,
+            playerTwoDamageDealt
+        );
+
+        if (!string.IsNullOrWhiteSpace(endGameSceneName))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(
+                endGameSceneName);
+        }
+        else
+        {
+            Debug.LogError("StockManager has no end-game scene name assigned.");
+        }
     }
 
     private IEnumerator RespawnPlayer(

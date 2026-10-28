@@ -6,11 +6,34 @@ using UnityEngine;
 /// </summary>
 public sealed class MenuMusic : MonoBehaviour
 {
+    private const string MusicEnabledKey = "MenuMusicEnabled";
+    private const string MusicVolumeKey = "MenuMusicVolume";
     private static MenuMusic instance;
     private AudioSource audioSource;
 
+    public static bool MusicEnabled =>
+        PlayerPrefs.GetInt(MusicEnabledKey, 1) == 1;
+
+    public static float MusicVolume =>
+        Mathf.Clamp01(PlayerPrefs.GetFloat(MusicVolumeKey, 0.5f));
+
     public static void Play(AudioClip clip, float volume)
     {
+        if (!PlayerPrefs.HasKey(MusicVolumeKey))
+        {
+            SetVolume(volume);
+        }
+
+        if (!MusicEnabled)
+        {
+            if (instance != null && instance.audioSource != null)
+            {
+                instance.audioSource.Stop();
+            }
+
+            return;
+        }
+
         if (clip == null)
         {
             if (instance == null || instance.audioSource == null ||
@@ -29,7 +52,7 @@ public sealed class MenuMusic : MonoBehaviour
             DontDestroyOnLoad(musicObject);
         }
 
-        instance.audioSource.volume = volume;
+        instance.audioSource.volume = MusicVolume;
 
         if (instance.audioSource.clip != clip)
         {
@@ -40,6 +63,35 @@ public sealed class MenuMusic : MonoBehaviour
         else if (!instance.audioSource.isPlaying)
         {
             instance.audioSource.Play();
+        }
+    }
+
+    public static bool ToggleMusic()
+    {
+        SetMusicEnabled(!MusicEnabled);
+        return MusicEnabled;
+    }
+
+    public static void SetMusicEnabled(bool enabled)
+    {
+        PlayerPrefs.SetInt(MusicEnabledKey, enabled ? 1 : 0);
+        PlayerPrefs.Save();
+
+        if (!enabled && instance != null && instance.audioSource != null)
+        {
+            instance.audioSource.Stop();
+        }
+    }
+
+    public static void SetVolume(float volume)
+    {
+        float clampedVolume = Mathf.Clamp01(volume);
+        PlayerPrefs.SetFloat(MusicVolumeKey, clampedVolume);
+        PlayerPrefs.Save();
+
+        if (instance != null && instance.audioSource != null)
+        {
+            instance.audioSource.volume = clampedVolume;
         }
     }
 

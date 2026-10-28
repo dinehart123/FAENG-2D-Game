@@ -4,6 +4,7 @@ public class FighterHealth : MonoBehaviour
 {
     [Header("Damage")]
     [SerializeField] private float damagePercent;
+    private float totalDamageTaken;
 
     [Header("Knockback Scaling")]
     [SerializeField] private float maxKnockbackMultiplier = 4f;
@@ -16,6 +17,7 @@ public class FighterHealth : MonoBehaviour
     private FighterController fighterController;
 
     public float DamagePercent => damagePercent;
+    public float TotalDamageTaken => totalDamageTaken;
 
     private void Awake()
     {
@@ -52,6 +54,7 @@ public class FighterHealth : MonoBehaviour
         }
 
         damagePercent += damage;
+        totalDamageTaken += damage;
 
         // Saturating exponential scaling:
         // knockback increases quickly, then approaches a maximum plateau.
