@@ -1032,6 +1032,8 @@ MonoBehaviour:
   mainMenuPanel: {fileID: 395066633}
   playOptions: {fileID: 1794510542}
   settingsPanel: {fileID: 1183066252}
+  backgroundMusic: {fileID: 8300000, guid: f6ccd720cde814d1083aecde09985111, type: 3}
+  backgroundMusicVolume: 0.5
   leavesImage: {fileID: 1709053255}
   topLeavesImage: {fileID: 1428432960}
   clickToStart: {fileID: 1297535304}

@@ -25,6 +25,10 @@ public class CharacterSelectManager : MonoBehaviour
     [Header("Scene")]
     [SerializeField] private string arenaSceneName = "Arena";
 
+    [Header("Background Music")]
+    [SerializeField] private AudioClip backgroundMusic;
+    [SerializeField, Range(0f, 1f)] private float backgroundMusicVolume = 0.5f;
+
     [Header("Optional UI")]
     [SerializeField] private Image player1Preview;
     [SerializeField] private Image player2Preview;
@@ -67,6 +71,8 @@ public class CharacterSelectManager : MonoBehaviour
 
     private void Start()
     {
+        MenuMusic.Play(backgroundMusic, backgroundMusicVolume);
+
         PlayerSelectionData.ResetSelections();
 
         // Player 1 is always reserved for the keyboard and mouse.

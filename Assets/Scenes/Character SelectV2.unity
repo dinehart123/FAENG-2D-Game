@@ -1055,6 +1055,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterSelectManager
   roster: {fileID: 11400000, guid: 80a06971f28c4b5469d5f16d985ff2b9, type: 2}
   arenaSceneName: Arena
+  backgroundMusic: {fileID: 8300000, guid: 675b48bff40334397b5d4f179f7e28c6, type: 3}
+  backgroundMusicVolume: 0.5
   player1Preview: {fileID: 1305747205}
   player2Preview: {fileID: 163190237}
   player1NameText: {fileID: 2071356634}

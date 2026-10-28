@@ -107,6 +107,34 @@ public class FighterAttack : MonoBehaviour
         }
     }
 
+    private void OnDisable()
+    {
+        ResetAttackState();
+    }
+
+    /// <summary>
+    /// Clears attack state when the fighter dies or is disabled. Unity stops
+    /// coroutines on disabled objects, so a cooldown coroutine may otherwise
+    /// leave canAttack false forever after respawning.
+    /// </summary>
+    public void ResetAttackState()
+    {
+        StopAllCoroutines();
+        canAttack = true;
+        attackSequence++;
+
+        if (attackHitbox != null)
+        {
+            attackHitbox.SetActive(false);
+        }
+
+        if (animator != null)
+        {
+            animator.SetBool("IsAttacking", false);
+            ResetAttackTriggers();
+        }
+    }
+
     private void Update()
     {
         if (fighterController != null && fighterController.IsRespawning)

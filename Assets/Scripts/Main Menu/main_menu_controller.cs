@@ -11,6 +11,10 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private GameObject playOptions;
     [SerializeField] private GameObject settingsPanel;
 
+    [Header("Background Music")]
+    [SerializeField] private AudioClip backgroundMusic;
+    [SerializeField, Range(0f, 1f)] private float backgroundMusicVolume = 0.5f;
+
     [Header("Intro Animation")]
     [SerializeField] private RectTransform leavesImage;
     [SerializeField] private RectTransform topLeavesImage;
@@ -26,6 +30,8 @@ public class MainMenuController : MonoBehaviour
 
     private void Start()
     {
+        MenuMusic.Play(backgroundMusic, backgroundMusicVolume);
+
         leafIntro.SetActive(true);
 
         mainMenuPanel.SetActive(false);
