@@ -23,6 +23,11 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private AudioClip backgroundMusic;
     [SerializeField, Range(0f, 1f)] private float backgroundMusicVolume = 0.5f;
 
+    [Header("Button Sound")]
+    [SerializeField] private AudioClip buttonClickSound;
+    [SerializeField] private AudioClip[] buttonClickSounds;
+    [SerializeField, Range(0f, 1f)] private float buttonClickVolume = 1f;
+
     [Header("Intro Animation")]
     [SerializeField] private RectTransform leavesImage;
     [SerializeField] private RectTransform topLeavesImage;
@@ -175,22 +180,26 @@ public class MainMenuController : MonoBehaviour
 
     public void PlayClicked()
     {
+        PlayButtonSound();
         playOptions.SetActive(!playOptions.activeSelf);
     }
 
     public void LocalClicked()
     {
+        PlayButtonSound();
         SceneManager.LoadScene("Character SelectV2");
     }
 
     public void SettingsClicked()
     {
+        PlayButtonSound();
         mainMenuPanel.SetActive(false);
         settingsPanel.SetActive(true);
     }
 
     public void CloseSettings()
     {
+        PlayButtonSound();
         settingsPanel.SetActive(false);
         mainMenuPanel.SetActive(true);
 
@@ -199,6 +208,7 @@ public class MainMenuController : MonoBehaviour
 
     public void ToggleMusic()
     {
+        PlayButtonSound();
         bool musicEnabled = MenuMusic.ToggleMusic();
 
         // Explicitly restart the assigned track when music is turned back on.
@@ -229,6 +239,16 @@ public class MainMenuController : MonoBehaviour
 
     public void QuitGame()
     {
+        PlayButtonSound();
         Application.Quit();
+    }
+
+    private void PlayButtonSound()
+    {
+        MenuButtonSound.Play(
+            buttonClickSounds,
+            buttonClickSound,
+            buttonClickVolume
+        );
     }
 }

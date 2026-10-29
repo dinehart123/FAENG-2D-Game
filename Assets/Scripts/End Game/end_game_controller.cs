@@ -13,6 +13,11 @@ public class EndGameController : MonoBehaviour
     [SerializeField] private AudioClip backgroundMusic;
     [SerializeField, Range(0f, 1f)] private float backgroundMusicVolume = 0.5f;
 
+    [Header("Button Sound")]
+    [SerializeField] private AudioClip buttonClickSound;
+    [SerializeField] private AudioClip[] buttonClickSounds;
+    [SerializeField, Range(0f, 1f)] private float buttonClickVolume = 1f;
+
     [Header("Navigation")]
     [SerializeField] private string mainMenuSceneName = "Main Menu";
     [SerializeField] private string characterSelectSceneName = "Character SelectV2";
@@ -32,22 +37,26 @@ public class EndGameController : MonoBehaviour
         SetText(winnerText, MatchResults.WinnerName + " WINS!");
         SetText(
             playerOneDamageText,
-            "PLAYER 1 DAMAGE: " + MatchResults.PlayerOneDamageDealt.ToString("0.0")
+            "PLAYER 1\nDAMAGE: " +
+            MatchResults.PlayerOneDamageDealt.ToString("0.0")
         );
         SetText(
             playerTwoDamageText,
-            "PLAYER 2 DAMAGE: " + MatchResults.PlayerTwoDamageDealt.ToString("0.0")
+            "PLAYER 2\nDAMAGE: " +
+            MatchResults.PlayerTwoDamageDealt.ToString("0.0")
         );
     }
 
     public void GoToCharacterSelect()
     {
+        PlayButtonSound();
         ResetMatchState();
         SceneManager.LoadScene(characterSelectSceneName);
     }
 
     public void GoToMainMenu()
     {
+        PlayButtonSound();
         ResetMatchState();
         MainMenuController.SkipIntroOnNextLoad = true;
         SceneManager.LoadScene(mainMenuSceneName);
@@ -81,5 +90,14 @@ public class EndGameController : MonoBehaviour
         {
             text.text = value;
         }
+    }
+
+    private void PlayButtonSound()
+    {
+        MenuButtonSound.Play(
+            buttonClickSounds,
+            buttonClickSound,
+            buttonClickVolume
+        );
     }
 }

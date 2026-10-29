@@ -40,6 +40,9 @@ public class StockManager : MonoBehaviour
         playerOneStocks = startingStocks;
         playerTwoStocks = startingStocks;
 
+        // Player 2 always faces Player 1 at the start of the match.
+        FacePlayerTwo(playerTwo == null ? null : playerTwo.gameObject);
+
         if (audioSource == null)
         {
             audioSource = GetComponent<AudioSource>();
@@ -209,7 +212,14 @@ public class StockManager : MonoBehaviour
         if (spawnPoint != null)
         {
             playerObject.transform.position = spawnPoint.position;
-            playerObject.transform.rotation = spawnPoint.rotation;
+            playerObject.transform.rotation = GetSpawnRotation(
+                spawnPoint.rotation,
+                isPlayerOne
+            );
+        }
+        else if (!isPlayerOne)
+        {
+            FacePlayerTwo(playerObject);
         }
 
         if (rb != null)
@@ -237,5 +247,31 @@ public class StockManager : MonoBehaviour
         {
             playerTwoRespawning = false;
         }
+    }
+
+    private Quaternion GetSpawnRotation(
+        Quaternion spawnRotation,
+        bool isPlayerOne)
+    {
+        if (isPlayerOne)
+        {
+            return spawnRotation;
+        }
+
+        Vector3 eulerAngles = spawnRotation.eulerAngles;
+        eulerAngles.y = 180f;
+        return Quaternion.Euler(eulerAngles);
+    }
+
+    private void FacePlayerTwo(GameObject playerObject)
+    {
+        if (playerObject == null)
+        {
+            return;
+        }
+
+        Vector3 eulerAngles = playerObject.transform.eulerAngles;
+        eulerAngles.y = 180f;
+        playerObject.transform.eulerAngles = eulerAngles;
     }
 }

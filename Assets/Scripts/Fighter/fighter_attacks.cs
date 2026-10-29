@@ -31,6 +31,11 @@ public class FighterAttack : MonoBehaviour
     [Header("Controls")]
     [SerializeField] private float bananaCooldown = 0.5f;
 
+    [Header("Banana Projectile")]
+    [SerializeField] private GameObject bananaProjectilePrefab;
+    [SerializeField] private Transform bananaSpawnPoint;
+    [SerializeField] private float bananaLaunchSpeed = 12f;
+
     [Header("Attack Knockback")]
     [SerializeField] private float lightKnockbackMultiplier = 0.65f;
     [SerializeField] private float heavyKnockbackMultiplier = 1f;
@@ -50,8 +55,33 @@ public class FighterAttack : MonoBehaviour
     [SerializeField] private AudioClip[] lightAttackSounds = new AudioClip[5];
     [SerializeField] private AudioClip[] heavyAttackSounds = new AudioClip[5];
 
-    [Header("Attack Hitbox")]
-    [SerializeField] private GameObject attackHitbox;
+    [Header("Banana Sounds")]
+    [SerializeField] private AudioClip bananaThrowSound;
+    [SerializeField] private float bananaThrowVolume = 1f;
+
+    [Header("Ground Light Hitboxes")]
+    [SerializeField] private GameObject neutralLightHitbox;
+    [SerializeField] private GameObject sideLightHitbox;
+    [SerializeField] private GameObject upLightHitbox;
+    [SerializeField] private GameObject downLightHitbox;
+
+    [Header("Ground Heavy Hitboxes")]
+    [SerializeField] private GameObject neutralHeavyHitbox;
+    [SerializeField] private GameObject sideHeavyHitbox;
+    [SerializeField] private GameObject upHeavyHitbox;
+    [SerializeField] private GameObject downHeavyHitbox;
+
+    [Header("Air Light Hitboxes")]
+    [SerializeField] private GameObject neutralAirLightHitbox;
+    [SerializeField] private GameObject sideAirLightHitbox;
+    [SerializeField] private GameObject upAirLightHitbox;
+    [SerializeField] private GameObject downAirLightHitbox;
+
+    [Header("Air Heavy Hitboxes")]
+    [SerializeField] private GameObject neutralAirHeavyHitbox;
+    [SerializeField] private GameObject sideAirHeavyHitbox;
+    [SerializeField] private GameObject upAirHeavyHitbox;
+    [SerializeField] private GameObject downAirHeavyHitbox;
 
     [Header("Ground Light Attacks")]
     [SerializeField] private AttackSettings neutralLight = new AttackSettings();
@@ -79,9 +109,28 @@ public class FighterAttack : MonoBehaviour
 
     private FighterController fighterController;
     private Animator animator;
-    private Hitbox hitbox;
     private bool canAttack = true;
     private int attackSequence = 0;
+
+    private GameObject[] AllHitboxes => new[]
+    {
+        neutralLightHitbox,
+        sideLightHitbox,
+        upLightHitbox,
+        downLightHitbox,
+        neutralHeavyHitbox,
+        sideHeavyHitbox,
+        upHeavyHitbox,
+        downHeavyHitbox,
+        neutralAirLightHitbox,
+        sideAirLightHitbox,
+        upAirLightHitbox,
+        downAirLightHitbox,
+        neutralAirHeavyHitbox,
+        sideAirHeavyHitbox,
+        upAirHeavyHitbox,
+        downAirHeavyHitbox
+    };
 
     private void Awake()
     {
@@ -100,10 +149,12 @@ public class FighterAttack : MonoBehaviour
             audioSource.spatialBlend = 0f;
         }
 
-        if (attackHitbox != null)
+        foreach (GameObject hitboxObject in AllHitboxes)
         {
-            hitbox = attackHitbox.GetComponent<Hitbox>();
-            attackHitbox.SetActive(false);
+            if (hitboxObject != null)
+            {
+                hitboxObject.SetActive(false);
+            }
         }
     }
 
@@ -123,10 +174,7 @@ public class FighterAttack : MonoBehaviour
         canAttack = true;
         attackSequence++;
 
-        if (attackHitbox != null)
-        {
-            attackHitbox.SetActive(false);
-        }
+        DisableAllHitboxes();
 
         if (animator != null)
         {
@@ -176,7 +224,8 @@ public class FighterAttack : MonoBehaviour
             FighterController.ControlMode.Keyboard)
         {
             return Keyboard.current != null &&
-                Keyboard.current.lKey.wasPressedThisFrame;
+                (Keyboard.current.leftAltKey.wasPressedThisFrame ||
+                 Keyboard.current.rightAltKey.wasPressedThisFrame);
         }
 
         Gamepad gamepad = fighterController.AssignedGamepad;
@@ -185,13 +234,57 @@ public class FighterAttack : MonoBehaviour
 
     private void PlayBananaAnimation()
     {
-        if (animator == null)
+        if (animator != null)
         {
+            ResetAttackTriggers();
+            animator.SetTrigger("Special");
+        }
+
+        if (audioSource != null && bananaThrowSound != null)
+        {
+            audioSource.PlayOneShot(bananaThrowSound, bananaThrowVolume);
+        }
+
+        SpawnBananaProjectile();
+    }
+
+    private void SpawnBananaProjectile()
+    {
+        if (bananaProjectilePrefab == null)
+        {
+            Debug.LogWarning(
+                gameObject.name +
+                " has no Banana Projectile Prefab assigned."
+            );
             return;
         }
 
-        ResetAttackTriggers();
-        animator.SetTrigger("Special");
+        float direction = fighterController.FacingRight ? 1f : -1f;
+        Transform spawnTransform = bananaSpawnPoint != null
+            ? bananaSpawnPoint
+            : transform;
+
+        GameObject banana = Instantiate(
+            bananaProjectilePrefab,
+            spawnTransform.position,
+            Quaternion.identity
+        );
+
+        BananaProjectile projectile = banana.GetComponent<BananaProjectile>();
+        if (projectile == null)
+        {
+            Debug.LogError(
+                "Banana Projectile Prefab needs a BananaProjectile component."
+            );
+            Destroy(banana);
+            return;
+        }
+
+        projectile.Launch(
+            gameObject,
+            direction,
+            bananaLaunchSpeed
+        );
     }
 
     private IEnumerator BananaCooldown()
@@ -284,8 +377,10 @@ public class FighterAttack : MonoBehaviour
             {
                 if (direction == AttackDirection.Side)
                 {
-                    // The current Monkey controller has no Air Forward state.
-                    return neutralAirLight;
+                    // The controller uses the neutral air animation, but the
+                    // side-air attack still gets its own editable hitbox and
+                    // attack settings.
+                    return sideAirLight;
                 }
 
                 if (direction == AttackDirection.Down)
@@ -303,8 +398,7 @@ public class FighterAttack : MonoBehaviour
 
             if (direction == AttackDirection.Side)
             {
-                // The current Monkey controller has no Air Forward state.
-                return neutralAirHeavy;
+                return sideAirHeavy;
             }
 
             if (direction == AttackDirection.Down)
@@ -482,6 +576,80 @@ public class FighterAttack : MonoBehaviour
         }
     }
 
+    private GameObject GetAttackHitbox(
+        AttackType attackType,
+        AttackDirection direction,
+        bool airAttack)
+    {
+        if (airAttack)
+        {
+            if (attackType == AttackType.Light)
+            {
+                switch (direction)
+                {
+                    case AttackDirection.Side:
+                        return sideAirLightHitbox;
+                    case AttackDirection.Up:
+                        return upAirLightHitbox;
+                    case AttackDirection.Down:
+                        return downAirLightHitbox;
+                    default:
+                        return neutralAirLightHitbox;
+                }
+            }
+
+            switch (direction)
+            {
+                case AttackDirection.Side:
+                    return sideAirHeavyHitbox;
+                case AttackDirection.Up:
+                    return upAirHeavyHitbox;
+                case AttackDirection.Down:
+                    return downAirHeavyHitbox;
+                default:
+                    return neutralAirHeavyHitbox;
+            }
+        }
+
+        if (attackType == AttackType.Light)
+        {
+            switch (direction)
+            {
+                case AttackDirection.Side:
+                    return sideLightHitbox;
+                case AttackDirection.Up:
+                    return upLightHitbox;
+                case AttackDirection.Down:
+                    return downLightHitbox;
+                default:
+                    return neutralLightHitbox;
+            }
+        }
+
+        switch (direction)
+        {
+            case AttackDirection.Side:
+                return sideHeavyHitbox;
+            case AttackDirection.Up:
+                return upHeavyHitbox;
+            case AttackDirection.Down:
+                return downHeavyHitbox;
+            default:
+                return neutralHeavyHitbox;
+        }
+    }
+
+    private void DisableAllHitboxes()
+    {
+        foreach (GameObject hitboxObject in AllHitboxes)
+        {
+            if (hitboxObject != null)
+            {
+                hitboxObject.SetActive(false);
+            }
+        }
+    }
+
     private IEnumerator PerformAttack(
         AttackSettings settings,
         AttackType attackType,
@@ -501,7 +669,16 @@ public class FighterAttack : MonoBehaviour
             animator.SetBool("IsAttacking", true);
         }
 
-        if (attackHitbox != null && hitbox != null)
+        GameObject activeHitbox = GetAttackHitbox(
+            attackType,
+            direction,
+            airAttack
+        );
+        Hitbox hitbox = activeHitbox == null
+            ? null
+            : activeHitbox.GetComponent<Hitbox>();
+
+        if (activeHitbox != null && hitbox != null)
         {
             float knockbackMultiplier = attackType == AttackType.Light
                 ? lightKnockbackMultiplier
@@ -518,9 +695,11 @@ public class FighterAttack : MonoBehaviour
                 attackDirection
             );
 
-            attackHitbox.SetActive(true);
+            MirrorHitboxToFacingDirection(activeHitbox, attackDirection);
+            DisableAllHitboxes();
+            activeHitbox.SetActive(true);
             yield return new WaitForSeconds(settings.duration);
-            attackHitbox.SetActive(false);
+            activeHitbox.SetActive(false);
         }
         else
         {
@@ -559,6 +738,24 @@ public class FighterAttack : MonoBehaviour
             {
                 animator.SetBool("IsAttacking", false);
             }
+        }
+    }
+
+    private void MirrorHitboxToFacingDirection(
+        GameObject hitboxObject,
+        float facingDirection)
+    {
+        Transform hitboxTransform = hitboxObject.transform;
+        Vector3 localPosition = hitboxTransform.localPosition;
+        localPosition.x = Mathf.Abs(localPosition.x) * facingDirection;
+        hitboxTransform.localPosition = localPosition;
+
+        BoxCollider2D collider = hitboxObject.GetComponent<BoxCollider2D>();
+        if (collider != null)
+        {
+            Vector2 colliderOffset = collider.offset;
+            colliderOffset.x = Mathf.Abs(colliderOffset.x) * facingDirection;
+            collider.offset = colliderOffset;
         }
     }
 

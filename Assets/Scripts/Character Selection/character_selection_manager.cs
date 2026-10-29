@@ -730,6 +730,7 @@ public class CharacterSelectManager : MonoBehaviour
         if (player2PreviewObject != null)
             Destroy(player2PreviewObject);
 
+        MenuMusic.Stop();
         SceneManager.LoadScene(arenaSceneName);
     }
 }

@@ -18,6 +18,7 @@ public class FighterController : MonoBehaviour
 
     [Header("Controls")]
     [SerializeField] private ControlMode controlMode = ControlMode.Keyboard;
+    [SerializeField] private bool startsFacingRight = true;
 
     [Header("Knockback")]
     [SerializeField] private float knockbackDuration = 0.25f;
@@ -40,6 +41,9 @@ public class FighterController : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip jumpSound;
 
+    [Header("Dash Sound")]
+    [SerializeField] private AudioClip dashSound;
+
     private Rigidbody2D rb;
     private Gamepad assignedGamepad;
 
@@ -59,6 +63,7 @@ public class FighterController : MonoBehaviour
     private Color originalSpriteColor = Color.white;
 
     private bool isGrounded;
+    private bool wasGrounded;
     private int jumpsRemaining;
     private bool downPressed;
     private bool upPressed;
@@ -81,6 +86,21 @@ public class FighterController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         jumpsRemaining = Mathf.Max(1, maxJumps);
+        facingRight = startsFacingRight;
+
+        // Facing is controlled with SpriteRenderer.flipX. Do not let the
+        // spawned prefab or spawn point leave the fighter rotated at 180/-180.
+        transform.rotation = Quaternion.identity;
+
+        // If this fighter is configured for controller input directly in the
+        // Arena scene, use the first connected gamepad. Character selection
+        // can still replace this through SetControls().
+        if (controlMode == ControlMode.Controller &&
+            assignedGamepad == null &&
+            Gamepad.all.Count > 0)
+        {
+            assignedGamepad = Gamepad.all[0];
+        }
 
         if (rb != null)
         {
@@ -95,6 +115,11 @@ public class FighterController : MonoBehaviour
         if (spriteRenderer == null)
         {
             spriteRenderer = GetComponent<SpriteRenderer>();
+        }
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.flipX = !facingRight;
         }
 
         if (spriteRenderer != null)
@@ -158,11 +183,14 @@ public class FighterController : MonoBehaviour
             dashAvailable = true;
         }
 
-        // Restore all jumps whenever the fighter is standing on the ground.
-        if (isGrounded)
+        // Reset jumps only when landing. Resetting every grounded frame can
+        // restore the counter after the first jump and allow one extra jump.
+        if (isGrounded && !wasGrounded)
         {
             jumpsRemaining = Mathf.Max(1, maxJumps);
         }
+
+        wasGrounded = isGrounded;
 
         horizontalInput = 0f;
         downPressed = false;
@@ -232,7 +260,7 @@ public class FighterController : MonoBehaviour
         downPressed = stickInput.y < -0.5f;
         upPressed = stickInput.y > 0.5f;
 
-        if (assignedGamepad.rightShoulder.wasPressedThisFrame &&
+        if (assignedGamepad.leftTrigger.wasPressedThisFrame &&
             dashAvailable &&
             knockbackTimer <= 0f &&
             !isDashing)
@@ -283,6 +311,11 @@ public class FighterController : MonoBehaviour
         dashTimer = dashDuration;
 
         rb.linearVelocity = dashVelocity;
+
+        if (audioSource != null && dashSound != null)
+        {
+            audioSource.PlayOneShot(dashSound);
+        }
     }
 
     private void Jump()
@@ -316,6 +349,7 @@ public class FighterController : MonoBehaviour
     {
         respawnFrozen = true;
         respawnTimer = duration;
+        jumpsRemaining = Mathf.Max(1, maxJumps);
         isDashing = false;
         attackLungeTimer = 0f;
         horizontalInput = 0f;
@@ -386,7 +420,7 @@ public class FighterController : MonoBehaviour
         if (assignedGamepad != null &&
             (assignedGamepad.leftStick.ReadValue().sqrMagnitude > 0.04f ||
              assignedGamepad.buttonSouth.wasPressedThisFrame ||
-             assignedGamepad.rightShoulder.wasPressedThisFrame ||
+             assignedGamepad.leftTrigger.wasPressedThisFrame ||
              assignedGamepad.buttonWest.wasPressedThisFrame ||
              assignedGamepad.buttonNorth.wasPressedThisFrame ||
              assignedGamepad.buttonEast.wasPressedThisFrame))
@@ -411,33 +445,6 @@ public class FighterController : MonoBehaviour
         if (spriteRenderer != null)
         {
             spriteRenderer.color = originalSpriteColor;
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        // Refresh the jumps when touching a platform edge. This lets the
-        // fighter escape if the collider gets caught on the side of a platform.
-        int otherLayer = collision.gameObject.layer;
-        bool isPlatform = (groundLayer.value & (1 << otherLayer)) != 0;
-
-        bool touchingPlatformSide = false;
-
-        if (isPlatform)
-        {
-            foreach (ContactPoint2D contact in collision.contacts)
-            {
-                if (Mathf.Abs(contact.normal.x) > Mathf.Abs(contact.normal.y))
-                {
-                    touchingPlatformSide = true;
-                    break;
-                }
-            }
-        }
-
-        if (touchingPlatformSide)
-        {
-            jumpsRemaining = Mathf.Max(1, maxJumps);
         }
     }
 

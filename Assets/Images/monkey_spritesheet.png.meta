@@ -4933,10 +4933,10 @@ TextureImporter:
       name: monkey_spritesheet_166
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 1537
         y: 1792
         width: 256
-        height: 256
+        height: 250
       alignment: 9
       pivot: {x: 0.46, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5022,7 +5022,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2560
-        y: 1792
+        y: 1794
         width: 256
         height: 256
       alignment: 9
@@ -7464,7 +7464,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2304
-        y: 0
+        y: 1
         width: 256
         height: 256
       alignment: 9
@@ -7485,9 +7485,9 @@ TextureImporter:
       name: monkey_spritesheet_282
       rect:
         serializedVersion: 2
-        x: 2560
+        x: 2564
         y: 0
-        width: 256
+        width: 252
         height: 256
       alignment: 9
       pivot: {x: 0.46, y: 0}
