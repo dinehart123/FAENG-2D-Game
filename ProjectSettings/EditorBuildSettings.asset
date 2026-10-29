@@ -14,11 +14,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Character SelectV2.unity
     guid: f65a9b54736f904438e239bb8a18ca8d
-  - enabled: 1
-    path: Assets/Scenes/Arena.unity
+  - enabled: 0
+    path: Assets/Scenes/Old Scenes/Arena freeze.unity
     guid: 9c56fbef27740fc4a89a267f8b09f865
   - enabled: 1
     path: Assets/Scenes/End Game.unity
     guid: abc53ed05153c452cb6bbeaa00c038ef
+  - enabled: 1
+    path: Assets/Scenes/Arena.unity
+    guid: ef10f014f911158458c6ca0eed86830d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

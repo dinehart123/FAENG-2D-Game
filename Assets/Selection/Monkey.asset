@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterData
   characterName: Monkey
   characterIcon: {fileID: -8835866482225543805, guid: eeec4815e4ea24d47ace6e3c16ad9d0a, type: 3}
-  fighterPrefab: {fileID: 1958671628650837319, guid: 634dab68e19491845b7f311719b27c9c, type: 3}
+  fighterPrefab: {fileID: 7756708626617881704, guid: cb08495b8935ba34194e35e78830f98e, type: 3}
   selectionPreviewPrefab: {fileID: 1958671628650837319, guid: 634dab68e19491845b7f311719b27c9c, type: 3}
+  previewIdleStateName: MonkeyIdle

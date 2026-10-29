@@ -1,5 +1,7 @@
 using System.Collections;
+using System.Reflection;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class StockManager : MonoBehaviour
 {
@@ -32,16 +34,181 @@ public class StockManager : MonoBehaviour
     private bool playerTwoEliminated;
     private bool matchEnded;
 
+    private void SpawnSelectedPlayers()
+    {
+        FighterHealth scenePlayerOne = playerOne;
+        FighterHealth scenePlayerTwo = playerTwo;
+
+        CharacterData selectedPlayerOne =
+            PlayerSelectionData.Player1Character;
+        CharacterData selectedPlayerTwo =
+            PlayerSelectionData.Player2Character;
+
+        // This fallback lets you open Arena directly from the editor while
+        // still using the players placed in the scene for testing.
+        if (selectedPlayerOne == null || selectedPlayerTwo == null)
+        {
+            if (scenePlayerOne != null)
+            {
+                scenePlayerOne.gameObject.SetActive(true);
+            }
+
+            if (scenePlayerTwo != null)
+            {
+                scenePlayerTwo.gameObject.SetActive(true);
+            }
+
+            Debug.LogWarning(
+                "No character selections found. Using Arena scene players.");
+            return;
+        }
+
+        if (scenePlayerOne != null)
+        {
+            scenePlayerOne.gameObject.SetActive(false);
+        }
+
+        if (scenePlayerTwo != null)
+        {
+            scenePlayerTwo.gameObject.SetActive(false);
+        }
+
+        playerOne = CreateSelectedPlayer(
+            selectedPlayerOne,
+            playerOneSpawn,
+            true
+        );
+
+        playerTwo = CreateSelectedPlayer(
+            selectedPlayerTwo,
+            playerTwoSpawn,
+            false
+        );
+
+        BindDamageDisplaysToSpawnedPlayers();
+    }
+
+    private FighterHealth CreateSelectedPlayer(
+        CharacterData character,
+        Transform spawnPoint,
+        bool isPlayerOne)
+    {
+        if (character == null || character.fighterPrefab == null)
+        {
+            Debug.LogError(
+                "Character " +
+                (character == null ? "null" : character.characterName) +
+                " has no fighterPrefab assigned.");
+            return null;
+        }
+
+        Vector3 spawnPosition = spawnPoint == null
+            ? Vector3.zero
+            : spawnPoint.position;
+        Quaternion spawnRotation = spawnPoint == null
+            ? Quaternion.identity
+            : GetSpawnRotation(spawnPoint);
+
+        GameObject fighterObject = Instantiate(
+            character.fighterPrefab,
+            spawnPosition,
+            spawnRotation
+        );
+
+        // A prefab can be saved inactive. Fighters spawned for a match must
+        // be active before their components can participate in gameplay.
+        fighterObject.SetActive(true);
+
+        fighterObject.name =
+            character.characterName + (isPlayerOne ? " (P1)" : " (P2)");
+
+        fighterObject.transform.position = spawnPosition;
+        fighterObject.transform.rotation = spawnRotation;
+
+        FighterController controller =
+            fighterObject.GetComponentInChildren<FighterController>(true);
+
+        if (controller != null)
+        {
+            FighterController.ControlMode mode = isPlayerOne
+                ? PlayerSelectionData.Player1ControlMode
+                : PlayerSelectionData.Player2ControlMode;
+            Gamepad gamepad = isPlayerOne
+                ? PlayerSelectionData.Player1Gamepad
+                : PlayerSelectionData.Player2Gamepad;
+
+            controller.SetControls(mode, gamepad);
+            controller.SetFacingDirection(isPlayerOne);
+        }
+
+        FighterHealth health =
+            fighterObject.GetComponentInChildren<FighterHealth>(true);
+
+        if (health == null)
+        {
+            Debug.LogError(
+                character.characterName +
+                " fighterPrefab needs a FighterHealth component.");
+            Destroy(fighterObject);
+        }
+
+        return health;
+    }
+
+    private void BindDamageDisplaysToSpawnedPlayers()
+    {
+        if (playerOne == null || playerTwo == null)
+        {
+            return;
+        }
+
+        DamageDisplay[] displays =
+            FindObjectsOfType<DamageDisplay>(true);
+
+        FieldInfo healthField = typeof(DamageDisplay).GetField(
+            "fighterHealth",
+            BindingFlags.Instance |
+            BindingFlags.Public |
+            BindingFlags.NonPublic
+        );
+
+        FieldInfo playerOneField = typeof(DamageDisplay).GetField(
+            "isPlayerOne",
+            BindingFlags.Instance |
+            BindingFlags.Public |
+            BindingFlags.NonPublic
+        );
+
+        if (healthField == null || playerOneField == null)
+        {
+            Debug.LogWarning(
+                "Could not automatically bind DamageDisplay references.");
+            return;
+        }
+
+        foreach (DamageDisplay display in displays)
+        {
+            bool isPlayerOne =
+                (bool)playerOneField.GetValue(display);
+            healthField.SetValue(
+                display,
+                isPlayerOne ? playerOne : playerTwo
+            );
+        }
+    }
+
     public int PlayerOneStocks => playerOneStocks;
     public int PlayerTwoStocks => playerTwoStocks;
 
     private void Awake()
     {
+        SpawnSelectedPlayers();
+
         playerOneStocks = startingStocks;
         playerTwoStocks = startingStocks;
 
-        // Player 2 always faces Player 1 at the start of the match.
-        FacePlayerTwo(playerTwo == null ? null : playerTwo.gameObject);
+        SetPlayerFacing(playerOne, true);
+        SetPlayerFacing(playerTwo, false);
 
         if (audioSource == null)
         {
@@ -213,14 +380,11 @@ public class StockManager : MonoBehaviour
         {
             playerObject.transform.position = spawnPoint.position;
             playerObject.transform.rotation = GetSpawnRotation(
-                spawnPoint.rotation,
-                isPlayerOne
+                spawnPoint
             );
         }
-        else if (!isPlayerOne)
-        {
-            FacePlayerTwo(playerObject);
-        }
+
+        SetPlayerFacing(player, isPlayerOne);
 
         if (rb != null)
         {
@@ -250,28 +414,35 @@ public class StockManager : MonoBehaviour
     }
 
     private Quaternion GetSpawnRotation(
-        Quaternion spawnRotation,
-        bool isPlayerOne)
+        Transform spawnPoint)
     {
-        if (isPlayerOne)
+        if (spawnPoint == null)
         {
-            return spawnRotation;
+            return Quaternion.identity;
         }
 
-        Vector3 eulerAngles = spawnRotation.eulerAngles;
-        eulerAngles.y = 180f;
-        return Quaternion.Euler(eulerAngles);
+        return Quaternion.Euler(
+            0f,
+            0f,
+            spawnPoint.eulerAngles.z
+        );
     }
 
-    private void FacePlayerTwo(GameObject playerObject)
+    private void SetPlayerFacing(
+        FighterHealth player,
+        bool shouldFaceRight)
     {
-        if (playerObject == null)
+        if (player == null)
         {
             return;
         }
 
-        Vector3 eulerAngles = playerObject.transform.eulerAngles;
-        eulerAngles.y = 180f;
-        playerObject.transform.eulerAngles = eulerAngles;
+        FighterController controller =
+            player.GetComponentInChildren<FighterController>(true);
+
+        if (controller != null)
+        {
+            controller.SetFacingDirection(shouldFaceRight);
+        }
     }
 }

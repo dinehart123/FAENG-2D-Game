@@ -532,6 +532,17 @@ public class FighterController : MonoBehaviour
         assignedGamepad = gamepad;
     }
 
+    public void SetFacingDirection(bool shouldFaceRight)
+    {
+        facingRight = shouldFaceRight;
+        transform.rotation = Quaternion.identity;
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.flipX = !facingRight;
+        }
+    }
+
     public void ApplyKnockback(Vector2 knockbackForce)
     {
         if (isDashing)
