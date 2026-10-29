@@ -7,6 +7,7 @@ using TMPro;
 
 public class CharacterSelectManager : MonoBehaviour
 {
+    // Handles joining, character selection, previews, and ready states.
     // These are world-space positions. Do not use the UI RectTransform's
     // anchored position for the animated clones, because that can be in
     // Canvas coordinates and place the clone far away from the arena.
@@ -71,6 +72,7 @@ public class CharacterSelectManager : MonoBehaviour
 
     private void Start()
     {
+        // Reset old choices and build the character-selection interface.
         MenuMusic.Play(backgroundMusic, backgroundMusicVolume);
 
         PlayerSelectionData.ResetSelections();
@@ -89,6 +91,7 @@ public class CharacterSelectManager : MonoBehaviour
 
     private void Update()
     {
+        // Process input, refresh the UI, and start when both players are ready.
         if (loadingArena) return;
 
         player1MoveCooldown -= Time.deltaTime;
@@ -114,6 +117,7 @@ public class CharacterSelectManager : MonoBehaviour
 
     private void CheckForPlayersJoining()
     {
+        // Join player two when an unassigned controller presses a button.
         foreach (Gamepad gamepad in Gamepad.all)
         {
             if (!ControllerPressedThisFrame(gamepad)) continue;
@@ -154,6 +158,7 @@ public class CharacterSelectManager : MonoBehaviour
 
     private void HandlePlayer1Selection()
     {
+        // Route player one input to the keyboard selection handler.
         HandleKeyboardSelection(
             ref player1CharacterIndex,
             ref player1Ready,
@@ -163,6 +168,7 @@ public class CharacterSelectManager : MonoBehaviour
 
     private void HandlePlayer2Selection()
     {
+        // Route player two input to the controller selection handler.
         HandleControllerSelection(
             PlayerSelectionData.Player2Gamepad,
             ref player2CharacterIndex,
@@ -177,6 +183,7 @@ public class CharacterSelectManager : MonoBehaviour
         ref float cooldown,
         int playerNumber)
     {
+        // Move and ready player one using keyboard controls.
         if (Keyboard.current == null) return;
 
         if (ready)
@@ -216,6 +223,7 @@ public class CharacterSelectManager : MonoBehaviour
         ref float cooldown,
         int playerNumber)
     {
+        // Move and ready player two using the assigned gamepad.
         if (gamepad == null) return;
 
         if (ready)
@@ -252,6 +260,7 @@ public class CharacterSelectManager : MonoBehaviour
 
     private void ConfirmReady(int playerNumber, int characterIndex, ref bool ready)
     {
+        // Save the selected character and mark the player as ready.
         if (playerNumber == 1 && !player1CharacterSelected)
         {
             Debug.Log("Player 1 must click a character before readying up.");
@@ -266,6 +275,7 @@ public class CharacterSelectManager : MonoBehaviour
 
     private void CancelReady(int playerNumber, ref bool ready)
     {
+        // Allow a ready player to change their selection.
         ready = false;
 
         Debug.Log("Player " + playerNumber + " is no longer ready.");
@@ -273,6 +283,7 @@ public class CharacterSelectManager : MonoBehaviour
 
     private void ChangeCharacter(ref int index, int direction)
     {
+        // Move through the roster and wrap around at either end.
         if (roster == null || roster.characters == null ||
             roster.characters.Length == 0)
         {
@@ -292,6 +303,7 @@ public class CharacterSelectManager : MonoBehaviour
 
     private void SelectCharacter(int playerNumber, int index)
     {
+        // Store the selected character for the requested player.
         if (roster == null || roster.characters == null ||
             roster.characters.Length == 0)
         {
@@ -322,6 +334,7 @@ public class CharacterSelectManager : MonoBehaviour
 
     private void SetupCharacterBoard()
     {
+        // Connect existing buttons or create the board automatically.
         if (roster == null || roster.characters == null)
         {
             return;
@@ -360,6 +373,7 @@ public class CharacterSelectManager : MonoBehaviour
 
     private void EnsureCharacterBoardParent()
     {
+        // Create a default UI parent when none was assigned.
         if (characterBoardParent != null)
         {
             return;
@@ -391,6 +405,7 @@ public class CharacterSelectManager : MonoBehaviour
 
     private void CreateCharacterBoardAutomatically()
     {
+        // Generate buttons, icons, and player markers from the roster.
         GridLayoutGroup grid =
             characterBoardParent.GetComponent<GridLayoutGroup>();
 
@@ -493,6 +508,7 @@ public class CharacterSelectManager : MonoBehaviour
 
     private void SelectCharacterFromBoard(int characterIndex)
     {
+        // Select a character when its board button is clicked.
         if (!player1Joined || player1Ready)
         {
             return;
@@ -512,6 +528,7 @@ public class CharacterSelectManager : MonoBehaviour
 
     private void UpdateSelectionMarkers()
     {
+        // Show which characters each player currently selected.
         SetMarker(
             player1SelectionMarkers,
             player1CharacterSelected,
@@ -541,6 +558,7 @@ public class CharacterSelectManager : MonoBehaviour
 
     private void RefreshUI()
     {
+        // Update portraits, names, status text, and selection markers.
         if (roster == null || roster.characters == null ||
             roster.characters.Length == 0)
         {
@@ -596,6 +614,7 @@ public class CharacterSelectManager : MonoBehaviour
 
     private void RefreshAnimatedPreviews()
     {
+        // Replace preview fighters whenever a selection changes.
         if (roster == null || roster.characters == null ||
             roster.characters.Length == 0)
         {
@@ -618,6 +637,7 @@ public class CharacterSelectManager : MonoBehaviour
         CharacterData character,
         Transform spawnPoint)
     {
+        // Spawn a preview fighter or remove it when no character is selected.
         if (spawnPoint == null)
         {
             return;
@@ -722,6 +742,7 @@ public class CharacterSelectManager : MonoBehaviour
 
     private void StartGame()
     {
+        // Clean up previews and load the arena scene once.
         loadingArena = true;
 
         if (player1PreviewObject != null)

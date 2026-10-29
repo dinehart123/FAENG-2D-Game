@@ -2,6 +2,7 @@ using UnityEngine.InputSystem;
 
 public static class PlayerSelectionData
 {
+    // Holds character and controller choices while changing scenes.
     public static CharacterData Player1Character;
     public static CharacterData Player2Character;
 
@@ -13,6 +14,7 @@ public static class PlayerSelectionData
 
     public static void ResetSelections()
     {
+        // Clear selections before starting a new character-select session.
         Player1Character = null;
         Player2Character = null;
 

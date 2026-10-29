@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class StockManager : MonoBehaviour
 {
+    // Spawns fighters, tracks stocks, respawns players, and ends the match.
     [Header("Players")]
     [SerializeField] private FighterHealth playerOne;
     [SerializeField] private FighterHealth playerTwo;
@@ -36,6 +37,7 @@ public class StockManager : MonoBehaviour
 
     private void SpawnSelectedPlayers()
     {
+        // Replace scene placeholders with the players chosen in character select.
         FighterHealth scenePlayerOne = playerOne;
         FighterHealth scenePlayerTwo = playerTwo;
 
@@ -93,6 +95,7 @@ public class StockManager : MonoBehaviour
         Transform spawnPoint,
         bool isPlayerOne)
     {
+        // Instantiate one selected fighter and assign its controls.
         if (character == null || character.fighterPrefab == null)
         {
             Debug.LogError(
@@ -157,6 +160,7 @@ public class StockManager : MonoBehaviour
 
     private void BindDamageDisplaysToSpawnedPlayers()
     {
+        // Connect the UI damage displays to the newly spawned fighters.
         if (playerOne == null || playerTwo == null)
         {
             return;
@@ -202,6 +206,7 @@ public class StockManager : MonoBehaviour
 
     private void Awake()
     {
+        // Spawn players, initialize stocks, and prepare death audio.
         SpawnSelectedPlayers();
 
         playerOneStocks = startingStocks;
@@ -226,6 +231,7 @@ public class StockManager : MonoBehaviour
 
     private void Update()
     {
+        // Check whether either fighter has fallen below the blast zone.
         if (matchEnded)
         {
             return;
@@ -261,6 +267,7 @@ public class StockManager : MonoBehaviour
         string playerName,
         bool isPlayerOne)
     {
+        // Remove a stock when a fighter crosses the blast-zone boundary.
         if (player == null || respawning || eliminated || !player.gameObject.activeInHierarchy)
         {
             return;
@@ -289,6 +296,7 @@ public class StockManager : MonoBehaviour
         string playerName,
         bool isPlayerOne)
     {
+        // Play the death response, then respawn or eliminate the player.
         stocks--;
         player.ResetDamage();
 
@@ -319,6 +327,7 @@ public class StockManager : MonoBehaviour
 
     private void EndMatch(bool playerOneWasEliminated)
     {
+        // Save the winner and load the end-game scene.
         if (matchEnded)
         {
             return;
@@ -364,6 +373,7 @@ public class StockManager : MonoBehaviour
         Transform spawnPoint,
         bool isPlayerOne)
     {
+        // Freeze the fighter, move it to the spawn point, and restore control.
         GameObject playerObject = player.gameObject;
         Rigidbody2D rb = playerObject.GetComponent<Rigidbody2D>();
 
@@ -416,6 +426,7 @@ public class StockManager : MonoBehaviour
     private Quaternion GetSpawnRotation(
         Transform spawnPoint)
     {
+        // Use the spawn point's rotation when one is available.
         if (spawnPoint == null)
         {
             return Quaternion.identity;
@@ -432,6 +443,7 @@ public class StockManager : MonoBehaviour
         FighterHealth player,
         bool shouldFaceRight)
     {
+        // Set the fighter's initial left/right facing direction.
         if (player == null)
         {
             return;

@@ -4,6 +4,7 @@ using TMPro;
 
 public class EndGameController : MonoBehaviour
 {
+    // Displays match results and handles end-screen navigation.
     [Header("End Game Text")]
     [SerializeField] private TMP_Text winnerText;
     [SerializeField] private TMP_Text playerOneDamageText;
@@ -24,6 +25,7 @@ public class EndGameController : MonoBehaviour
 
     private void Start()
     {
+        // Fill the end-game screen with the saved match results.
         MenuMusic.Play(backgroundMusic, backgroundMusicVolume);
 
         if (!MatchResults.HasResults)
@@ -49,6 +51,7 @@ public class EndGameController : MonoBehaviour
 
     public void GoToCharacterSelect()
     {
+        // Reset the match and open character select for a rematch.
         PlayButtonSound();
         ResetMatchState();
         SceneManager.LoadScene(characterSelectSceneName);
@@ -56,6 +59,7 @@ public class EndGameController : MonoBehaviour
 
     public void GoToMainMenu()
     {
+        // Reset the match and return to the main menu.
         PlayButtonSound();
         ResetMatchState();
         MainMenuController.SkipIntroOnNextLoad = true;

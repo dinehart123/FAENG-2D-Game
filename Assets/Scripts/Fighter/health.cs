@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class FighterHealth : MonoBehaviour
 {
+    // Tracks damage, applies knockback, and handles fighter damage state.
     [Header("Damage")]
     [SerializeField] private float damagePercent;
     private float totalDamageTaken;
@@ -21,6 +22,7 @@ public class FighterHealth : MonoBehaviour
 
     private void Awake()
     {
+        // Cache fighter components and prepare the death audio source.
         fighterController = GetComponent<FighterController>();
 
         if (audioSource == null)
@@ -38,6 +40,7 @@ public class FighterHealth : MonoBehaviour
 
     public void PlayDeathSound()
     {
+        // Play the configured sound when this fighter loses a stock.
         if (audioSource != null && deathSound != null)
         {
             audioSource.PlayOneShot(deathSound);
@@ -46,6 +49,7 @@ public class FighterHealth : MonoBehaviour
 
     public void TakeDamage(float damage, Vector2 knockback)
     {
+        // Add damage and apply knockback unless the fighter is respawning.
         // Dashing grants invulnerability: no damage and no knockback.
         if (fighterController != null &&
             (fighterController.IsDashing || fighterController.IsRespawning))
@@ -83,6 +87,7 @@ public class FighterHealth : MonoBehaviour
 
     public void ResetDamage()
     {
+        // Return the fighter's damage values to zero.
         damagePercent = 0f;
     }
 }

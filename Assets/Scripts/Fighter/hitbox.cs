@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Hitbox : MonoBehaviour
 {
+    // Stores attack data and applies it once to each fighter hit.
     private GameObject owner;
     private float damage;
     private float horizontalKnockback;
@@ -18,6 +19,7 @@ public class Hitbox : MonoBehaviour
         float verticalForce,
         float direction)
     {
+        // Set the attack owner, damage, and knockback values.
         owner = attackOwner;
         damage = attackDamage;
         horizontalKnockback = horizontalForce;
@@ -28,6 +30,7 @@ public class Hitbox : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        // Ignore invalid or repeated targets, then apply knockback and damage.
         FighterHealth target = other.GetComponentInParent<FighterHealth>();
 
         if (target == null || owner == null || hitTargets.Contains(target))

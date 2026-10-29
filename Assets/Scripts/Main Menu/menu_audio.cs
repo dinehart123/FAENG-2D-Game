@@ -2,6 +2,7 @@ using UnityEngine;
 
 public sealed class MenuMusic : MonoBehaviour
 {
+    // Maintains one looping menu-music source across scene changes.
     private const string MusicVolumeKey = "MenuMusicVolume";
     private static MenuMusic instance;
     private AudioSource audioSource;
@@ -14,6 +15,7 @@ public sealed class MenuMusic : MonoBehaviour
 
     public static void Play(AudioClip clip, float volume)
     {
+        // Start or resume the requested track using the saved volume.
         if (!PlayerPrefs.HasKey(MusicVolumeKey))
         {
             SetVolume(volume);
@@ -52,12 +54,14 @@ public sealed class MenuMusic : MonoBehaviour
 
     public static bool ToggleMusic()
     {
+        // Switch music between enabled and muted states.
         SetMusicEnabled(!MusicEnabled);
         return MusicEnabled;
     }
 
     public static void SetMusicEnabled(bool enabled)
     {
+        // Apply the music toggle to the persistent audio source.
         musicEnabled = enabled;
 
         if (instance == null || instance.audioSource == null)
@@ -84,6 +88,7 @@ public sealed class MenuMusic : MonoBehaviour
 
     public static void SetVolume(float volume)
     {
+        // Clamp and save volume, then update the active source.
         float clampedVolume = Mathf.Clamp01(volume);
         PlayerPrefs.SetFloat(MusicVolumeKey, clampedVolume);
         PlayerPrefs.Save();
@@ -97,6 +102,7 @@ public sealed class MenuMusic : MonoBehaviour
 
     public static void Stop()
     {
+        // Stop the persistent music source.
         if (instance != null && instance.audioSource != null)
         {
             instance.audioSource.Stop();
@@ -105,6 +111,7 @@ public sealed class MenuMusic : MonoBehaviour
 
     private static void CreateInstanceIfNeeded()
     {
+        // Create a music object when no persistent instance exists.
         if (instance != null)
         {
             return;
@@ -116,6 +123,7 @@ public sealed class MenuMusic : MonoBehaviour
 
     private void Awake()
     {
+        // Keep only one instance and configure its AudioSource.
         if (instance != null && instance != this)
         {
             Destroy(gameObject);
@@ -134,11 +142,13 @@ public sealed class MenuMusic : MonoBehaviour
 
 public sealed class MenuButtonSound : MonoBehaviour
 {
+    // Plays menu button sounds from a persistent one-shot AudioSource.
     private static MenuButtonSound instance;
     private AudioSource audioSource;
 
     private void Awake()
     {
+        // Keep one instance and configure the button sound source.
         if (instance != null && instance != this)
         {
             Destroy(gameObject);
@@ -165,6 +175,7 @@ public sealed class MenuButtonSound : MonoBehaviour
         AudioClip fallbackClip,
         float volume)
     {
+        // Choose a random sound or use the fallback clip.
         AudioClip clip = GetRandomClip(clips);
 
         if (clip == null)
@@ -191,6 +202,7 @@ public sealed class MenuButtonSound : MonoBehaviour
 
     private static AudioClip GetRandomClip(AudioClip[] clips)
     {
+        // Select randomly from only the non-null clips.
         if (clips == null || clips.Length == 0)
         {
             return null;

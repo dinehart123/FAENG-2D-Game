@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class BananaProjectile : MonoBehaviour
 {
+    // Controls the banana's movement, damage, collision, and lifetime.
     [Header("Damage")]
     [SerializeField] private float damage = 8f;
     [SerializeField] private float horizontalKnockback = 8f;
@@ -20,12 +21,14 @@ public class BananaProjectile : MonoBehaviour
 
     private void Awake()
     {
+        // Cache physics and remove the projectile after its lifetime.
         rb = GetComponent<Rigidbody2D>();
         Destroy(gameObject, lifetime);
     }
 
     public void Launch(GameObject projectileOwner, float direction, float speed)
     {
+        // Set the owner, movement, hitbox values, and facing direction.
         owner = projectileOwner;
 
         if (rb != null)
@@ -54,6 +57,7 @@ public class BananaProjectile : MonoBehaviour
 
     private void IgnoreOwnerCollisions()
     {
+        // Prevent the banana from colliding with the fighter who threw it.
         if (owner == null)
         {
             return;
@@ -81,6 +85,7 @@ public class BananaProjectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        // Destroy the banana after it hits another fighter.
         if (hasHit)
         {
             return;

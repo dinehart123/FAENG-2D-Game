@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class DamageDisplay : MonoBehaviour
 {
+    // Displays a fighter's damage percentage and remaining stocks.
     [Header("Player")]
     [SerializeField] private FighterHealth fighterHealth;
     [SerializeField] private bool isPlayerOne;
@@ -13,6 +14,7 @@ public class DamageDisplay : MonoBehaviour
 
     private void Awake()
     {
+        // Find optional references that were not assigned in the Inspector.
         if (percentText == null)
         {
             percentText = GetComponent<TMP_Text>();
@@ -26,6 +28,7 @@ public class DamageDisplay : MonoBehaviour
 
     private void Update()
     {
+        // Refresh the displayed damage, color, and stock count each frame.
         if (fighterHealth == null || percentText == null)
         {
             return;

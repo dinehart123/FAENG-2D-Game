@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 
 public class FighterController : MonoBehaviour
 {
+    // Handles movement, jumping, dashing, knockback, and fighter animation.
     public enum ControlMode
     {
         Keyboard,
@@ -84,6 +85,7 @@ public class FighterController : MonoBehaviour
 
     private void Awake()
     {
+        // Cache components and initialize movement and visual state.
         rb = GetComponent<Rigidbody2D>();
         jumpsRemaining = Mathf.Max(1, maxJumps);
         facingRight = startsFacingRight;
@@ -142,6 +144,7 @@ public class FighterController : MonoBehaviour
 
     private void Update()
     {
+        // Process timers, grounded state, input, facing, and animation.
         if (respawnFrozen)
         {
             UpdateRespawnState();
@@ -211,6 +214,7 @@ public class FighterController : MonoBehaviour
 
     private void HandleKeyboardInput()
     {
+        // Read movement, dash, and jump input from the keyboard.
         if (Keyboard.current == null)
         {
             return;
@@ -249,6 +253,7 @@ public class FighterController : MonoBehaviour
 
     private void HandleControllerInput()
     {
+        // Read movement, dash, and jump input from the assigned gamepad.
         if (assignedGamepad == null)
         {
             return;
@@ -279,6 +284,7 @@ public class FighterController : MonoBehaviour
 
     private void StartDash()
     {
+        // Begin a directional dash when the dash is available.
         if (!dashAvailable || rb == null || isDashing)
         {
             return;
@@ -320,6 +326,7 @@ public class FighterController : MonoBehaviour
 
     private void Jump()
     {
+        // Use one remaining jump and apply upward velocity.
         if (rb == null || jumpsRemaining <= 0)
         {
             return;
@@ -347,6 +354,7 @@ public class FighterController : MonoBehaviour
 
     public void BeginRespawn(float duration)
     {
+        // Freeze the fighter and make it flash during respawn protection.
         respawnFrozen = true;
         respawnTimer = duration;
         jumpsRemaining = Mathf.Max(1, maxJumps);
@@ -366,6 +374,7 @@ public class FighterController : MonoBehaviour
 
     private void UpdateRespawnState()
     {
+        // Keep the fighter frozen and end protection after input or time.
         respawnTimer -= Time.deltaTime;
 
         if (rb != null)
@@ -393,6 +402,7 @@ public class FighterController : MonoBehaviour
 
     private bool HasResumeInput()
     {
+        // Check whether the player presses movement or attack input.
         if (Keyboard.current != null)
         {
             if (Keyboard.current.aKey.wasPressedThisFrame ||
@@ -433,6 +443,7 @@ public class FighterController : MonoBehaviour
 
     private void EndRespawn()
     {
+        // Restore movement and the fighter's original color.
         respawnFrozen = false;
         respawnTimer = 0f;
 
@@ -450,6 +461,7 @@ public class FighterController : MonoBehaviour
 
     private void UpdateFacingDirection()
     {
+        // Face the fighter toward its current horizontal movement.
         if (horizontalInput > 0f)
         {
             facingRight = true;
@@ -468,6 +480,7 @@ public class FighterController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // Apply physics movement, knockback, dashes, and fast-fall input.
         if (respawnFrozen)
         {
             rb.linearVelocity = Vector2.zero;
@@ -528,12 +541,14 @@ public class FighterController : MonoBehaviour
         ControlMode mode,
         Gamepad gamepad = null)
     {
+        // Assign the input mode and gamepad used by this fighter.
         controlMode = mode;
         assignedGamepad = gamepad;
     }
 
     public void SetFacingDirection(bool shouldFaceRight)
     {
+        // Set the fighter's initial facing direction.
         facingRight = shouldFaceRight;
         transform.rotation = Quaternion.identity;
 
@@ -545,6 +560,7 @@ public class FighterController : MonoBehaviour
 
     public void ApplyKnockback(Vector2 knockbackForce)
     {
+        // Replace current velocity with attack knockback.
         if (isDashing)
         {
             return;
@@ -557,6 +573,7 @@ public class FighterController : MonoBehaviour
 
     public void StartAttackLunge(Vector2 velocity, float duration)
     {
+        // Temporarily move the fighter during a lunge attack.
         if (rb == null || isDashing || knockbackTimer > 0f)
         {
             return;
@@ -568,6 +585,7 @@ public class FighterController : MonoBehaviour
 
     private void UpdateAnimation()
     {
+        // Send movement and grounded values to the Animator.
         if (animator == null)
         {
             return;

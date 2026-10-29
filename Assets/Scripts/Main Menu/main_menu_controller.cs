@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class MainMenuController : MonoBehaviour
 {
+    // Controls the intro animation, menu panels, music, and navigation.
     public static bool SkipIntroOnNextLoad { get; set; }
 
     [Header("Menu Panels")]
@@ -43,6 +44,7 @@ public class MainMenuController : MonoBehaviour
 
     private void Start()
     {
+        // Initialize the menu, music settings, and leaf positions.
         MenuMusic.Play(backgroundMusic, backgroundMusicVolume);
 
         leafIntro.SetActive(true);
@@ -73,6 +75,7 @@ public class MainMenuController : MonoBehaviour
 
     private void Update()
     {
+        // Detect intro clicks and the back button each frame.
         if (!introFinished && 
         ((Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) ||
         (Gamepad.current != null && Gamepad.current.buttonSouth.wasPressedThisFrame)))
@@ -91,6 +94,7 @@ public class MainMenuController : MonoBehaviour
 
     private void GoBack()
     {
+        // Close the currently open submenu.
         // If Settings is open -> return to main menu
         if (settingsPanel.activeSelf)
         {
@@ -112,6 +116,7 @@ public class MainMenuController : MonoBehaviour
 
     private IEnumerator ShowMainMenu()
     {
+        // Animate the leaves away and reveal the main menu.
         introFinished = true;
 
         // Hide the prompt immediately when the intro animation begins
@@ -164,6 +169,7 @@ public class MainMenuController : MonoBehaviour
 
     private void OpenMainMenuImmediately()
     {
+        // Skip the intro animation when returning from another scene.
         introFinished = true;
         clickToStart.SetActive(false);
 
@@ -180,18 +186,21 @@ public class MainMenuController : MonoBehaviour
 
     public void PlayClicked()
     {
+        // Toggle the local/online play options.
         PlayButtonSound();
         playOptions.SetActive(!playOptions.activeSelf);
     }
 
     public void LocalClicked()
     {
+        // Open the local character-selection scene.
         PlayButtonSound();
         SceneManager.LoadScene("Character SelectV2");
     }
 
     public void SettingsClicked()
     {
+        // Replace the main menu with the settings panel.
         PlayButtonSound();
         mainMenuPanel.SetActive(false);
         settingsPanel.SetActive(true);
@@ -199,6 +208,7 @@ public class MainMenuController : MonoBehaviour
 
     public void CloseSettings()
     {
+        // Close settings and restore the main menu.
         PlayButtonSound();
         settingsPanel.SetActive(false);
         mainMenuPanel.SetActive(true);
@@ -208,6 +218,7 @@ public class MainMenuController : MonoBehaviour
 
     public void ToggleMusic()
     {
+        // Toggle music and update the button label.
         PlayButtonSound();
         bool musicEnabled = MenuMusic.ToggleMusic();
 
@@ -224,6 +235,7 @@ public class MainMenuController : MonoBehaviour
 
     public void SetMusicVolume(float value)
     {
+        // Save the selected music volume.
         MenuMusic.SetVolume(value);
     }
 
@@ -239,6 +251,7 @@ public class MainMenuController : MonoBehaviour
 
     public void QuitGame()
     {
+        // Close the game application.
         PlayButtonSound();
         Application.Quit();
     }

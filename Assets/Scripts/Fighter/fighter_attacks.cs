@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 
 public class FighterAttack : MonoBehaviour
 {
+    // Reads attack input, plays animations, and enables attack hitboxes.
     private enum AttackType
     {
         Light,
@@ -134,6 +135,7 @@ public class FighterAttack : MonoBehaviour
 
     private void Awake()
     {
+        // Cache fighter components and disable hitboxes at startup.
         fighterController = GetComponent<FighterController>();
         animator = GetComponent<Animator>();
 
@@ -160,6 +162,7 @@ public class FighterAttack : MonoBehaviour
 
     private void OnDisable()
     {
+        // Stop attacks when the fighter is disabled or destroyed.
         ResetAttackState();
     }
 
@@ -170,6 +173,7 @@ public class FighterAttack : MonoBehaviour
     /// </summary>
     public void ResetAttackState()
     {
+        // Cancel attack coroutines, triggers, and active hitboxes.
         StopAllCoroutines();
         canAttack = true;
         attackSequence++;
@@ -185,6 +189,7 @@ public class FighterAttack : MonoBehaviour
 
     private void Update()
     {
+        // Check for projectile and normal attack input each frame.
         if (fighterController != null && fighterController.IsRespawning)
         {
             return;
@@ -220,6 +225,7 @@ public class FighterAttack : MonoBehaviour
 
     private bool BananaPressed()
     {
+        // Return true when the current control scheme throws a banana.
         if (fighterController.CurrentControlMode ==
             FighterController.ControlMode.Keyboard)
         {
@@ -234,6 +240,7 @@ public class FighterAttack : MonoBehaviour
 
     private void PlayBananaAnimation()
     {
+        // Trigger the throw animation, sound, and projectile spawn.
         if (animator != null)
         {
             ResetAttackTriggers();
@@ -250,6 +257,7 @@ public class FighterAttack : MonoBehaviour
 
     private void SpawnBananaProjectile()
     {
+        // Create a banana and launch it in the fighter's facing direction.
         if (bananaProjectilePrefab == null)
         {
             Debug.LogWarning(
@@ -289,6 +297,7 @@ public class FighterAttack : MonoBehaviour
 
     private IEnumerator BananaCooldown()
     {
+        // Prevent another banana throw until the cooldown expires.
         canAttack = false;
         yield return new WaitForSeconds(bananaCooldown);
         canAttack = true;
@@ -296,6 +305,7 @@ public class FighterAttack : MonoBehaviour
 
     private bool AttackPressed(out AttackType attackType)
     {
+        // Detect light or heavy attack input for the active control scheme.
         attackType = AttackType.Light;
 
         if (fighterController.CurrentControlMode ==
@@ -347,6 +357,7 @@ public class FighterAttack : MonoBehaviour
 
     private AttackDirection GetAttackDirection()
     {
+        // Convert movement input into neutral, side, up, or down.
         // Vertical input takes priority over sideways movement.
         if (fighterController.IsDownPressed)
         {
@@ -371,6 +382,7 @@ public class FighterAttack : MonoBehaviour
         AttackDirection direction,
         bool airAttack)
     {
+        // Select the configured attack values for direction and air state.
         if (airAttack)
         {
             if (attackType == AttackType.Light)
@@ -457,6 +469,7 @@ public class FighterAttack : MonoBehaviour
         AttackDirection direction,
         bool airAttack)
     {
+        // Reset old triggers and activate the matching attack animation.
         if (animator == null)
         {
             return;
@@ -536,6 +549,7 @@ public class FighterAttack : MonoBehaviour
 
     private void PlayRandomAttackSound(AudioClip[] sounds)
     {
+        // Play one valid sound chosen randomly from the supplied array.
         if (audioSource == null || sounds == null || sounds.Length == 0)
         {
             return;
@@ -581,6 +595,7 @@ public class FighterAttack : MonoBehaviour
         AttackDirection direction,
         bool airAttack)
     {
+        // Return the hitbox matching the attack type and direction.
         if (airAttack)
         {
             if (attackType == AttackType.Light)
@@ -641,6 +656,7 @@ public class FighterAttack : MonoBehaviour
 
     private void DisableAllHitboxes()
     {
+        // Turn off every attack hitbox before enabling a new one.
         foreach (GameObject hitboxObject in AllHitboxes)
         {
             if (hitboxObject != null)
@@ -656,6 +672,7 @@ public class FighterAttack : MonoBehaviour
         AttackDirection direction,
         bool airAttack)
     {
+        // Enable the attack hitbox, wait for its active time, and cool down.
         int myAttackSequence = ++attackSequence;
         canAttack = false;
 
@@ -745,6 +762,7 @@ public class FighterAttack : MonoBehaviour
         GameObject hitboxObject,
         float facingDirection)
     {
+        // Flip side-attack hitboxes to match the fighter's facing direction.
         Transform hitboxTransform = hitboxObject.transform;
         Vector3 localPosition = hitboxTransform.localPosition;
         localPosition.x = Mathf.Abs(localPosition.x) * facingDirection;
@@ -761,6 +779,7 @@ public class FighterAttack : MonoBehaviour
 
     private void StartHeavyAttackMovement(AttackDirection direction)
     {
+        // Apply forward or directional movement during a heavy attack.
         float facingDirection = fighterController.FacingRight ? 1f : -1f;
         Vector2 movement;
 
